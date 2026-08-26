@@ -9,13 +9,13 @@ export default function Home() {
           className="h-full"
           src="/images/profile.webp"
           alt="Christo-profile"
-          width={550}
+          width={590}
           height={600}
           priority
         />
         <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-2 px-16 bg-white py-28 dark:bg-black sm:items-start">
           <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-            <h1 className="max-w-sm text-5xl font-semibold leading-12 tracking-tight text-black dark:text-zinc-50">
+            <h1 className="max-w-sm text-5xl font-bold leading-12 tracking-tight text-black dark:text-zinc-50">
               Welcome to
               <span className="text-red-500"> Christo Razafimanga</span>{' '}
               Universe.
