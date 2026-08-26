@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const dmSans = DM_Sans({
-  variable: '--font-dm-sans',
+  // variable: '--font-dm-sans',
   subsets: ['latin'],
   display: 'swap',
 });
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} h-full antialiased`}>
-      <body className="min-h-full font-sans flex flex-col">
+    <html lang="en" className={`${dmSans.className} h-full antialiased`}>
+      <body className="min-h-full font-[optical-sizing:auto] flex flex-col">
         {children}
 
         <Analytics />
