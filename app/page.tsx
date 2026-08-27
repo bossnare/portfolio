@@ -20,21 +20,25 @@ export default function Home() {
             />
             <div className="absolute inset-x-0 bottom-0 md:hidden h-1/3 bg-linear-to-b from-transparent to-primary/20"></div>
           </div>
-          <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-4 px-16 py-20 bg-white md:py-0 dark:bg-black md:items-start">
+          <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-4 px-16 py-16 bg-white md:py-0 dark:bg-black md:items-start">
             <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className="max-w-sm text-5xl font-black tracking-tight text-black leading-12 dark:text-zinc-50">
                 Building
                 <span className="text-primary"> digital experiences</span> that
                 matter.
               </h1>
-              <p className="max-w-md font-mono leading-8 text-zinc-600 dark:text-zinc-500">
-                $ <span className="text-red-400">git</span> <span>commit</span>
-                <span className="text-yellow-400"> -m</span>
-                <span className="text-primary/80">
+              <code className="max-w-md font-mono leading-6 text-zinc-600 dark:text-zinc-500">
+                <span className="text-primary">$ git</span> <span>commit</span>
+                <span> -m</span>
+                <span className="text-yellow-300">
                   {' '}
                   &quot;building digital experiences&quot;
                 </span>
-              </p>
+              </code>
+              {/* <code className="max-w-md font-mono leading-6 text-zinc-600 dark:text-zinc-500">
+                <span className="text-primary">$ whoami</span> <span>&gt;</span>
+                <span> full-stack developer</span>
+              </code> */}
               <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
                 Full-stack web developer focused on crafting{' '}
                 <a className="font-medium text-zinc-950 dark:text-zinc-50">
