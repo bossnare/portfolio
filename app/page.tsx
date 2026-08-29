@@ -1,16 +1,26 @@
+'use client';
+
 import Image from 'next/image';
 import { ArrowBigDownDash, Phone, Terminal } from 'lucide-react';
 import { stacks } from '@/src/data/stack';
+import { motion, useInView } from 'motion/react';
+import { useRef } from 'react';
 
 export default function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <div className="flex flex-col items-center justify-center flex-1 bg-zinc-50 dark:bg-black">
-      <header className="sticky w-full h-16 px-8 border md:px-10 z-1000 border-zinc-300 dark:border-white/6">
+      <header className="sticky w-full h-16 px-6 border md:px-10 z-1000 border-zinc-300 dark:border-white/6">
         <nav className="flex items-center justify-between h-full">
-          <div className="text-lg font-extrabold">Christo Razafimanga</div>
+          <div className="flex items-center gap-3">
+            <span className="text-xl font-black text-primary">/CR</span>
+            <span className="text-lg font-extrabold">Christo Razafimanga</span>
+          </div>
 
           <ul className="items-center hidden gap-6 lg:flex">
-            <li className="relative font-bold text-primary">
+            <li className="relative font-semibold text-primary">
               Home
               <span className="absolute inset-x-0 h-1 rounded-full -bottom-2 bg-primary"></span>
             </li>
@@ -29,7 +39,7 @@ export default function Home() {
           </a>
         </nav>
       </header>
-      <main className="w-full mt-5">
+      <main className="w-full mt-4">
         <section
           className="flex relative overflow-hidden flex-col items-center justify-between mx-auto rounded-lg w-full md:max-w-[94%] sm:p-10 md:pb-0 border border-zinc-300 dark:border-white/6 min-h-screen bg-white dark:bg-black md:min-h-auto md:flex-row md:items-center
         [background-image:linear-gradient(to_right,_rgba(148,_163,_184,_0.35)_1px,_transparent_1px),_linear-gradient(to_bottom,_rgba(148,_163,_184,_0.35)_1px,_transparent_1px)] bg-size-[40px_40px]"
@@ -82,11 +92,10 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Phone className="size-5" />
-                Contact me
+                Get in touch
               </a>
             </div>
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start pb-4 md:pb-0">
               <span className="text-muted-foreground">Tech stack.</span>
               <ul className="flex items-center gap-6 mt-4">
                 {stacks.map((stack, i) => (
@@ -113,15 +122,22 @@ export default function Home() {
             </div>
           </div>
           <div className="relative overflow-hidden md:w-1/2">
-            <Image
-              className="object-contain relative h-auto w-70 mx-auto lg:w-[420px] sm:w-[340px] xl:w-[480px]
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 40 }}
+              transition={{ duration: 0.6 }}
+            >
+              <Image
+                className="object-contain relative h-auto w-70 mx-auto lg:w-[420px] sm:w-[340px] xl:w-[480px]
                z-12"
-              src="/images/profile-1.png"
-              alt="Christo Razafimanga"
-              width={800}
-              height={900}
-              priority
-            />
+                src="/images/profile-1.png"
+                alt="Christo Razafimanga"
+                width={800}
+                height={900}
+                priority
+              />
+            </motion.div>
             <div className="absolute inset-0 z-10 bg-primary/10"></div>
             {/* <div className="absolute inset-0 z-9 bg-[radial-gradient(ellipse_at_center,transparent_20%,#fff_70%)]"></div> */}
           </div>
