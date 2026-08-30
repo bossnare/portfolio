@@ -66,7 +66,7 @@ export function Hero() {
             Get in touch
           </a>
         </div>
-        <div className="flex flex-col items-center md:items-start pb-4 md:pb-0">
+        <div className="flex flex-col items-center pb-4 md:items-start md:pb-0">
           <span className="text-muted-foreground">Tech stack.</span>
           <ul className="flex items-center gap-6 mt-4">
             {stacks.map((stack, i) => (
@@ -100,8 +100,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
         >
           <Image
-            className="object-contain relative h-auto w-70 mx-auto lg:w-105 sm:w-85 xl:w-120
-               z-12"
+            className="relative object-contain h-auto mx-auto w-70 lg:w-105 sm:w-85 xl:w-120 z-12"
             src="/images/profile-1.png"
             alt="Christo Razafimanga"
             width={800}
