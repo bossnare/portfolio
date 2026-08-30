@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowBigDownDash, Phone, Terminal } from 'lucide-react';
+import { ArrowBigDownDash, Terminal } from 'lucide-react';
 import { stacks } from '@/src/data/stack';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
@@ -42,7 +42,7 @@ export default function Home() {
       <main className="w-full mt-4">
         <section
           className="flex relative overflow-hidden flex-col items-center justify-between mx-auto rounded-lg w-full md:max-w-[94%] sm:p-10 md:pb-0 border border-zinc-300 dark:border-white/6 min-h-screen bg-white dark:bg-black md:min-h-auto md:flex-row md:items-center
-        [background-image:linear-gradient(to_right,_rgba(148,_163,_184,_0.35)_1px,_transparent_1px),_linear-gradient(to_bottom,_rgba(148,_163,_184,_0.35)_1px,_transparent_1px)] bg-size-[40px_40px]"
+        bg-[linear-gradient(to_right,rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-size-[40px_40px]"
         >
           <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 py-5 bg-white md:px-0 md:py-0 dark:bg-black md:items-start">
             <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
@@ -129,7 +129,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <Image
-                className="object-contain relative h-auto w-70 mx-auto lg:w-[420px] sm:w-[340px] xl:w-[480px]
+                className="object-contain relative h-auto w-70 mx-auto lg:w-105 sm:w-85 xl:w-120
                z-12"
                 src="/images/profile-1.png"
                 alt="Christo Razafimanga"
