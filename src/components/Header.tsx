@@ -1,10 +1,13 @@
 import { ArrowBigDownDash } from 'lucide-react';
+import Image from 'next/image';
+
 
 export function Header() {
   return (
     <nav className="flex items-center justify-between h-full">
       <div className="flex items-center gap-3">
-        <span className="text-xl font-black text-primary">/CR</span>
+        <Image alt="logo-icon" src="/icon/icon.svg" className="dark:hidden" width={30} height={30} />
+        <Image alt="logo-icon" src="/icon/icon-dark.svg" className="hidden dark:block" width={30} height={30} />
         <span className="text-lg font-extrabold">Christo Razafimanga</span>
       </div>
 
