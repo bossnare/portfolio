@@ -1,6 +1,8 @@
 import { Hero } from '@/src/components/Hero';
 import { Header } from '@/src/components/Header';
 import { ArrowUpRight, Grid2X2Check } from 'lucide-react';
+import { projects } from '@/src/data/projects';
+
 
 export default function Home() {
   return (
@@ -23,25 +25,25 @@ export default function Home() {
               </button>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
-              {Array.from({ length: 3 }).map((_, i) => (
+              {projects.map((project) => (
                 <div
-                  key={i}
-                  className="flex gap-4 p-4 rounded-md min-h-40 bg-background"
+                  key={project.type}
+                  className="flex gap-4 p-4 shadow-md border border-zinc-200 dark:border-white/6 rounded-md min-h-40 bg-background"
                 >
                   <span className="shrink-0">
                     <Grid2X2Check />
                   </span>
                   <div className="flex flex-col gap-3 grow">
-                    <span>Project {i + 1}</span>
-                    <span>
+                    <span className="capitalize font-medium">{project.type}</span>
+                    <span className="text-muted-foreground">
                       Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-                      Lorem ipsum dolor sit amet, this project {i + 1} is
+                      Lorem ipsum dolor sit amet, this {project.type} is
                       amazing
                     </span>
-                    <button className="flex items-center gap-1 text-muted-foreground">
+                    <a href="#" className="flex hover:underline items-center gap-1 py-2 text-primary">
                       <span>View project</span>
                       <ArrowUpRight className="text-primary" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               ))}
