@@ -1,6 +1,6 @@
 'use client';
 
-import { stacks } from '@/src/data/stack';
+import { stacks } from '@/src/data/stacks';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import Image from 'next/image';
@@ -12,7 +12,7 @@ export function Hero() {
 
   return (
     <section
-      className="flex relative overflow-hidden flex-col items-center justify-between mx-auto rounded-lg w-full md:max-w-[94%] sm:p-10 md:pb-0 border border-zinc-300 dark:border-white/6 min-h-screen bg-white dark:bg-black md:min-h-auto md:flex-row md:items-center
+      className="flex relative overflow-hidden flex-col items-center justify-between mx-auto rounded-lg w-full md:max-w-[94%] sm:p-10 md:pb-0 border border-zinc-200 dark:border-white/5 min-h-screen bg-white dark:bg-black md:min-h-auto md:flex-row md:items-center
         bg-[linear-gradient(to_right,rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-size-[40px_40px]"
     >
       <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 py-5 bg-white md:px-0 md:py-0 dark:bg-black md:items-start">
