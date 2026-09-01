@@ -68,6 +68,56 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="flex flex-col items-center w-full gap-4 px-4 py-8 bg-zinc-200 dark:bg-white/4 md:px-10">
+        <span>Christo Razafimanga</span>
+        <div className="flex gap-4">
+          <div
+            className="bg-foreground size-6"
+            style={
+              {
+                maskImage: `url(/icon/instagram.svg)`,
+                maskRepeat: 'no-repeat',
+                maskPosition: 'center',
+                maskSize: 'contain',
+                WebkitMaskImage: `url(/icon/instagram.svg)`,
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskPosition: 'center',
+                WebkitMaskSize: 'contain',
+              } as React.CSSProperties
+            }
+          ></div>
+          <div
+            className="bg-foreground size-6"
+            style={
+              {
+                maskImage: `url(/icon/facebook.svg)`,
+                maskRepeat: 'no-repeat',
+                maskPosition: 'center',
+                maskSize: 'contain',
+                WebkitMaskImage: `url(/icon/facebook.svg)`,
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskPosition: 'center',
+                WebkitMaskSize: 'contain',
+              } as React.CSSProperties
+            }
+          ></div>
+          <div
+            className="bg-foreground size-6"
+            style={
+              {
+                maskImage: `url(/icon/whatsapp.svg)`,
+                maskRepeat: 'no-repeat',
+                maskPosition: 'center',
+                maskSize: 'contain',
+                WebkitMaskImage: `url(/icon/whatsapp.svg)`,
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskPosition: 'center',
+                WebkitMaskSize: 'contain',
+              } as React.CSSProperties
+            }
+          ></div>
+        </div>
+      </footer>
     </div>
   );
 }
