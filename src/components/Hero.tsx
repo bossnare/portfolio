@@ -12,6 +12,7 @@ export function Hero() {
 
   return (
     <section
+      id="hero"
       className="flex relative overflow-hidden flex-col items-center justify-between mx-auto rounded-lg w-full md:max-w-[94%] sm:p-10 md:pb-0 border border-zinc-200 dark:border-white/5 min-h-screen bg-white dark:bg-black md:min-h-auto md:flex-row md:items-center
         bg-[linear-gradient(to_right,rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-size-[40px_40px]"
     >
