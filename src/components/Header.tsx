@@ -1,10 +1,10 @@
-import { ArrowBigDownDash, TextAlignJustify } from 'lucide-react';
+import { ArrowBigDownDash, Menu } from 'lucide-react';
 import Image from 'next/image';
 
 export function Header() {
   return (
     <nav className="flex items-center justify-between h-full">
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2">
         <Image
           alt="logo-icon"
           src="/icon/icon.svg"
@@ -41,12 +41,12 @@ export function Header() {
           <ArrowBigDownDash />
           Download CV
         </a>
-        <div className="h-full border border-zinc-200 overflow-hidden dark:border-white/5 rounded-lg flex items-center *:px-3 *:py-2">
-          <span className="bg-primary/20 text-foreground">EN</span>
+        <div className="p-0.5 border border-zinc-200 overflow-hidden dark:border-white/5 rounded-md flex items-center *:px-2 *:rounded-sm">
+          <span className="bg-primary text-black">EN</span>
           <span className="text-muted-foreground">FR</span>
         </div>
-        <button className="flex items-center justify-center border md:hidden size-10 rounded-xl border-zinc-20 dark:border-white/5">
-          <TextAlignJustify />
+        <button className="flex items-center justify-center border md:hidden size-8 rounded-xl border-zinc-20 dark:border-white/5">
+          <Menu />
         </button>
       </div>
     </nav>
