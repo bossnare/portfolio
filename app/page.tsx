@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center flex-1 bg-zinc-50 dark:bg-black">
-      <header className="sticky w-full h-16 px-3 border md:px-10 z-1000 border-zinc-300 dark:border-white/8">
+      <header className="sticky w-full h-16 px-3 border md:px-10 z-1000 border-b-zinc-300 dark:border-b-white/8">
         <Header />
       </header>
       <main className="w-full mt-4 space-y-8 md:space-y-10">
