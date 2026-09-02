@@ -41,11 +41,11 @@ export function Header() {
           <ArrowBigDownDash />
           Download CV
         </a>
-        <div className="p-0.5 border border-zinc-200 overflow-hidden dark:border-white/5 rounded-md flex items-center *:px-2 *:rounded-sm">
+        <div className="p-0.5 border border-zinc-200 overflow-hidden dark:border-white/8 rounded-md flex items-center *:px-2 *:rounded-sm">
           <span className="bg-primary text-black">EN</span>
           <span className="text-muted-foreground">FR</span>
         </div>
-        <button className="flex items-center justify-center border md:hidden size-8 rounded-xl border-zinc-20 dark:border-white/5">
+        <button className="flex items-center justify-center border md:hidden size-8 rounded-xl border-zinc-20 dark:border-white/8">
           <Menu />
         </button>
       </div>
