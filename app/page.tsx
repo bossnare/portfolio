@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center flex-1 bg-zinc-50 dark:bg-black">
-      <header className="sticky w-full h-16 px-3 border md:px-10 z-1000 border-b-zinc-300 dark:border-b-white/8">
+      <header className="sticky w-full h-16 px-3 border-b md:px-10 z-1000 border-zinc-300 dark:border-white/8">
         <Header />
       </header>
       <main className="w-full mt-4 space-y-8 md:space-y-10">
@@ -30,7 +30,7 @@ export default function Home() {
               {projects.map((project) => (
                 <div
                   key={project.type}
-                  className="flex gap-4 p-4 border rounded-md shadow-md border-zinc-200 dark:border-white/8 bg-background dark:bg-background/60"
+                  className="flex gap-4 p-4 border rounded-md shadow-md border-zinc-200 dark:border-white/8 bg-background dark:bg-background/80"
                 >
                   <span
                     style={{ background: `${project.color}1a` }} // 1a = HEX alpha chanel(opacity), 1a = 10% opacity
@@ -43,9 +43,7 @@ export default function Home() {
                       {project.type}
                     </span>
                     <span className="text-muted-foreground">
-                      Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.
-                      Lorem ipsum dolor sit amet, this {project.type} is
-                      amazing, called {project.name}
+                      {project.description} {project.name}
                     </span>
                     <a
                       href="#"
