@@ -1,5 +1,6 @@
 import { ArrowBigDownDash, Menu } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Header() {
   return (
@@ -24,13 +25,23 @@ export function Header() {
 
       <ul className="items-center hidden gap-6 lg:flex">
         <li className="relative font-semibold text-primary">
-          Home
+          <Link href="/">Home</Link>
           <span className="absolute inset-x-0 h-1 rounded-full -bottom-2 bg-primary"></span>
         </li>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          {' '}
+          <Link href="#">About</Link>
+        </li>
+        <li>
+          {' '}
+          <Link href="#">Experience</Link>
+        </li>
+        <li>
+          <Link href="#">Projects</Link>
+        </li>
+        <li>
+          <Link href="#">Contact</Link>
+        </li>
       </ul>
       <div className="flex items-center gap-3">
         <a
@@ -45,8 +56,8 @@ export function Header() {
           <span className="bg-primary text-black">EN</span>
           <span className="text-muted-foreground">FR</span>
         </div>
-        <button className="flex items-center justify-center border md:hidden size-8 rounded-xl border-zinc-20 dark:border-white/8">
-          <Menu />
+        <button className="flex items-center justify-center border md:hidden size-8 rounded-md border-zinc-20 dark:border-white/8">
+          <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />
         </button>
       </div>
     </nav>
