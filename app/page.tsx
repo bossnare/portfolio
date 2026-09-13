@@ -9,11 +9,11 @@ export default function Home() {
       <header className="fixed inset-x-0 top-0 h-16 px-3 md:px-14 z-1000 bg-[#F5F5F3] dark:bg-black">
         <Header />
       </header>
-      <main className="w-full pt-16 space-y-8 sm:pt-20 md:space-y-10">
+      <main className="w-full pt-16 space-y-14 sm:pt-20">
         <Hero />
         <section
           id="featured-projects"
-          className="flex flex-col gap-6 px-4 md:px-10"
+          className="flex flex-col gap-6 px-4 md:px-14"
         >
           <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="about" className="flex flex-col gap-6 px-4 md:px-10">
+        <section id="about" className="flex flex-col gap-6 px-4 md:px-14">
           <div className="flex flex-col min-h-screen gap-4">
             <div className="flex items-center justify-between">
               <span className="text-xl font-semibold">About me</span>
