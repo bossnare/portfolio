@@ -1,7 +1,7 @@
 'use client';
 
 import { stacks } from '@/src/data/stacks';
-import { ArrowBigDownDash, Terminal } from 'lucide-react';
+import { MoveRight, Send, Terminal } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 import Image from 'next/image';
 import { useRef } from 'react';
@@ -13,20 +13,19 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="flex relative overflow-hidden flex-col items-center justify-between mx-auto md:rounded-lg w-full md:max-w-[94%] sm:p-10 md:pb-0 border border-zinc-200 dark:border-white/8 min-h-screen bg-white dark:bg-black md:min-h-auto md:flex-row md:items-center
-        bg-[linear-gradient(to_right,rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-size-[40px_40px]"
+      className="flex relative overflow-hidden flex-col items-center justify-between mx-auto md:rounded-lg w-full md:max-w-[94%] md:pb-0 md:px-4 min-h-screen dark:bg-black md:min-h-auto md:flex-row md:items-center
+        "
     >
-      <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 py-5 bg-white md:px-0 md:py-0 dark:bg-black md:items-start">
+      <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 py-5 md:px-0 md:py-0 dark:bg-black md:items-start">
         <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
-          <p>
-            Hi, I&apos;m <span className="text-primary"> Christo</span>
-          </p>
-          <h1 className="max-w-md text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-12 dark:text-zinc-50">
-            Building
+          <p className="uppercase">Hi, I&apos;m...</p>
+          <h1 className="max-w-xl text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-12 dark:text-zinc-50">
+            <span className="uppercase">Christo RAZAFIMANGA</span>
+            {/* Building
             <span className="text-primary"> digital experiences</span> that
-            <span className="text-primary"> matter.</span>
+            <span className="text-primary"> matter.</span> */}
           </h1>
-          <code className="max-w-md font-mono leading-6 text-muted-foreground">
+          {/* <code className="max-w-md font-mono leading-6 text-muted-foreground">
             <span className="text-primary">$</span> <span>git</span>{' '}
             <span>commit</span>
             <span> -m</span>
@@ -34,46 +33,46 @@ export function Hero() {
               {' '}
               &quot;building digital experiences&quot;
             </span>
-          </code>
+          </code> */}
           {/* <code className="max-w-md font-mono leading-6 text-zinc-600 dark:text-zinc-500">
                 <span className="text-primary">$ whoami</span> <span>&gt;</span>
                 <span> full-stack developer</span>
               </code> */}
-          <p className="max-w-md text-lg leading-8 text-muted-foreground">
-            Full-stack web developer focused on crafting{' '}
-            <a className="font-medium text-zinc-950 dark:text-zinc-50">
-              modern
-            </a>
-            <a className="font-medium text-zinc-950 dark:text-zinc-50">
-              , performant, and thoughtful{' '}
-            </a>{' '}
-            web applications.
+          <p className="pr-1.5 text-3xl font-extrabold border-r-2 text-primary border-primary">
+            Web Developer
+          </p>
+          <p className="max-w-md text-lg leading-7 text-muted-foreground">
+            Full-stack web developer focused on crafting modern, performant, and
+            thoughtful web applications.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 text-background dark:text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] md:w-44"
-            href="/cv/Christo_Razafimanga_Dev_CV.pdf"
+            className="flex h-12 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-white transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
             download
           >
-            <ArrowBigDownDash />
-            Download CV
+            View my projects
+            <MoveRight />
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-40"
+            className="flex h-12 w-auto items-center justify-center gap-2 rounded-md border border-solid border-black/8 px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Get in touch
+            Get in touch <Send className="size-5" />
           </a>
         </div>
         <div className="flex flex-col items-center pb-4 md:items-start md:pb-0">
-          <span className="text-muted-foreground">Tech stack.</span>
-          <ul className="flex items-center gap-6 mt-4">
+          <span className="uppercase text-muted-foreground">Technologies</span>
+          <ul className="flex items-center gap-4 mt-4">
             {stacks.map((stack, i) => (
-              <li title={stack.name} key={i}>
+              <li
+                title={stack.name}
+                key={i}
+                className="p-2 rounded-md bg-background"
+              >
                 <div
-                  className={`${stack.color ? `bg-(--stack-color)` : 'bg-foreground'} size-6`}
+                  className="bg-foreground size-6"
                   style={
                     {
                       maskImage: `url(/icon/${stack.icon})`,
@@ -84,7 +83,6 @@ export function Hero() {
                       WebkitMaskRepeat: 'no-repeat',
                       WebkitMaskPosition: 'center',
                       WebkitMaskSize: 'contain',
-                      '--stack-color': stack.color,
                     } as React.CSSProperties
                   }
                 ></div>
@@ -93,7 +91,7 @@ export function Hero() {
           </ul>
         </div>
       </div>
-      <div className="relative overflow-hidden md:w-1/2">
+      <div className="relative overflow-hidden md:w-1/2 bg-[linear-gradient(to_right,rgba(148,163,184,0.35)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.35)_1px,transparent_1px)] bg-size-[40px_40px]">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -109,17 +107,17 @@ export function Hero() {
             priority
           />
         </motion.div>
-        <div className="absolute inset-0 z-10 bg-primary/10"></div>
+        <div className="absolute inset-0 z-10"></div>
         {/* <div className="absolute inset-0 z-9 bg-[radial-gradient(ellipse_at_center,transparent_20%,#fff_70%)]"></div> */}
       </div>
 
       {/* availability */}
-      <div className="absolute flex items-center p-2 border bottom-4 right-8 bg-background/90 z-16 border-zinc-300 dark:border-white/6 rounded-xl">
+      <div className="absolute flex items-center p-2 border rounded-lg bottom-4 right-8 bg-background/90 z-16 border-zinc-300 dark:border-white/6">
         <span className="rounded-full size-2.5 bg-primary ml-1"></span>
         <span className="ml-2 text-muted-foreground">
           Available for new opportunities
         </span>
-        <span className="p-1.5 border rounded-lg border-zinc-300 dark:border-white/6">
+        <span className="p-1.5 border rounded-md border-zinc-300 dark:border-white/6">
           <Terminal className="text-primary size-5" />
         </span>
       </div>

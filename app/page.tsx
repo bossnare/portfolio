@@ -5,11 +5,11 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center flex-1 bg-zinc-50 dark:bg-black">
-      <header className="sticky w-full h-16 px-3 border-b md:px-10 z-1000 border-zinc-300 dark:border-white/8">
+    <div className="flex flex-col items-center justify-center flex-1 bg-[#F5F5F3] dark:bg-black">
+      <header className="fixed inset-x-0 top-0 h-16 px-3 md:px-14 z-1000 bg-[#F5F5F3] dark:bg-black">
         <Header />
       </header>
-      <main className="w-full mt-4 space-y-8 md:space-y-10">
+      <main className="w-full pt-16 space-y-8 sm:pt-20 md:space-y-10">
         <Hero />
         <section
           id="featured-projects"
@@ -47,10 +47,10 @@ export default function Home() {
                     </span>
                     <a
                       href="#"
-                      className="flex items-center self-start gap-1 py-2 mt-auto hover:underline text-primary"
+                      className="flex items-center self-start gap-1 py-2 mt-auto hover:underline text-muted-foreground hover:text-primary"
                     >
                       <span>View project</span>
-                      <ArrowUpRight className="text-primary" />
+                      <ArrowUpRight />
                     </a>
                   </div>
                 </div>

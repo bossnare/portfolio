@@ -14,7 +14,6 @@ export const stacks = [
   {
     name: 'NodeJS',
     icon: 'nodedotjs.svg',
-    color: '#5FA04E',
   },
   {
     name: 'TailwindCSS',
