@@ -108,6 +108,22 @@ export function Hero() {
           />
         </motion.div>
         <div className="absolute inset-0 z-10"></div>
+        <Image
+          className="absolute top-0 object-contain h-auto -right-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
+          src="/icon/graphic-1.svg"
+          alt="graphic-1"
+          width={600}
+          height={600}
+          priority
+        />
+        <Image
+          className="absolute left-0 object-contain h-auto -bottom-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
+          src="/icon/graphic-2.svg"
+          alt="graphic-2"
+          width={600}
+          height={600}
+          priority
+        />
         {/* <div className="absolute inset-0 z-9 bg-[radial-gradient(ellipse_at_center,transparent_20%,#fff_70%)]"></div> */}
       </div>
 
