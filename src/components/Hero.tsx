@@ -5,16 +5,16 @@ import { MoveRight, Plus, Send, Terminal } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { Section } from './Section';
 
 export function Hero() {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
   return (
-    <section
+    <Section
       id="hero"
-      className="flex relative overflow-hidden flex-col items-center justify-between mx-auto md:rounded-lg w-full md:max-w-[94%] md:pb-0 md:px-4 min-h-screen dark:bg-black md:min-h-auto md:flex-row md:items-center
-        "
+      className="relative flex flex-col items-center justify-between min-h-screen overflow-hidden md:min-h-auto md:flex-row md:items-center"
     >
       <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 py-5 md:px-0 md:py-0 dark:bg-black md:items-start">
         <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
@@ -142,6 +142,6 @@ export function Hero() {
           <Terminal className="text-primary size-5" />
         </span>
       </div>
-    </section>
+    </Section>
   );
 }
