@@ -1,5 +1,6 @@
 import { Header } from '@/src/components/Header';
 import { Hero } from '@/src/components/Hero';
+import { Section } from '@/src/components/Section';
 import { projects } from '@/src/data/projects';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -11,10 +12,7 @@ export default function Home() {
       </header>
       <main className="w-full pt-16 space-y-14 sm:pt-20">
         <Hero />
-        <section
-          id="featured-projects"
-          className="flex flex-col gap-6 px-4 md:px-14"
-        >
+        <Section id="featured-projects" className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <span className="text-xl font-semibold">Featured projects</span>
@@ -57,14 +55,14 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
-        <section id="about" className="flex flex-col gap-6 px-4 md:px-14">
+        </Section>
+        <Section id="about" className="flex flex-col gap-6">
           <div className="flex flex-col min-h-screen gap-4">
             <div className="flex items-center justify-between">
               <span className="text-xl font-semibold">About me</span>
             </div>
           </div>
-        </section>
+        </Section>
       </main>
       <footer className="flex flex-col items-center w-full gap-4 px-4 py-8 bg-zinc-200 dark:bg-white/4 md:px-10">
         <span>Christo Razafimanga</span>
