@@ -33,3 +33,40 @@ body {
 code {
   @apply font-mono;
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11ch;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  width: 11ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation:
+    typewriter 1.4s steps(13, end) both,
+    typewriter-cursor 0.75s steps(1, end) infinite;
+}
+
+@keyframes typewriter-cursor {
+  0%,
+  49% {
+    border-color: var(--primary);
+  }
+  50%,
+  100% {
+    border-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter {
+    animation: none;
+    width: 11ch;
+  }
+}

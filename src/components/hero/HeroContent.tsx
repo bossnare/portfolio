@@ -1,4 +1,4 @@
-import { infoProvisors } from '@/src/data/infoProvisors';
+import { stats } from '@/src/data/stats';
 import { stacks } from '@/src/data/stacks';
 import { MoveRight, Send } from 'lucide-react';
 import { MaskedIcon } from '../MaskedIcon';
@@ -10,7 +10,7 @@ function HeroIntroduction() {
       <h1 className="max-w-xl text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-12 dark:text-zinc-50">
         <span className="uppercase">Christo RAZAFIMANGA</span>
       </h1>
-      <p className="pr-1.5 text-3xl font-extrabold border-r-2 text-primary border-primary">
+      <p className="typewriter pr-1.5 text-3xl font-extrabold border-r-2 text-primary border-primary">
         Web Developer
       </p>
       <p className="max-w-md text-lg leading-7 text-muted-foreground">
@@ -66,14 +66,14 @@ function HeroStats() {
   return (
     <div>
       <ul className="flex justify-between gap-4 md:gap-10">
-        {infoProvisors.map((info) => (
+        {stats.map((stat) => (
           <li
-            key={info.name}
-            className="flex flex-col items-center md:items-start"
+            key={stat.name}
+            className="flex flex-col items-center flex-1 md:items-start"
           >
-            <span className="text-2xl font-bold text-primary">{info.stat}</span>
-            <span className="text-sm leading-4 text-center md:text-start text-muted-foreground">
-              {info.name}
+            <span className="text-2xl font-bold text-primary">{stat.stat}</span>
+            <span className="text-sm leading-4 text-center md:text-nowrap md:text-start text-muted-foreground">
+              {stat.name}
             </span>
           </li>
         ))}

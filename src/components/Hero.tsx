@@ -16,7 +16,9 @@ export function Hero() {
       <div className="w-full border-t border-zinc-200 dark:border-white/8"></div>
       <div className="flex justify-between py-5 text-muted-foreground">
         <div></div>
-        <span>&copy; 2026 Christo Razafimanga. All rights reserved.</span>
+        <span className="text-sm">
+          &copy; 2026 Christo Razafimanga. All rights reserved.
+        </span>
       </div>
     </Section>
   );
