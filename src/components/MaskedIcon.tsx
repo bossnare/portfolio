@@ -6,7 +6,7 @@ type MaskedIconProps = {
 export function MaskedIcon({ icon, className = '' }: MaskedIconProps) {
   return (
     <span
-      className={`bg-foreground ${className}`}
+      className={`bg-foreground flex ${className}`}
       style={
         {
           maskImage: `url(/icon/${icon})`,
