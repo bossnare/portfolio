@@ -9,7 +9,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex gap-4 p-4 border rounded-md shadow-md border-zinc-200 dark:border-white/8 bg-background dark:bg-background/80">
+    <div className="flex gap-4 p-4 border rounded-md shadow-xs border-zinc-200 dark:border-white/8 bg-background dark:bg-background/80">
       <span
         style={{ background: `${project.color}1a` }}
         className="shrink-0 self-start p-2 rounded-lg"
