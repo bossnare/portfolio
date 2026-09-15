@@ -13,7 +13,7 @@ export function FeaturedProjects() {
             <span>
               View all <span className="hidden md:inline-block">projects</span>
             </span>
-            <ArrowUpRight className="text-primary" />
+            <ArrowUpRight className="text-primary size-5" />
           </button>
         </div>
         <div className="grid gap-4 md:grid-cols-3">

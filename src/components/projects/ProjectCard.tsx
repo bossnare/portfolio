@@ -11,7 +11,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
       style={{ borderColor: project.color }}
-      className="flex gap-4 p-4 border-l-3 rounded-md shadow-xs bg-background dark:bg-background/80"
+      className="flex gap-4 p-4 rounded-md shadow-xs border-l-3 bg-background dark:bg-background/80"
     >
       <span
         style={{ background: `${project.color}1a` }}
@@ -29,7 +29,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           className="flex items-center self-start gap-1 py-2 mt-auto hover:underline text-muted-foreground hover:text-primary"
         >
           <span>View project</span>
-          <ArrowUpRight />
+          <ArrowUpRight className="size-5" />
         </a>
       </div>
     </div>
