@@ -57,6 +57,13 @@ function Technologies() {
             <MaskedIcon icon={stack.icon} className="size-6" />
           </li>
         ))}
+        {/* go to stacks */}
+        <a
+          href="/skills"
+          className="p-2 border rounded-full border-zinc-300 dark:border-white/8"
+        >
+          <MoveRight className="size-6 text-zinc-800 dark:text-zinc-100" />
+        </a>
       </ul>
     </div>
   );
