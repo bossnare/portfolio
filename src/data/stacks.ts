@@ -1,5 +1,9 @@
 export const stacks = [
   {
+    name: 'ReactJS',
+    icon: 'react.svg',
+  },
+  {
     name: 'NextJS',
     icon: 'nextdotjs.svg',
   },
@@ -8,16 +12,12 @@ export const stacks = [
     icon: 'typescript.svg',
   },
   {
-    name: 'ReactJS',
-    icon: 'react.svg',
+    name: 'TailwindCSS',
+    icon: 'tailwindcss.svg',
   },
   {
     name: 'NodeJS',
     icon: 'nodedotjs.svg',
-  },
-  {
-    name: 'TailwindCSS',
-    icon: 'tailwindcss.svg',
   },
   {
     name: 'PostgreSQL',

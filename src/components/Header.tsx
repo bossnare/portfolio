@@ -9,10 +9,10 @@ export function Header() {
         <span className="text-lg font-extrabold">Christo Razafimanga</span>
       </div>
 
-      <ul className="items-center hidden gap-12 font-semibold lg:flex text-foreground/80">
-        <li className="relative flex justify-center text-primary">
+      <ul className="items-center hidden gap-12 tracking-tighter lg:flex text-foreground/80">
+        <li className="relative flex justify-center font-semibold text-primary">
           <Link href="/">Home</Link>
-          <span className="absolute w-1/3 h-1 rounded-full -bottom-2 bg-primary"></span>
+          <span className="absolute w-1/3 h-[3px] rounded-full -bottom-2 bg-primary"></span>
         </li>
         <li>
           {' '}
@@ -31,7 +31,7 @@ export function Header() {
       </ul>
       <div className="flex items-center gap-3">
         <a
-          className="hidden lg:flex h-10 w-full items-center justify-center gap-2 rounded-md px-5 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] md:w-44"
+          className="hidden lg:flex h-8 items-center justify-center gap-2 rounded-md px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
           href="/cv/Christo_Razafimanga_Dev_CV.pdf"
           download
         >
@@ -42,7 +42,7 @@ export function Header() {
           <span className="text-white bg-primary">EN</span>
           <span className="text-muted-foreground">FR</span>
         </div>
-        <button className="flex items-center justify-center border rounded-md md:hidden size-8 border-zinc-20 dark:border-white/8">
+        <button className="flex items-center justify-center border rounded-md md:hidden size-7 border-zinc-300 dark:border-white/8">
           <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />
         </button>
       </div>

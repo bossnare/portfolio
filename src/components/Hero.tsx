@@ -1,4 +1,5 @@
 import { Section } from './Section';
+import { FollowMeLinks } from './FollowMeLinks';
 import { HeroContent } from './hero/HeroContent';
 import { HeroVisual } from './hero/HeroVisual';
 
@@ -14,11 +15,15 @@ export function Hero() {
       </div>
       {/* line */}
       <div className="w-full border-t border-zinc-200 dark:border-white/8"></div>
-      <div className="flex justify-between py-5 text-muted-foreground">
-        <div></div>
-        <span className="text-sm">
-          &copy; 2026 Christo Razafimanga. All rights reserved.
-        </span>
+      <div
+        id="hero-footer"
+        className="items-center justify-between hidden pt-5 text-sm md:flex text-muted-foreground"
+      >
+        <div className="flex items-center gap-6">
+          <span className="uppercase">Follow me</span>
+          <FollowMeLinks />
+        </div>
+        <span>&copy; 2026 Christo Razafimanga. All rights reserved.</span>
       </div>
     </Section>
   );
