@@ -1,6 +1,11 @@
 import { MaskedIcon } from './MaskedIcon';
 
-const socialIcons = ['instagram.svg', 'facebook.svg', 'whatsapp.svg'];
+const socialIcons = [
+  'instagram.svg',
+  'facebook.svg',
+  'whatsapp.svg',
+  'github.svg',
+];
 
 export function SocialLinks() {
   return (
