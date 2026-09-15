@@ -9,10 +9,10 @@ export function Header() {
         <span className="text-lg font-extrabold">Christo Razafimanga</span>
       </div>
 
-      <ul className="items-center hidden gap-12 font-semibold lg:flex text-foreground/80">
-        <li className="relative flex justify-center text-primary">
+      <ul className="items-center hidden gap-12 tracking-tighter lg:flex text-foreground/80">
+        <li className="relative flex justify-center font-semibold text-primary">
           <Link href="/">Home</Link>
-          <span className="absolute w-1/3 h-1 rounded-full -bottom-2 bg-primary"></span>
+          <span className="absolute w-1/3 h-[3px] rounded-full -bottom-2 bg-primary"></span>
         </li>
         <li>
           {' '}
