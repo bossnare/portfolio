@@ -9,16 +9,19 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex gap-4 p-4 border rounded-md shadow-xs border-zinc-200 dark:border-white/8 bg-background dark:bg-background/80">
+    <div
+      style={{ borderColor: project.color }}
+      className="flex gap-4 p-4 border-l-3 rounded-md shadow-xs bg-background dark:bg-background/80"
+    >
       <span
         style={{ background: `${project.color}1a` }}
-        className="shrink-0 self-start p-2 rounded-lg"
+        className="shrink-0 self-start p-1.5 rounded-lg"
       >
         <project.icon style={{ color: project.color }} />
       </span>
       <div className="flex flex-col gap-1 grow">
         <span className="font-medium capitalize">{project.type}</span>
-        <span className="text-muted-foreground">
+        <span className="text-muted-foreground text-[15px]">
           {project.description} {project.name}
         </span>
         <a

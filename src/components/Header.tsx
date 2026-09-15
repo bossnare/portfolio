@@ -31,7 +31,7 @@ export function Header() {
       </ul>
       <div className="flex items-center gap-3">
         <a
-          className="hidden lg:flex h-8 w-full items-center justify-center gap-2 rounded-md px-5 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] md:w-44"
+          className="hidden lg:flex h-8 items-center justify-center gap-2 rounded-md px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
           href="/cv/Christo_Razafimanga_Dev_CV.pdf"
           download
         >

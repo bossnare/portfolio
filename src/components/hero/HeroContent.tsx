@@ -13,7 +13,7 @@ function HeroIntroduction() {
       <p className="typewriter pr-1.5 text-3xl font-extrabold border-r-2 text-primary border-primary">
         Web Developer
       </p>
-      <p className="max-w-md text-lg leading-7 text-muted-foreground">
+      <p className="max-w-md leading-7 text-muted-foreground">
         Full-stack web developer focused on crafting modern, performant, and
         thoughtful web applications.
       </p>
@@ -25,14 +25,14 @@ function HeroActions() {
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
       <a
-        className="flex h-12 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-white transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
+        className="flex h-11 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-white transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
         download
       >
         View my projects
         <MoveRight />
       </a>
       <a
-        className="flex h-12 w-auto items-center justify-center gap-2 rounded-md border border-solid border-black/12 px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
+        className="flex h-11 w-auto items-center justify-center gap-2 rounded-md border border-solid border-black/12 px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -69,7 +69,7 @@ function HeroStats() {
         {stats.map((stat) => (
           <li
             key={stat.name}
-            className="flex flex-col items-center flex-1 md:items-start"
+            className="flex flex-col items-center flex-1 gap-1.5 md:items-start"
           >
             <span className="text-2xl font-bold text-primary">{stat.stat}</span>
             <span className="text-sm leading-4 text-center md:text-nowrap md:text-start text-muted-foreground">
