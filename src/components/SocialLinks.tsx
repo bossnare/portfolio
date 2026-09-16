@@ -30,7 +30,7 @@ export function SocialLinks() {
         <a
           href={social.href}
           key={social.icon}
-          className="hover:opacity-80 active:opacity-60"
+          className="p-1 hover:opacity-80 active:bg-background!"
         >
           <MaskedIcon icon={social.icon} className="size-6" />
         </a>

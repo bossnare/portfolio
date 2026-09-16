@@ -5,6 +5,7 @@
   --foreground: #171717;
   --primary: #5b2eff;
   --muted-foreground: #52525b;
+  --primary-foreground: #eeeded;
 }
 
 @theme inline {
@@ -12,7 +13,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-muted-foreground: var(--muted-foreground);
-  --font-sans: var(--font-dm-sans);
+  --color-primary-foreground: var(--primary-foreground)
+    --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-dm-mono);
 }
 
@@ -22,6 +24,7 @@
     --foreground: #f5f5f5;
     --primary: #5b2eff;
     --muted-foreground: #a1a1aa;
+    --primary-foreground: #eeeded;
   }
 }
 

@@ -2,7 +2,7 @@ import { SocialLinks } from './SocialLinks';
 
 export function Footer() {
   return (
-    <footer className="w-full px-4 py-10 border-t border-zinc-300/70 bg-zinc-200 dark:border-white/8 dark:bg-white/4 md:px-8 md:py-12">
+    <footer className="w-full px-4 py-10 border-t border-zinc-300/70 bg-zinc-200 dark:border-white/8 dark:bg-zinc-950 md:px-8 md:py-12">
       <div className="flex flex-col w-full max-w-6xl gap-8 mx-auto">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm space-y-2">
@@ -13,7 +13,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-3 sm:items-end">
+          <div className="flex flex-col gap-1 sm:items-end">
             <span className="text-xs font-semibold tracking-wider uppercase text-muted-foreground">
               Connect
             </span>
