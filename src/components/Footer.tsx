@@ -13,7 +13,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-1 sm:items-end">
+          <div className="flex flex-col gap-2 sm:items-end">
             <span className="text-xs font-semibold tracking-wider uppercase text-muted-foreground">
               Connect
             </span>

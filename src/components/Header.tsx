@@ -6,7 +6,7 @@ export function Header() {
     <nav className="flex items-center justify-between h-full">
       <div className="flex items-center gap-2">
         <Code2 className="text-primary" />
-        <span className="text-lg font-extrabold">CHRISTO</span>
+        <span className="text-lg font-bold">CHRISTO</span>
       </div>
 
       <ul className="items-center hidden gap-12 tracking-tighter lg:flex">
