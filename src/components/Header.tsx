@@ -1,11 +1,10 @@
-import { Code2, Download, Menu } from 'lucide-react';
+import { Download, Menu } from 'lucide-react';
 import { Tab } from './header/Tab';
 
 export function Header() {
   return (
     <nav className="flex items-center justify-between h-full">
       <div className="flex items-center gap-2">
-        <Code2 className="text-primary" />
         <span className="text-lg font-bold">CHRISTO</span>
       </div>
 
