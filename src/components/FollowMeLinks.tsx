@@ -23,6 +23,7 @@ export function FollowMeLinks() {
     <div className="flex gap-4">
       {socialLinks.map((socialLink) => (
         <a
+          aria-label={`Follow me in ${socialLink.name}`}
           href={socialLink.href}
           key={socialLink.icon}
           target="_blank"
@@ -31,7 +32,7 @@ export function FollowMeLinks() {
         >
           <MaskedIcon
             icon={socialLink.icon}
-            className="size-4.5 bg-muted-foreground group-hover:bg-foreground"
+            className="size-5 md:size-4.5 bg-muted-foreground group-hover:bg-foreground group-active:bg-foreground"
           />
         </a>
       ))}

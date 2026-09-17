@@ -1,4 +1,4 @@
-import { MaskedIcon } from './MaskedIcon';
+import Image from 'next/image';
 
 const socialLinks = [
   {
@@ -14,12 +14,12 @@ const socialLinks = [
   {
     name: 'WhatsApp',
     icon: 'whatsapp.svg',
-    href: 'https://wa.me/261382742449',
+    href: `https://wa.me/261382742449/text=${encodeURIComponent('Hello Christo')}`,
   },
   {
-    name: 'GitHub',
-    icon: 'github.svg',
-    href: 'https://github.com/bossnare',
+    name: 'TikTok',
+    icon: 'tiktok.svg',
+    href: '#',
   },
 ];
 
@@ -29,13 +29,19 @@ export function SocialLinks() {
       {socialLinks.map((socialLink) => (
         <a
           href={socialLink.href}
+          aria-label={`Message me in ${socialLink.name}`}
           key={socialLink.icon}
-          aria-label={socialLink.name}
           target="_blank"
           rel="noopener noreferrer"
           className="p-1 rounded hover:opacity-80 active:bg-black/4 dark:active:bg-[#1a1a1a]"
         >
-          <MaskedIcon icon={socialLink.icon} className="size-6" />
+          <Image
+            width={60}
+            height={60}
+            src={`/icon/color/${socialLink.icon}`}
+            className="size-6"
+            alt={socialLink.name}
+          />
         </a>
       ))}
     </div>

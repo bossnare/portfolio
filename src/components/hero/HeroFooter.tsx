@@ -4,13 +4,10 @@ export function HeroFooter() {
   return (
     <div
       id="hero-footer"
-      className="items-center justify-between hidden pt-4 text-sm md:flex text-muted-foreground"
+      className="flex items-center justify-end md:justify-start gap-4 pt-4 text-sm text-muted-foreground"
     >
-      <div className="flex items-center gap-4">
-        <span className="uppercase">Follow me</span>
-        <FollowMeLinks />
-      </div>
-      <span>&copy; 2026 Christo Razafimanga. All rights reserved.</span>
+      <span className="uppercase">Follow me</span>
+      <FollowMeLinks />
     </div>
   );
 }
