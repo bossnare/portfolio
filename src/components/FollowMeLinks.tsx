@@ -20,16 +20,16 @@ const socialData = [
 
 export function FollowMeLinks() {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-4">
       {socialData.map((social) => (
         <a
           href={social.href}
           key={social.icon}
-          className="hover:opacity-80 active:opacity-60"
+          className="group active:bg-background p-2"
         >
           <MaskedIcon
             icon={social.icon}
-            className="size-4.5 bg-muted-foreground"
+            className="size-4.5 bg-muted-foreground group-hover:bg-foreground"
           />
         </a>
       ))}

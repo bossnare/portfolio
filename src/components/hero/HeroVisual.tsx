@@ -45,7 +45,7 @@ export function HeroVisual() {
       />
       <div className="absolute z-20 rounded-full border-3 size-3 md:size-4 border-primary top-10 left-8 md:top-20 md:left-30"></div>
       <div className="absolute z-20 bg-[#F0785E] rounded-full size-2 bottom-20 right-4 md:size-3 md:bottom-26 md:right-16"></div>
-      <div className="absolute z-20 rounded-full text-[#55D5D0] bottom-50 right-14 md:bottom-80 md:right-40">
+      <div className="absolute z-20 rounded-full text-[#55D5D0] bottom-50 right-14 md:bottom-80 md:right-38">
         <Plus className="size-5" />
       </div>
       <div className="absolute right-0 flex items-center p-2 border rounded-lg bottom-4 bg-background/90 z-16 border-zinc-300 dark:border-white/6">

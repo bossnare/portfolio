@@ -25,7 +25,7 @@ function HeroActions() {
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
       <a
-        className="flex h-11 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-white transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
+        className="flex h-11 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-primary-foreground transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
         download
       >
         View my projects
@@ -57,13 +57,6 @@ function Technologies() {
             <MaskedIcon icon={stack.icon} className="size-6" />
           </li>
         ))}
-        {/* go to stacks */}
-        <a
-          href="/skills"
-          className="p-2 border rounded-full border-zinc-300 dark:border-white/8"
-        >
-          <MoveRight className="size-6 text-zinc-800 dark:text-zinc-100" />
-        </a>
       </ul>
     </div>
   );
