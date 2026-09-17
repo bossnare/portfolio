@@ -1,5 +1,4 @@
 import { HeroContent } from './hero/HeroContent';
-import { HeroFooter } from './hero/HeroFooter';
 import { HeroVisual } from './hero/HeroVisual';
 import { Section } from './Section';
 
@@ -15,7 +14,6 @@ export function Hero() {
       </div>
       {/* line */}
       <div className="w-full border-t border-zinc-200 dark:border-white/8"></div>
-      <HeroFooter />
     </Section>
   );
 }
