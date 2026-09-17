@@ -46,7 +46,9 @@ function HeroActions() {
 function Technologies() {
   return (
     <div className="flex flex-col items-center md:items-start">
-      <span className="uppercase text-muted-foreground">Technologies</span>
+      <span className="uppercase text-muted-foreground font-display">
+        Technologies
+      </span>
       <ul className="flex items-center gap-4 mt-4">
         {stacks.map((stack) => (
           <li
