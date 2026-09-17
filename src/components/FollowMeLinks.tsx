@@ -1,6 +1,6 @@
 import { MaskedIcon } from './MaskedIcon';
 
-const socialData = [
+const socialLinks = [
   {
     name: 'Instagram',
     icon: 'instagram.svg',
@@ -21,14 +21,16 @@ const socialData = [
 export function FollowMeLinks() {
   return (
     <div className="flex gap-4">
-      {socialData.map((social) => (
+      {socialLinks.map((socialLink) => (
         <a
-          href={social.href}
-          key={social.icon}
+          href={socialLink.href}
+          key={socialLink.icon}
+          target="_blank"
+          rel="noopener noreferrer"
           className="p-2 rounded group active:bg-background"
         >
           <MaskedIcon
-            icon={social.icon}
+            icon={socialLink.icon}
             className="size-4.5 bg-muted-foreground group-hover:bg-foreground"
           />
         </a>
