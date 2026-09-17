@@ -38,11 +38,11 @@ export function Header() {
           Download CV
           <Download className="size-5" />
         </a>
-        <div className="p-0.5 border border-zinc-200 overflow-hidden dark:border-white/8 rounded-md flex items-center *:px-2 *:rounded-sm">
+        <div className="p-0.5 border border-zinc-200 overflow-hidden dark:border-white/12 rounded-md flex items-center *:px-2 *:rounded-sm">
           <span className="text-white bg-primary">EN</span>
           <span className="text-muted-foreground">FR</span>
         </div>
-        <button className="flex items-center justify-center border rounded-md md:hidden size-7 border-zinc-300 dark:border-white/8">
+        <button className="flex items-center justify-center border rounded-md md:hidden size-7 border-zinc-300 dark:border-white/12">
           <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />
         </button>
       </div>
