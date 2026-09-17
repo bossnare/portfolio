@@ -1,7 +1,7 @@
-import { Section } from './Section';
-import { FollowMeLinks } from './FollowMeLinks';
 import { HeroContent } from './hero/HeroContent';
+import { HeroFooter } from './hero/HeroFooter';
 import { HeroVisual } from './hero/HeroVisual';
+import { Section } from './Section';
 
 export function Hero() {
   return (
@@ -15,16 +15,7 @@ export function Hero() {
       </div>
       {/* line */}
       <div className="w-full border-t border-zinc-200 dark:border-white/8"></div>
-      <div
-        id="hero-footer"
-        className="items-center justify-between hidden pt-5 text-sm md:flex text-muted-foreground"
-      >
-        <div className="flex items-center gap-4">
-          <span className="uppercase">Follow me</span>
-          <FollowMeLinks />
-        </div>
-        <span>&copy; 2026 Christo Razafimanga. All rights reserved.</span>
-      </div>
+      <HeroFooter />
     </Section>
   );
 }

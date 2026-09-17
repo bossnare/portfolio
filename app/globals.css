@@ -33,6 +33,10 @@ body {
   color: var(--foreground);
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 code {
   @apply font-mono;
 }

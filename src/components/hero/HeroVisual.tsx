@@ -48,12 +48,12 @@ export function HeroVisual() {
       <div className="absolute z-20 rounded-full text-[#55D5D0] bottom-50 right-14 md:bottom-80 md:right-38">
         <Plus className="size-5" />
       </div>
-      <div className="absolute right-0 flex items-center p-2 border rounded-lg bottom-4 bg-background/90 z-16 border-zinc-300 dark:border-white/6">
+      <div className="absolute right-0 flex items-center p-1.5 border rounded-lg bottom-4 bg-background/90 z-16 border-black/10 dark:border-white/6">
         <span className="rounded-full size-2.5 bg-primary ml-1"></span>
         <span className="ml-2 text-sm md:text-base text-muted-foreground">
           Available for new opportunities
         </span>
-        <span className="p-1 border rounded-md border-zinc-400 dark:border-white/6">
+        <span className="p-1 border rounded-md border-black/10 dark:border-white/6">
           <Terminal className="text-primary size-5" />
         </span>
       </div>

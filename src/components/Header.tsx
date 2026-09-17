@@ -1,33 +1,16 @@
 import { Code2, Download, Menu } from 'lucide-react';
-import Link from 'next/link';
+import { Tab } from './header/Tab';
 
 export function Header() {
   return (
     <nav className="flex items-center justify-between h-full">
       <div className="flex items-center gap-2">
         <Code2 className="text-primary" />
-        <span className="text-lg font-extrabold">Christo Razafimanga</span>
+        <span className="text-lg font-extrabold">CHRISTO</span>
       </div>
 
-      <ul className="items-center hidden gap-12 tracking-tighter lg:flex text-foreground/80">
-        <li className="relative flex justify-center font-semibold text-primary">
-          <Link href="/">Home</Link>
-          <span className="absolute w-1/3 h-[3px] rounded-full -bottom-2 bg-primary"></span>
-        </li>
-        <li>
-          {' '}
-          <Link href="#">About</Link>
-        </li>
-        <li>
-          <Link href="#">Projects</Link>
-        </li>
-        <li>
-          {' '}
-          <Link href="#">Experience</Link>
-        </li>
-        <li>
-          <Link href="#">Contact</Link>
-        </li>
+      <ul className="items-center hidden gap-12 tracking-tighter lg:flex">
+        <Tab />
       </ul>
       <div className="flex items-center gap-3">
         <a
@@ -38,11 +21,11 @@ export function Header() {
           Download CV
           <Download className="size-5" />
         </a>
-        <div className="p-0.5 border border-zinc-200 overflow-hidden dark:border-white/8 rounded-md flex items-center *:px-2 *:rounded-sm">
-          <span className="text-white bg-primary">EN</span>
-          <span className="text-muted-foreground">FR</span>
+        <div className="p-0.5 border border-zinc-300 overflow-hidden dark:border-white/12 rounded-sm flex items-center *:px-2 *:rounded-sm">
+          <button className="text-white bg-primary">EN</button>
+          <button className="text-muted-foreground">FR</button>
         </div>
-        <button className="flex items-center justify-center border rounded-md md:hidden size-7 border-zinc-300 dark:border-white/8">
+        <button className="flex items-center justify-center border rounded-md md:hidden size-7 border-zinc-300 dark:border-white/12">
           <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />
         </button>
       </div>

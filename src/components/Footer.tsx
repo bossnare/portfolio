@@ -2,7 +2,7 @@ import { SocialLinks } from './SocialLinks';
 
 export function Footer() {
   return (
-    <footer className="w-full px-4 py-10 border-t border-zinc-300/70 bg-zinc-200 dark:border-white/8 dark:bg-zinc-950 md:px-8 md:py-12">
+    <footer className="w-full px-4 py-10 border-t border-zinc-300/70 bg-zinc-200 dark:border-white/4 dark:bg-zinc-950 md:px-8 md:py-12">
       <div className="flex flex-col w-full max-w-6xl gap-8 mx-auto">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm space-y-2">
@@ -21,7 +21,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 pt-5 text-sm border-t border-zinc-300/70 text-muted-foreground dark:border-white/8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 pt-5 text-sm border-t border-zinc-300/70 text-muted-foreground dark:border-white/4 sm:flex-row sm:items-center sm:justify-between">
           <nav
             aria-label="Footer navigation"
             className="flex flex-wrap gap-x-5 gap-y-2"
