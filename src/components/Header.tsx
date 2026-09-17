@@ -9,7 +9,7 @@ export function Header() {
         <span className="text-lg font-bold">CHRISTO</span>
       </div>
 
-      <ul className="items-center hidden gap-12 tracking-tighter lg:flex">
+      <ul className="items-center hidden gap-12 tracking-tight lg:flex">
         <Tab />
       </ul>
       <div className="flex items-center gap-3">
