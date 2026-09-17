@@ -1,6 +1,6 @@
 import { HeroContent } from './hero/HeroContent';
-import { HeroVisual } from './hero/HeroVisual';
 import { HeroFooter } from './hero/HeroFooter';
+import { HeroVisual } from './hero/HeroVisual';
 import { Section } from './Section';
 
 export function Hero() {

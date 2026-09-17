@@ -4,17 +4,17 @@ const socialData = [
   {
     name: 'Instagram',
     icon: 'instagram.svg',
-    href: '#',
+    href: 'https://instagram.com/thebossnare',
   },
   {
     name: 'Facebook',
     icon: 'facebook.svg',
-    href: '#',
+    href: 'https://facebook.com/thebossnare',
   },
   {
     name: 'GitHub',
     icon: 'github.svg',
-    href: '#',
+    href: 'https://github.com/bossnare',
   },
 ];
 
@@ -25,7 +25,7 @@ export function FollowMeLinks() {
         <a
           href={social.href}
           key={social.icon}
-          className="group active:bg-background p-2"
+          className="p-2 rounded group active:bg-background"
         >
           <MaskedIcon
             icon={social.icon}
