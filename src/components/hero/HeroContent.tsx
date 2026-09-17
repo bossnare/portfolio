@@ -7,7 +7,7 @@ function HeroIntroduction() {
   return (
     <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
       <p className="uppercase font-display">Hi, I&apos;m...</p>
-      <h1 className="max-w-xl text-4xl md:text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-8 dark:text-zinc-50">
+      <h1 className="max-w-xl text-[42px] md:text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-8 dark:text-zinc-50">
         <span className="uppercase">Christo RAZAFIMANGA</span>
       </h1>
       <p className="typewriter font-display pr-1.5 text-3xl font-bold border-r-2 text-primary border-primary">
