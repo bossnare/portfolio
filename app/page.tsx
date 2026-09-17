@@ -2,7 +2,15 @@ import { Footer } from '@/src/components/Footer';
 import { Header } from '@/src/components/Header';
 import { Hero } from '@/src/components/Hero';
 import { FeaturedProjects } from '@/src/components/projects/FeaturedProjects';
-import { Section } from '@/src/components/Section';
+import {
+  Section,
+  SectionHeader,
+  SectionTitle,
+  SectionParagraphe,
+  SectionContent,
+  SectionButton,
+} from '@/src/components/Section';
+import { ChevronRight } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -13,12 +21,17 @@ export default function Home() {
       <main className="w-full pt-15 space-y-14 sm:pt-18">
         <Hero />
         <FeaturedProjects />
-        <Section id="about" className="flex flex-col gap-6">
-          <div className="flex flex-col min-h-screen gap-4">
-            <div className="flex items-center justify-between">
-              <span className="text-xl font-semibold">About me</span>
-            </div>
-          </div>
+        <Section id="about" className="flex flex-col gap-6 min-h-60">
+          <SectionHeader>
+            <SectionContent>
+              <SectionTitle>About me</SectionTitle>
+              <SectionParagraphe>Explore more about me</SectionParagraphe>
+            </SectionContent>
+            <SectionButton>
+              Explore more
+              <ChevronRight className="size-5" />
+            </SectionButton>
+          </SectionHeader>
         </Section>
       </main>
       <Footer />
