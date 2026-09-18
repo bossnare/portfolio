@@ -10,8 +10,8 @@ export function Footer() {
               Christo Razafimanga
             </p>
             <p className="text-sm leading-6 text-[#a1a1aa]">
-              Full-stack web developer crafting modern and thoughtful web
-              applications.
+              Full-stack developer creating scalable products, polished
+              interfaces, and reliable experiences from concept to launch.
             </p>
           </div>
 

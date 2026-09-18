@@ -5,7 +5,9 @@ export function Header() {
   return (
     <nav className="flex items-center justify-between h-full">
       <div className="flex items-center gap-2">
-        <span className="text-lg font-bold font-display">CHRISTO ™</span>
+        <span className="text-lg font-bold font-display">
+          CHRISTO <span className="font-medium">™</span>
+        </span>
       </div>
 
       <ul className="items-center hidden gap-12 tracking-tight lg:flex">

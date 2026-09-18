@@ -14,8 +14,8 @@ function HeroIntroduction() {
         Web Developer
       </p>
       <p className="max-w-md leading-7 text-muted-foreground">
-        Full-stack web developer focused on crafting modern, performant, and
-        thoughtful web applications.
+        Full-stack web developer building fast, scalable, and user-centered
+        digital products that turn ideas into measurable impact.
       </p>
     </div>
   );
