@@ -1,6 +1,6 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import { Analytics } from '@vercel/analytics/next';
 // import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
@@ -29,8 +29,9 @@ const generalSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Christo Razafimanga',
-  description: 'A Christo Portfolio',
+  title: 'Christo Razafimanga - Full-stack Web Developer',
+  description:
+    'Full-stack web developer building high-impact digital products, scalable systems, and polished user experiences from concept to deployment.',
 };
 
 export default function RootLayout({

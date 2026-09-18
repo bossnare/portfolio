@@ -18,7 +18,7 @@ export function HeroVisual() {
         transition={{ duration: 0.6 }}
       >
         <Image
-          className="relative object-contain h-auto mx-auto w-80 lg:w-105 sm:w-85 xl:w-130 z-12"
+          className="relative object-contain h-auto mx-auto w-80 lg:w-105 sm:w-85 xl:w-140 z-12"
           src="/images/profile-1.png"
           alt="Christo Razafimanga"
           width={800}
