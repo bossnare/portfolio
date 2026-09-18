@@ -88,7 +88,7 @@ function HeroStats() {
 
 export function HeroContent() {
   return (
-    <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 py-5 md:px-0 md:py-0 dark:bg-black md:items-start">
+    <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-8 md:px-0 dark:bg-black md:items-start">
       <HeroIntroduction />
       <HeroActions />
       <Technologies />

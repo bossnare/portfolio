@@ -1,5 +1,5 @@
 import type { projects } from '@/src/data/projects';
-import { ArrowUpRight } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 
 type Project = (typeof projects)[number];
 
@@ -20,16 +20,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <project.icon style={{ color: project.color }} />
       </span>
       <div className="flex flex-col gap-1 grow">
-        <span className="font-medium capitalize">{project.type}</span>
-        <span className="text-muted-foreground text-[15px]">
+        <span className="font-semibold capitalize font-display">
+          {project.type}
+        </span>
+        <span className="text-muted-foreground font-medium text-[15px]">
           {project.description} {project.name}
         </span>
         <a
           href="#"
-          className="flex items-center self-start gap-1 py-2 mt-auto hover:underline text-muted-foreground hover:text-primary"
+          className="flex items-center self-start gap-3 py-2 mt-auto text-sm hover:underline text-muted-foreground hover:text-primary"
         >
           <span>View project</span>
-          <ArrowUpRight className="size-5" />
+          <MoveRight className="size-4" />
         </a>
       </div>
     </div>
