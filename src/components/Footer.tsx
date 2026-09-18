@@ -6,7 +6,7 @@ export function Footer() {
       <div className="flex flex-col w-full max-w-6xl gap-8 mx-auto">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm space-y-2">
-            <p className="text-lg font-extrabold font-display">
+            <p className="text-lg font-bold font-display">
               Christo Razafimanga
             </p>
             <p className="text-sm leading-6 text-[#a1a1aa]">
