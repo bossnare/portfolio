@@ -1,4 +1,4 @@
-import { Code2, Download, Menu } from 'lucide-react';
+import { Download, Menu } from 'lucide-react';
 import { Tab } from './header/Tab';
 
 export function Header() {

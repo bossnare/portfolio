@@ -1,5 +1,5 @@
-import { stats } from '@/src/data/stats';
 import { stacks } from '@/src/data/stacks';
+import { stats } from '@/src/data/stats';
 import { MoveRight, Send } from 'lucide-react';
 import { MaskedIcon } from '../MaskedIcon';
 
@@ -7,7 +7,7 @@ function HeroIntroduction() {
   return (
     <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
       <p className="uppercase font-display">Hi, I&apos;m...</p>
-      <h1 className="max-w-xl text-[42px] md:text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-8 dark:text-zinc-50">
+      <h1 className="max-w-xl text-[42px] md:text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-10 md:leading-14 dark:text-zinc-50">
         <span className="uppercase">Christo RAZAFIMANGA</span>
       </h1>
       <p className="typewriter font-display pr-1.5 text-3xl font-bold border-r-2 text-primary border-primary">
@@ -46,7 +46,9 @@ function HeroActions() {
 function Technologies() {
   return (
     <div className="flex flex-col items-center md:items-start">
-      <span className="uppercase text-muted-foreground">Technologies</span>
+      <span className="uppercase text-muted-foreground font-display">
+        Technologies
+      </span>
       <ul className="flex items-center gap-4 mt-4">
         {stacks.map((stack) => (
           <li
@@ -71,7 +73,7 @@ function HeroStats() {
             key={stat.name}
             className="flex flex-col items-center flex-1 gap-1.5 md:items-start"
           >
-            <span className="text-2xl font-display font-bold text-primary">
+            <span className="text-2xl font-bold font-display text-primary">
               {stat.stat}
             </span>
             <span className="text-sm leading-4 text-center md:text-nowrap md:text-start text-muted-foreground">

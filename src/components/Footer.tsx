@@ -6,7 +6,9 @@ export function Footer() {
       <div className="flex flex-col w-full max-w-6xl gap-8 mx-auto">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm space-y-2">
-            <p className="text-lg font-extrabold">Christo Razafimanga</p>
+            <p className="text-lg font-extrabold font-display">
+              Christo Razafimanga
+            </p>
             <p className="text-sm leading-6 text-[#a1a1aa]">
               Full-stack web developer crafting modern and thoughtful web
               applications.
@@ -14,7 +16,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col gap-2 sm:items-end">
-            <span className="text-xs font-semibold tracking-wider uppercase text-[#a1a1aa]">
+            <span className="text-xs font-semibold tracking-wider font-display uppercase text-[#a1a1aa]">
               Connect
             </span>
             <SocialLinks />
