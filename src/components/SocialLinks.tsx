@@ -17,9 +17,14 @@ const socialLinks = [
     href: `https://wa.me/261382742449/text=${encodeURIComponent('Hello Christo')}`,
   },
   {
+    name: 'GitHub',
+    icon: 'github.svg',
+    href: `https://www.github.com/bossnare`,
+  },
+  {
     name: 'TikTok',
     icon: 'tiktok.svg',
-    href: '#',
+    href: 'https://www.tiktok.com/@thebossnare',
   },
 ];
 

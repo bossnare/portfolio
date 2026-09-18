@@ -15,7 +15,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, this project is amazing for visiters.',
     icon: FolderKanban,
-    color: '#f4acb7',
+    color: '#F0785E',
   },
   {
     type: 'Portfolio website',
@@ -23,6 +23,6 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, this project is amazing for visiters.',
     icon: GlobeCheck,
-    color: '#7cff6b',
+    color: '#55D5D0',
   },
 ];
