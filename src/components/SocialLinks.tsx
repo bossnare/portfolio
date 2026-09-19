@@ -14,7 +14,7 @@ const socialLinks = [
   {
     name: 'WhatsApp',
     icon: 'whatsapp.svg',
-    href: `https://wa.me/261382742449/text=${encodeURIComponent('Hello Christo')}`,
+    href: `https://wa.me/261382742449?text=${encodeURIComponent('Hello Christo')}`,
   },
   {
     name: 'GitHub',
