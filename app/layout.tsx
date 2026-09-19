@@ -29,6 +29,7 @@ const generalSans = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://christorazafimanga.is-a.dev"),
   title: {
     default: 'Christo Razafimanga — Full-stack Web Developer',
     template: "%s | Christo Razafimanga"
@@ -51,6 +52,7 @@ const personJsonLd = {
     "https://github.com/bossnare",
     "https://www.facebook.com/thebossnare",
     "https://www.instagram.com/thebossnare",
+    "https://www.x.com/thebossnare",
     "https://www/tiktok.com/@thebossnare"
   ]
 }
