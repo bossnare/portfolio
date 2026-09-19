@@ -19,7 +19,7 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: 'github.svg',
-    href: `https://www.github.com/bossnare`,
+    href: `https://github.com/bossnare`,
   },
   {
     name: 'TikTok',
