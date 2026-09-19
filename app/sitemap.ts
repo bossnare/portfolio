@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 1,
-        sitemap: "https://christorazafimanga.is-a.dev"
     }
     ]
 
