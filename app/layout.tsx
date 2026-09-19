@@ -30,7 +30,7 @@ const generalSans = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Christo Razafimanga  Full-stack Web Developer',
+    default: 'Christo Razafimanga — Full-stack Web Developer',
     template: "%s | Christo Razafimanga"
   },
   description:
