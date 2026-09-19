@@ -14,12 +14,12 @@ const socialLinks = [
   {
     name: 'WhatsApp',
     icon: 'whatsapp.svg',
-    href: `https://wa.me/261382742449/text=${encodeURIComponent('Hello Christo')}`,
+    href: `https://wa.me/261382742449?text=${encodeURIComponent('Hello Christo')}`,
   },
   {
     name: 'GitHub',
     icon: 'github.svg',
-    href: `https://www.github.com/bossnare`,
+    href: `https://github.com/bossnare`,
   },
   {
     name: 'TikTok',

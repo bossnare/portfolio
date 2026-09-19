@@ -29,10 +29,31 @@ const generalSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Christo Razafimanga - Full-stack Web Developer',
+  title: {
+    default: 'Christo Razafimanga  Full-stack Web Developer',
+    template: "%s | Christo Razafimanga"
+  },
   description:
     'Full-stack web developer building high-impact digital products, scalable systems, and polished user experiences from concept to deployment.',
+  alternates: {
+    canonical: "/",
+  },
 };
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Christo Razafimanga",
+  url: "https://christorazafimanga.is-a.dev",
+  image: "https://christorazafimanga.is-a.dev/images/christo.webp",
+  jobTitle: "Full-Stack Web Developer",
+  sameAs: [
+    "https://github.com/bossnare",
+    "https://www.facebook.com/thebossnare",
+    "https://www.instagram.com/thebossnare",
+    "https://www/tiktok.com/@thebossnare"
+  ]
+}
 
 export default function RootLayout({
   children,
@@ -49,6 +70,13 @@ export default function RootLayout({
 
         <Analytics />
         {/* <GoogleAnalytics /> */}
+
+        {/* jsonLd - SEO */}
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personJsonLd)
+        }} />
       </body>
     </html>
   );

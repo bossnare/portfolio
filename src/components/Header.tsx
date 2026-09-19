@@ -50,7 +50,7 @@ export function Header() {
         <motion.nav initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }} className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b border-zinc-200 dark:border-white/8 md:hidden">
-          <ul className="flex flex-col items-start gap-4 text-[15px]">
+          <ul className="flex flex-col items-start gap-4">
             {
             tabs.map((tab) => (
               <li key={tab.label}><Tab label={tab.label} href={tab.href} /></li>
