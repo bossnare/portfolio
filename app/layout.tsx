@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 // import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
+import { Header } from '@/src/components/Header';
+import { Footer } from '@/src/components/Footer';
 
 // const dmSans = DM_Sans({
 //   variable: '--font-dm-sans',
@@ -29,33 +31,33 @@ const generalSans = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://christorazafimanga.is-a.dev"),
+  metadataBase: new URL('https://christorazafimanga.is-a.dev'),
   title: {
     default: 'Christo Razafimanga — Full-stack Web Developer',
-    template: "%s | Christo Razafimanga"
+    template: '%s | Christo Razafimanga',
   },
   description:
     'Full-stack web developer building high-impact digital products, scalable systems, and polished user experiences from concept to deployment.',
   alternates: {
-    canonical: "/",
+    canonical: '/',
   },
 };
 
 const personJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Christo Razafimanga",
-  url: "https://christorazafimanga.is-a.dev",
-  image: "https://christorazafimanga.is-a.dev/images/christo.webp",
-  jobTitle: "Full-Stack Web Developer",
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Christo Razafimanga',
+  url: 'https://christorazafimanga.is-a.dev',
+  image: 'https://christorazafimanga.is-a.dev/images/christo.png',
+  jobTitle: 'Full-Stack Web Developer',
   sameAs: [
-    "https://github.com/bossnare",
-    "https://www.facebook.com/thebossnare",
-    "https://www.instagram.com/thebossnare",
-    "https://www.x.com/thebossnare",
-    "https://www/tiktok.com/@thebossnare"
-  ]
-}
+    'https://github.com/bossnare',
+    'https://www.facebook.com/thebossnare',
+    'https://www.instagram.com/thebossnare',
+    'https://www.x.com/thebossnare',
+    'https://www/tiktok.com/@thebossnare',
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -65,20 +67,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${clashDisplay.variable} ${generalSans.variable} h-full antialiased`}
+      className={`${clashDisplay.variable} ${generalSans.variable} antialiased`}
     >
-      <body className="min-h-full font-sans font-[optical-sizing:auto] flex flex-col">
-        {children}
+      <body className="font-sans font-[optical-sizing:auto] flex flex-col">
+        <div className="flex flex-col items-center justify-center flex-1">
+          <Header />
+          <main className="w-full pt-8 md:pt-0">{children}</main>
+          <Footer />
+        </div>
 
-        <Analytics />
         {/* <GoogleAnalytics /> */}
-
+        <Analytics />
         {/* jsonLd - SEO */}
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(personJsonLd)
-        }} />
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd),
+          }}
+        />
       </body>
     </html>
   );

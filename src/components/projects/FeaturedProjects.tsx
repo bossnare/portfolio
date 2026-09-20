@@ -17,7 +17,8 @@ export function FeaturedProjects() {
         <SectionContent>
           <SectionTitle>Featured projects</SectionTitle>
           <SectionParagraphe>
-            Some projects I&apos;ve realised...
+            A curated selection of projects I&apos;ve built, explored, and
+            brought to life.
           </SectionParagraphe>
         </SectionContent>
         <SectionButton>

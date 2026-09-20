@@ -19,7 +19,7 @@ export function HeroVisual() {
       >
         <Image
           className="relative object-contain h-auto mx-auto w-80 lg:w-105 sm:w-85 xl:w-140 z-12"
-          src="/images/profile-1.png"
+          src="/images/profile.png"
           alt="Christo Razafimanga"
           width={800}
           height={900}
