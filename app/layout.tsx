@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 // import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
+import { Header } from '@/src/components/Header';
+import { Footer } from '@/src/components/Footer';
 
 // const dmSans = DM_Sans({
 //   variable: '--font-dm-sans',
@@ -65,14 +67,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${clashDisplay.variable} ${generalSans.variable} h-full antialiased`}
+      className={`${clashDisplay.variable} ${generalSans.variable} antialiased`}
     >
-      <body className="min-h-full font-sans font-[optical-sizing:auto] flex flex-col">
-        {children}
+      <body className="font-sans font-[optical-sizing:auto] flex flex-col">
+        <div className="flex flex-col items-center justify-center flex-1">
+          <Header />
+          <main className="w-full pt-8 md:pt-0">{children}</main>
+          <Footer />
+        </div>
 
-        <Analytics />
         {/* <GoogleAnalytics /> */}
-
+        <Analytics />
         {/* jsonLd - SEO */}
         <script
           type="application/ld+json"
