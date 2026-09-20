@@ -4,6 +4,7 @@ import { Download, Menu, X } from 'lucide-react';
 import { Tab, tabs } from './header/Tab';
 import { useState } from 'react';
 import { motion } from 'motion/react';
+import { handleWait } from '../utils/handle-wait';
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -61,7 +62,10 @@ export function Header() {
         >
           <ul className="flex flex-col items-start gap-4">
             {tabs.map((tab) => (
-              <li onClick={handleTogleOpenMenu} key={tab.label}>
+              <li
+                onClick={() => handleWait(handleTogleOpenMenu, 300)}
+                key={tab.label}
+              >
                 <Tab label={tab.label} href={tab.href} />
               </li>
             ))}
