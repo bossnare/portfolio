@@ -46,10 +46,6 @@ button {
   @apply cursor-pointer;
 }
 
-code {
-  @apply font-mono;
-}
-
 @keyframes typewriter {
   from {
     width: 0;

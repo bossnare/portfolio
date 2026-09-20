@@ -12,7 +12,7 @@ export default function ContactPage() {
         <h1 className="px-2 border rounded-sm w-fit border-zinc-200 dark:border-white/12 text-muted-foreground">
           Contact
         </h1>
-        <p className="max-w-3xl text-2xl font-semibold">
+        <p className="max-w-2xl text-2xl font-semibold">
           Here are my contact details if you&apos;d like to discuss a project,
           collaboration, or professional opportunity.
         </p>

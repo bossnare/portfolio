@@ -58,7 +58,7 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b border-zinc-200 dark:border-white/8 md:hidden"
+          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b border-zinc-200 dark:border-white/12 md:hidden"
         >
           <ul className="flex flex-col items-start gap-4">
             {tabs.map((tab) => (
