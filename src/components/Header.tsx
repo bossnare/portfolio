@@ -3,10 +3,12 @@
 import { Download, Menu, X } from 'lucide-react';
 import { Tab, tabs } from './header/Tab';
 import { useState } from 'react';
-import {motion} from 'motion/react'
+import { motion } from 'motion/react';
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const handleTogleOpenMenu = () => setIsOpenMenu((prev) => !prev);
 
   return (
     <header className="sticky w-full top-0 z-1000 bg-[#F5F5F3] dark:bg-black">
@@ -18,11 +20,11 @@ export function Header() {
         </div>
 
         <ul className="items-center hidden gap-12 tracking-tight lg:flex">
-          {
-            tabs.map((tab) => (
-              <li key={tab.label}><Tab label={tab.label} href={tab.href} /></li>
-            ))
-          }
+          {tabs.map((tab) => (
+            <li key={tab.label}>
+              <Tab label={tab.label} href={tab.href} />
+            </li>
+          ))}
         </ul>
         <div className="flex items-center gap-3">
           <a
@@ -38,24 +40,31 @@ export function Header() {
             <button className="text-muted-foreground">FR</button>
           </div>
           <button
-            onClick={() => setIsOpenMenu((prev) => !prev)}
+            onClick={handleTogleOpenMenu}
             className="flex items-center justify-center border rounded-sm md:hidden size-7 border-zinc-300 dark:border-white/12 active:bg-background active:opacity-80"
           >
-            {isOpenMenu ? <X className="size-5 text-zinc-800 dark:text-zinc-100" /> : <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />}
+            {isOpenMenu ? (
+              <X className="size-5 text-zinc-800 dark:text-zinc-100" />
+            ) : (
+              <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />
+            )}
           </button>
         </div>
       </nav>
       {/* mobile navigation */}
       {isOpenMenu && (
-        <motion.nav initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }} className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b border-zinc-200 dark:border-white/8 md:hidden">
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b border-zinc-200 dark:border-white/8 md:hidden"
+        >
           <ul className="flex flex-col items-start gap-4">
-            {
-            tabs.map((tab) => (
-              <li key={tab.label}><Tab label={tab.label} href={tab.href} /></li>
-            ))
-          }
+            {tabs.map((tab) => (
+              <li onClick={handleTogleOpenMenu} key={tab.label}>
+                <Tab label={tab.label} href={tab.href} />
+              </li>
+            ))}
           </ul>
         </motion.nav>
       )}
