@@ -5,7 +5,7 @@ export const contacts = [
     name: 'Email',
     content: 'For professional inquires.',
     icon: Mail,
-    link: 'mailto:razafimangagervaischristo@gmail.com?subject=Portfolio%20Inquiry?body=Hello%20Christo, ',
+    link: 'mailto:razafimangagervaischristo@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Christo, ',
     contact: 'razafimangagervaischristo@gmail.com',
   },
   {

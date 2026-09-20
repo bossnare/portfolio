@@ -1,4 +1,6 @@
 import { contacts } from '@/src/data/contacts';
+import {Page, PageHeader} from '@/src/components/Page'
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,16 +9,9 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="w-full max-w-6xl px-4 mx-auto space-y-6 md:pt-12 md:p-0">
-      <div className="space-y-4">
-        <h1 className="px-2 border rounded-sm w-fit border-zinc-200 dark:border-white/12 text-muted-foreground">
-          Contact
-        </h1>
-        <p className="max-w-3xl text-2xl font-semibold">
-          Here are my contact details if you&apos;d like to discuss a project,
-          collaboration, or professional opportunity.
-        </p>
-      </div>
+    <Page id="contact-page">
+      <PageHeader title="Contact" description="Here are my contact details if you'd like to discuss a project,
+          collaboration, or professional opportunity." />
       <ul className="grid w-full grid-cols-1 gap-6 mt-4 divide-y bg-background dark:bg-transparent md:m-0 md:grid-cols-3 md:divide-x md:divide-y-0 divide-zinc-200 dark:divide-white/12">
         {contacts.map((contact) => (
           <li key={contact.name}>
@@ -40,6 +35,6 @@ export default function ContactPage() {
           </li>
         ))}
       </ul>
-    </div>
+    </Page>
   );
 }
