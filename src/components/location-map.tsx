@@ -11,6 +11,8 @@ export function LocationMap() {
     const [isDark, setIsDark] = useState(false)
 
     useEffect(() => {
+        if (typeof window === "undefined") return
+        
         const media = window.matchMedia("(prefers-color-scheme: dark)")
         setIsDark(media.matches)
 
@@ -20,7 +22,7 @@ export function LocationMap() {
 
         media.addEventListener("change", handleChange)
 
-        return () => media.removeEventListerner("change", handleChange)
+        return () => media.removeEventListener("change", handleChange)
     }, [])
 
     const homeIcon = L.divIcon({
