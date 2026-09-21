@@ -34,7 +34,7 @@ export function SocialLinks() {
       {socialLinks.map((socialLink) => (
         <a
           href={socialLink.href}
-          aria-label={`Message me in ${socialLink.name}`}
+          aria-label={`Send me a message ${socialLink.name}`}
           key={socialLink.icon}
           target="_blank"
           rel="noopener noreferrer"
