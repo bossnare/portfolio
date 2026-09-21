@@ -28,6 +28,8 @@ export default function ContactPage() {
               <a
                 href={contact.link}
                 className="font-semibold w-fit text-primary hover:underline active:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {contact.contact}
               </a>
