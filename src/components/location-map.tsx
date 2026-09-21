@@ -1,7 +1,7 @@
 "use client"
 
 import {MapContainer, Marker, TileLayer, ZoomControl} from 'react-leaflet'
-import L, type { LatLngTuple} from 'leaflet'
+import L {type LatLngTuple} from 'leaflet'
 import {useState, useEffect} from 'react'
 import "leaflet/dist/leaflet.css"
 
