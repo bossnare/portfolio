@@ -1,4 +1,7 @@
+'use client';
+
 import {cn} from '@/src/lib/utils'
+import {motion} from 'motion/react'
 
 type PageProps = React.ComponentProps<'div'>;
 
@@ -8,13 +11,15 @@ export const Page = ({className, children, ...props}: PageProps) => {
 
 export function PageHeader({title="Title", description='This is the description'}: {title?: string; description?: string}) {
     return(
-        <div className="space-y-4">
+        <motion.div initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }} className="space-y-4">
         <h1 className="px-2 border rounded-sm w-fit border-zinc-200 dark:border-white/12 text-muted-foreground">
           {title}
         </h1>
-        <p className="max-w-2xl text-2xl font-semibold">
+        <p className="max-w-2xl leading-8 text-2xl font-semibold">
           {description}
         </p>
-      </div>
+      </motion.div>
     )
 }

@@ -27,7 +27,7 @@ export default function ContactPage() {
               </div>
               <a
                 href={contact.link}
-                className="font-medium w-fit text-primary hover:underline active:underline"
+                className="font-semibold w-fit text-primary hover:underline active:underline"
               >
                 {contact.contact}
               </a>
