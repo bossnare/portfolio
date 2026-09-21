@@ -58,13 +58,14 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b border-zinc-200 dark:border-white/12 md:hidden"
+          className="flex flex-col gap-3 px-5 pt-3 pb-8 bg-background dark:bg-transparent border-t border-b border-zinc-300 dark:border-white/12 md:hidden"
         >
           <ul className="flex flex-col items-start gap-4">
             {tabs.map((tab) => (
               <li
-                onClick={() => handleWait(handleTogleOpenMenu, 300)}
+                onClick={() => handleWait(handleTogleOpenMenu, 150)}
                 key={tab.label}
+                className="active:bg-zinc-300 dark:active:bg-background active:opacity-80"
               >
                 <Tab label={tab.label} href={tab.href} />
               </li>

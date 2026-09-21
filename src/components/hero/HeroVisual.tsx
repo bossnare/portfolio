@@ -4,16 +4,16 @@ import { Plus, Terminal } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 import Image from 'next/image';
 import { useRef } from 'react';
+import {useReveal} from '@/src/hooks/use-reveal'
 
 export function HeroVisual() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  const {ref, isInView} = useReveal<HTMLDivElement>({once: true, amount: 0.5})
 
   return (
     <div className="relative overflow-hidden md:w-1/2">
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 40 }}
         transition={{ duration: 0.6 }}
       >
