@@ -1,11 +1,11 @@
 "use client"
 
 import {MapContainer, Marker, TileLayer, ZoomControl} from 'react-leaflet'
-import L from 'leaflet'
+import L, type { LatLngTuple} from 'leaflet'
 import {useState, useEffect} from 'react'
 import "leaflet/dist/leaflet.css"
 
-const position = [-18.909707, 47.552839] // [lat, lng]
+const position: LatLngTuple = [-18.909707, 47.552839] // [lat, lng]
 
 export function LocationMap() {
     const [isDark, setIsDark] = useState(false)
