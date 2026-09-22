@@ -1,19 +1,19 @@
 {
-    "files.watcherExclude": {
-        "**/node_modules/**": true,
-        "**/.next/**": true,
-        "**/dist/**": true,
-        "**/build/**": true,
-        "**/.git/**": true,
-        "**/coverage/**": true
-    },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.git/**": true,
+    "**/coverage/**": true
+  },
 
-     "files.exclude": {
-        "**/node_modules": true,
-        "**/.next": true,
-        "**/dist": true,
-        "**/build": true,
-        "**/coverage": true
-        "**/.git": true,
-    }
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/.git": true
+  }
 }
