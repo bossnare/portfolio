@@ -12,18 +12,18 @@ export function LocationMap() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-        const media = window.matchMedia('(prefers-color-scheme: dark)');
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsDark(media.matches);
-    };
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setIsDark(media.matches);
 
-    const handleChange = (event: MediaQueryListEvent) => {
-      setIsDark(event.matches);
-    };
+      const handleChange = (event: MediaQueryListEvent) => {
+        setIsDark(event.matches);
+      };
 
-    media.addEventListener('change', handleChange);
+      media.addEventListener('change', handleChange);
 
-    return () => media.removeEventListener('change', handleChange);
+      return () => media.removeEventListener('change', handleChange);
+    }
   }, []);
 
   const homeIcon = L.divIcon({
