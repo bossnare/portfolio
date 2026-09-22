@@ -11,11 +11,11 @@ export function LocationMap() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    if (typeof window !== 'undefined') {
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsDark(media.matches);
+    };
 
     const handleChange = (event: MediaQueryListEvent) => {
       setIsDark(event.matches);
