@@ -22,9 +22,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #f5f5f5;
-    --primary: #7048e8;
+    --primary: #ffb86b;
     --muted-foreground: #a3a3a3;
-    --primary-foreground: #eeeded;
+    --primary-foreground: #0A0A0A;
   }
 }
 
