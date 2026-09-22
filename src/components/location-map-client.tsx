@@ -11,29 +11,29 @@ export function LocationMapClient() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-      const media = window.matchMedia('(prefers-color-scheme: dark)');
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setIsDark(media.matches);
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsDark(media.matches);
 
-      const handleChange = (event: MediaQueryListEvent) => {
-        setIsDark(event.matches);
-      };
+    const handleChange = (event: MediaQueryListEvent) => {
+      setIsDark(event.matches);
+    };
 
-      media.addEventListener('change', handleChange);
+    media.addEventListener('change', handleChange);
 
-      return () => media.removeEventListener('change', handleChange);
-    
+    return () => media.removeEventListener('change', handleChange);
   }, []);
 
   const homeIcon = L.divIcon({
     className: '',
     html: `
     <div class="relative flex size-10 items-center justify-center">
-      <div class="absolute size-10 animate-ping rounded-full bg-[#7CFF6B]/25"></div>
+      <div class="absolute size-10 animate-ping rounded-full bg-[#5b2eff]/60"></div>
+      <img src="/images/christo.png" class="absolute -right-2 -bottom-4 size-8 z-10 rounded-full object-cover" />
 
       <div class="relative flex size-8 items-center justify-center
         rounded-full border-2 border-white
-        bg-[#7CFF6B] shadow-lg shadow-black/30">
+        bg-[#5b2eff] shadow-lg shadow-black/30">
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,15 +58,15 @@ export function LocationMapClient() {
 
   const mapTiles = {
     light: {
-      url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=cb1_3scg_1_5452341e84f7901060e36a98',
+      url: 'https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png',
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; CARTO',
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; Alidade',
       subdomains: ['a', 'b', 'c', 'd'],
     },
     dark: {
-      url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_3scg_1_5452341e84f7901060e36a98',
+      url: 'https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png',
       attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; CARTO',
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; Alidade',
       subdomains: ['a', 'b', 'c', 'd'],
     },
   };
