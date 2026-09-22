@@ -1,7 +1,14 @@
 import type { Metadata } from 'next';
 import {Page, PageHeader} from '@/src/components/Page'
 import {Locate} from 'lucide-react'
-import {LocationMap} from '@/src/components/location-map'
+import dynamic from 'next/dynamic'
+
+const LocationMapClient = dynamic(() => import('@/src/components/location-map'), {
+  ssr: false,
+  loading: () => (
+    <div className="h-100 w-full bg-zinc-300 dark:bg-zinc-800 animate-pulse rounded-3xl" />
+  )
+})
 
 export const metadata: Metadata = {
   title: 'About',
@@ -16,7 +23,7 @@ export default function AboutPage() {
         Full-stack developer creating scalable products, polished
         interfaces, and reliable experiences from concept to launch.
       </p>
-      <LocationMap />
+      <LocationMapClient />
     </div>
   </Page>);
 }

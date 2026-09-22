@@ -11,7 +11,6 @@ export function LocationMap() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
       const media = window.matchMedia('(prefers-color-scheme: dark)');
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDark(media.matches);
@@ -23,7 +22,7 @@ export function LocationMap() {
       media.addEventListener('change', handleChange);
 
       return () => media.removeEventListener('change', handleChange);
-    }
+    
   }, []);
 
   const homeIcon = L.divIcon({
@@ -93,7 +92,7 @@ export function LocationMap() {
           <Marker position={position} icon={homeIcon} />
           <ZoomControl position="topright" />
         </MapContainer>
-        <div className="pointer-vents-none absolute inset-x-0 bottom-0 z-400 h-24 bg-gradient-to-t from-black/80 to-transparent">
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-400 h-24 bg-gradient-to-t from-black/80 to-transparent">
           <div className="flex items-center justify-between gap-4 p-5">
             <div>
               <p className="font-medium">Antananarivo, Madagascar</p>
