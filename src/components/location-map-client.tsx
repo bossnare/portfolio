@@ -33,7 +33,7 @@ export function LocationMapClient() {
 
       <div class="relative flex size-8 items-center justify-center
         rounded-full border-2 border-white
-        bg-[#5b2eff] shadow-lg shadow-black/30">
+        bg-[#5b2eff] text-primary-foreground shadow-lg shadow-black/30">
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,13 +58,13 @@ export function LocationMapClient() {
 
   const mapTiles = {
     light: {
-      url: 'https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png',
+      url: 'https://tiles.stadiamaps.com/tiles/alidade_bright/{z}/{x}/{y}{r}.png',
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; Alidade',
       subdomains: ['a', 'b', 'c', 'd'],
     },
     dark: {
-      url: 'https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.png',
+      url: 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; Alidade',
       subdomains: ['a', 'b', 'c', 'd'],
@@ -74,7 +74,7 @@ export function LocationMapClient() {
   const tiles = mapTiles[theme];
 
   return (
-    <div className="overflow-hidden rounded-3xl bg-background group border border-zinc-300 dark:border-white/12">
+    <div className="overflow-hidden border rounded-3xl bg-background group border-zinc-300 dark:border-white/12">
       <div className="relative w-full h-100">
         <MapContainer
           center={position}
@@ -92,19 +92,17 @@ export function LocationMapClient() {
           <Marker position={position} icon={homeIcon} />
           <ZoomControl position="topright" />
         </MapContainer>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-400 h-24 bg-gradient-to-t from-black/80 to-transparent">
+        <div className="absolute inset-x-0 bottom-0 h-24 text-white pointer-events-none z-400 bg-linear-to-t from-black/80 to-transparent">
           <div className="flex items-center justify-between gap-4 p-5">
             <div>
               <p className="font-medium">Antananarivo, Madagascar</p>
-              <p className="mt-1 text-sm text-foreground/80">
-                Based in Madagascar
-              </p>
+              <p className="mt-1 text-sm text-white/80">Based in Madagascar</p>
             </div>
             <a
               href={`https://www.google.com/maps/search/?api=1&query=${position[0]},${position[1]}`}
               target="_blank"
               rel="nooper noreferrer"
-              className="border border-zinc-300 dark:border-white/12 shrink-0 rounded-full px-4 py-2 text-sm font-medium"
+              className="px-4 py-2 text-sm font-medium border rounded-full border-zinc-300 dark:border-white/12 shrink-0"
             >
               View map
             </a>
