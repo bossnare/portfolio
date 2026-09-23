@@ -37,7 +37,7 @@ export function Header() {
             <Download className="size-5" />
           </a>
           <div className="p-0.5 border border-zinc-300 overflow-hidden dark:border-white/12 rounded-sm flex items-center *:px-2 *:rounded-xs">
-            <button className="text-white bg-primary">EN</button>
+            <button className="text-primary-foreground bg-primary">EN</button>
             <button className="text-muted-foreground">FR</button>
           </div>
           <button
@@ -58,7 +58,7 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 pt-3 pb-8 bg-background dark:bg-transparent border-t border-b border-zinc-300 dark:border-white/12 md:hidden"
+          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b bg-background dark:bg-transparent border-zinc-300 dark:border-white/12 md:hidden"
         >
           <ul className="flex flex-col items-start gap-4">
             {tabs.map((tab) => (
