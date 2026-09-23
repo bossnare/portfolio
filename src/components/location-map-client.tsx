@@ -28,12 +28,12 @@ export function LocationMapClient() {
     className: '',
     html: `
     <div class="relative flex size-10 items-center justify-center">
-      <div class="absolute size-10 animate-ping rounded-full bg-[#5b2eff]/60"></div>
+      <div class="absolute size-10 animate-ping rounded-full bg-primary/60"></div>
       <img src="/images/christo.png" class="absolute -right-2 -bottom-4 size-8 z-10 rounded-full object-cover" />
 
       <div class="relative flex size-8 items-center justify-center
         rounded-full border-2 border-white
-        bg-[#5b2eff] text-primary-foreground shadow-lg shadow-black/30">
+        bg-primary *:stroke-primary-foreground shadow-lg shadow-black/30">
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
