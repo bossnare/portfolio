@@ -53,6 +53,7 @@ const personJsonLd = {
   sameAs: [
     'https://github.com/bossnare',
     'https://www.facebook.com/thebossnare',
+    'https://facebook.com/theletsgochris',
     'https://www.instagram.com/thebossnare',
     'https://www.x.com/thebossnare',
     'https://www/tiktok.com/@thebossnare',

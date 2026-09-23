@@ -9,7 +9,7 @@ const socialLinks = [
   {
     name: 'Facebook',
     icon: 'facebook.svg',
-    href: 'https://facebook.com/thebossnare',
+    href: 'https://facebook.com/theletsgochris',
   },
   {
     name: 'WhatsApp',
