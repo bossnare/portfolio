@@ -10,7 +10,7 @@ import { ChevronRight } from 'lucide-react';
 
 export function AboutMe() {
   return (
-    <Section id="about" className="flex flex-col gap-6 min-h-60">
+    <Section id="about" className="flex flex-col gap-8 min-h-60">
       <SectionHeader>
         <SectionContent>
           <SectionTitle>About me</SectionTitle>

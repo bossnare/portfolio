@@ -38,7 +38,7 @@ export function SectionParagraphe({ children }: { children: React.ReactNode }) {
 
 export function SectionButton({ children }: { children: React.ReactNode }) {
   return (
-    <button className="inline-flex items-center gap-1 md:px-1 rounded text-muted-foreground hover:text-foreground hover:bg-black/4 dark:hover:bg-[#1a1a1a] active:opacity-80">
+    <button className="inline-flex items-center gap-1 md:px-1 rounded text-muted-foreground hover:text-foreground hover:bg-black/4 dark:hover:bg-[#1a1a1a] text-sm active:opacity-80">
       {children}
     </button>
   );
