@@ -19,7 +19,7 @@ export const contacts = [
     name: 'WhatsApp',
     content: 'Start a conversation.',
     icon: MessageSquare,
-    contact: 'Christo Razafimanga',
+    contact: "LET'S GO CHRIS",
     link: 'https://wa.me/261382742449',
   },
 ];

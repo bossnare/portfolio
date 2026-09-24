@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Page, PageHeader } from '@/src/components/Page';
 import { LocationMap } from '@/src/components/location-map';
 import { stats } from '@/src/data/stats';
+import { Counter } from '@/src/components/about/Counter';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -25,12 +26,12 @@ export default function AboutPage() {
           </h3>
           <div className="grid justify-between grid-cols-2 gap-12 md:grid-cols-4">
             {stats.map((stat) => (
-              <p key={stat.name} className="flex flex-col gap-2">
+              <p key={stat.label} className="flex flex-col gap-2">
                 <span className="text-6xl font-medium font-display">
-                  {stat.stat}
+                  <Counter value={stat.value} suffix={stat.suffix} />
                 </span>
                 <span className="text-sm font-medium text-foreground/90">
-                  {stat.name}
+                  {stat.label}
                 </span>
               </p>
             ))}

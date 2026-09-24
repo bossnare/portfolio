@@ -12,7 +12,7 @@ import { ProjectCard } from './ProjectCard';
 
 export function FeaturedProjects() {
   return (
-    <Section id="featured-projects" className="flex flex-col gap-6">
+    <Section id="featured-projects" className="flex flex-col gap-8">
       <SectionHeader>
         <SectionContent>
           <SectionTitle>Featured projects</SectionTitle>

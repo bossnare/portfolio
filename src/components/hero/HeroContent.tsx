@@ -70,14 +70,14 @@ function HeroStats() {
       <ul className="flex justify-between gap-4 md:gap-10">
         {stats.map((stat) => (
           <li
-            key={stat.name}
+            key={stat.label}
             className="flex flex-col items-center flex-1 gap-1.5 md:items-start"
           >
             <span className="text-2xl font-bold font-display text-primary">
-              {stat.stat}
+              {stat.value} {stat.suffix}
             </span>
             <span className="text-sm leading-4 text-center md:text-nowrap md:text-start text-muted-foreground">
-              {stat.name}
+              {stat.label}
             </span>
           </li>
         ))}

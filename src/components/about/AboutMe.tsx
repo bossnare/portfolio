@@ -10,7 +10,7 @@ import { ChevronRight } from 'lucide-react';
 
 export function AboutMe() {
   return (
-    <Section id="about" className="flex flex-col gap-6 min-h-60">
+    <Section id="about" className="flex flex-col gap-8 min-h-60">
       <SectionHeader>
         <SectionContent>
           <SectionTitle>About me</SectionTitle>
@@ -27,7 +27,7 @@ export function AboutMe() {
       <div className="max-w-4xl">
         I&apos;m web developer focused on building modern, scalable web
         applications with{' '}
-        <span className="bg-[#F0785E] text-black font-medium">
+        <span className="bg-primary text-black font-medium">
           TypeScript, Next.js, and NestJS
         </span>
         . I enjoy turning ideas and business needs into clean, reliable digital
