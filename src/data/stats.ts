@@ -1,6 +1,6 @@
 export const stats = [
-  { name: 'Years of experience', stat: '1+' },
-  { name: 'Completed projects', stat: '4+' },
-  { name: 'Satisfied clients', stat: '2+' },
-  { name: 'Passion & discipline', stat: '100%' },
+  { label: 'Years of experience', value: 1, suffix: '+' },
+  { label: 'Completed projects', value: 4, suffix: '+' },
+  { label: 'Satisfied clients', value: 2, suffix: '+' },
+  { label: 'Passion & discipline', value: 100, suffix: '%' },
 ];
