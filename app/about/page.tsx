@@ -26,7 +26,7 @@ export default function AboutPage() {
           </h3>
           <div className="grid justify-between grid-cols-2 gap-12 md:grid-cols-4">
             {stats.map((stat) => (
-              <p key={stat.label} className="flex flex-col gap-2">
+              <p key={stat.label} className="flex flex-col gap-2 min-w-50">
                 <span className="text-6xl font-medium font-display">
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </span>
