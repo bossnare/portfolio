@@ -18,7 +18,9 @@ export function Tab({ href = '#', label }: { href?: string; label?: string }) {
       <Link className="relative flex justify-center" href={href}>
         <span
           className={cn(
-            isActive ? 'text-primary font-medium' : 'text-foreground/90'
+            isActive
+              ? 'text-primary font-medium'
+              : 'text-foreground/90 hover:text-foreground transition-colors'
           )}
         >
           {label}
