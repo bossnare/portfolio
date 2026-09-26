@@ -4,7 +4,7 @@ export const personalInfo = {
   data: [
     {
       label: 'Born',
-      value: 'December 3, 2003',
+      value: 'December 9, 2003',
     },
     {
       label: 'Nationality',
