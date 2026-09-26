@@ -3,6 +3,7 @@ import { Page, PageHeader } from '@/src/components/Page';
 import { LocationMap } from '@/src/components/location-map';
 import { stats } from '@/src/data/stats';
 import { Counter } from '@/src/components/about/Counter';
+import { personalInfo } from '@/src/data/personal-info';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -22,38 +23,22 @@ export default function AboutPage() {
         </p>
         <section className="flex flex-col items-start justify-center w-full h-auto min-h-screen gap-8 md:gap-10 md:items-center">
           <h3 className="max-w-md text-3xl">Personal Information</h3>
-          <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-zinc-300 dark:divide-white/8">
+          <div className="flex flex-col justify-between gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-zinc-300 dark:divide-white/8">
             <div className="flex flex-col gap-3 pb-8">
-              <span className="text-muted-foreground">Full name</span>
-              <span className="text-4xl font-medium font-display">
-                RAZAFIMANGA Gervais Christo
+              <span className="text-muted-foreground">
+                {personalInfo.label}
               </span>
+              <span className="text-4xl font-medium">{personalInfo.value}</span>
             </div>
-            <div className="md:w-[70%] pt-4 md:pt-0 grid grid-cols-2 justify-between gap-10 *:flex *:flex-col *:gap-3">
-              <div className="">
-                <span className="text-muted-foreground">Born</span>
-                <span className="text-lg font-medium font-display">
-                  December 03, 2003
-                </span>
-              </div>
-              <div className="">
-                <span className="text-muted-foreground">Nationality</span>
-                <span className="text-lg font-medium font-display">
-                  Malagasy
-                </span>
-              </div>
-              <div className="">
-                <span className="text-muted-foreground">Location</span>
-                <span className="text-lg font-medium font-display">
-                  Antananarivo, Madagascar
-                </span>
-              </div>
-              <div className="">
-                <span className="text-muted-foreground">Languages</span>
-                <span className="text-lg font-medium font-display">
-                  Malagassy - English
-                </span>
-              </div>
+            <div className="md:w-[70%] pt-4 md:pt-0 grid grid-cols-2 justify-between gap-10">
+              {personalInfo.data.map((info) => (
+                <div className="flex flex-col gap-3" key={info.value}>
+                  <span className="text-muted-foreground">{info.label}</span>
+                  <span className="text-lg font-medium font-display">
+                    {info.value}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </section>
