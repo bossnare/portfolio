@@ -74,7 +74,8 @@ function HeroStats() {
             className="flex flex-col items-center flex-1 gap-1.5 md:items-start"
           >
             <span className="text-2xl font-bold font-display text-primary">
-              {stat.value} {stat.suffix}
+              {stat.value}
+              {stat.suffix}
             </span>
             <span className="text-sm leading-4 text-center md:text-nowrap md:text-start text-muted-foreground">
               {stat.label}
