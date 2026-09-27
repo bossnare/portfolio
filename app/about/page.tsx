@@ -21,9 +21,11 @@ export default function AboutPage() {
           Full-stack developer creating scalable products, polished interfaces,
           and reliable experiences from concept to launch.
         </p>
-        <section className="flex flex-col items-start justify-center w-full min-h-screen gap-8 md:gap-10 md:items-center">
+        <section className="relative flex flex-col items-start justify-center w-full min-h-screen gap-8 md:gap-10 md:items-center">
+          <span className="absolute top-0 w-1/4 border-t border-zinc-200 dark:border-white/8" />
+
           <h3 className="max-w-md text-3xl">Personal Information</h3>
-          <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-zinc-300 dark:divide-white/8">
+          <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-zinc-200 dark:divide-white/8">
             <div className="flex flex-col gap-3 pb-8">
               <span className="text-muted-foreground">
                 {personalInfo.label}
@@ -34,22 +36,21 @@ export default function AboutPage() {
               {personalInfo.data.map((info) => (
                 <div className="flex flex-col gap-3" key={info.value}>
                   <span className="text-muted-foreground">{info.label}</span>
-                  <span className="text-lg font-medium font-display">
-                    {info.value}
-                  </span>
+                  <span className="text-lg font-medium">{info.value}</span>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="flex flex-col items-start justify-center w-full min-h-screen gap-8 md:gap-10 md:items-center">
+        <section className="relative flex flex-col items-start justify-center w-full min-h-screen gap-8 md:gap-10 md:items-center">
+          <span className="absolute top-0 w-1/4 border-t border-zinc-200 dark:border-white/8" />
           <h3 className="max-w-md text-3xl">My states and impacts</h3>
           <div className="grid justify-between grid-cols-2 gap-12 md:grid-cols-4">
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="flex flex-col gap-2 min-w-30 md:min-w-50"
+                className="flex flex-col gap-2 min-w-40 md:min-w-50"
               >
                 <span className="text-6xl font-medium font-display">
                   <Counter value={stat.value} suffix={stat.suffix} />

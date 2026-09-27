@@ -37,7 +37,9 @@ export function Header() {
             <Download className="size-5" />
           </a>
           <div className="p-0.5 border border-zinc-300 overflow-hidden dark:border-white/12 rounded-sm flex items-center *:px-2 *:rounded-xs">
-            <button className="text-primary-foreground bg-primary">EN</button>
+            <button className="text-primary-foreground bg-primary font-medium">
+              EN
+            </button>
             <button className="text-muted-foreground">FR</button>
           </div>
           <button
