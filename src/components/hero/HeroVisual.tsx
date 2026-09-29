@@ -47,8 +47,8 @@ export function HeroVisual() {
         priority
       />
       <div className="absolute z-20 rounded-full border-3 size-3 md:size-4 border-primary top-10 left-8 md:top-20 md:left-30"></div>
-      <div className="absolute z-20 bg-[#F0785E] rounded-full size-2 bottom-20 right-4 md:size-3 md:bottom-26 md:right-16"></div>
-      <div className="absolute z-20 rounded-full text-[#55D5D0] bottom-50 right-14 md:bottom-80 md:right-38">
+      <div className="absolute z-20 rounded-full bg-foreground size-2 bottom-20 right-4 md:size-3 md:bottom-26 md:right-16"></div>
+      <div className="absolute z-20 rounded-full bottom-50 right-14 md:bottom-80 md:right-38">
         <Plus className="size-5" />
       </div>
       <Availability className="absolute right-0 z-16 bottom-4" />
