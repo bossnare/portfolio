@@ -71,9 +71,9 @@ export default function RootLayout({
       className={`${clashDisplay.variable} ${generalSans.variable} antialiased`}
     >
       <body className="font-sans font-[optical-sizing:auto] flex flex-col">
-        <div className="flex flex-col items-center justify-center flex-1">
+        <div className="flex flex-col items-center justify-center flex-1 min-h-screen">
           <Header />
-          <main className="w-full pt-8 md:pt-0">{children}</main>
+          <main className="w-full pt-8 pb-20 md:pt-0">{children}</main>
           <Footer />
         </div>
 
