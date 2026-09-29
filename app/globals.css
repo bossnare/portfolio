@@ -43,7 +43,7 @@ h6 {
 }
 
 button {
-  @apply cursor-pointer;
+  @apply cursor-pointer select-none;
 }
 
 @keyframes typewriter {
