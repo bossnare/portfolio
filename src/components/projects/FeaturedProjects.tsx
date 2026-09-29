@@ -6,7 +6,7 @@ import {
   SectionTitle,
   SectionParagraphe,
   SectionContent,
-  SectionButton,
+  SectionLinkButton,
 } from '../Section';
 import { ProjectCard } from './ProjectCard';
 
@@ -21,10 +21,10 @@ export function FeaturedProjects() {
             brought to life.
           </SectionParagraphe>
         </SectionContent>
-        <SectionButton>
+        <SectionLinkButton href="/projects">
           View all projects
           <ChevronRight className="size-5" />
-        </SectionButton>
+        </SectionLinkButton>
       </SectionHeader>
       <div className="grid gap-4 md:grid-cols-3">
         {projects.map((project) => (

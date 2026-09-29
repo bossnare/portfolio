@@ -4,7 +4,7 @@ import {
   SectionTitle,
   SectionParagraphe,
   SectionContent,
-  SectionButton,
+  SectionLinkButton,
 } from '@/src/components/Section';
 import { ChevronRight } from 'lucide-react';
 
@@ -19,10 +19,10 @@ export function AboutMe() {
             software development.
           </SectionParagraphe>
         </SectionContent>
-        <SectionButton>
+        <SectionLinkButton href="/about">
           More about me
           <ChevronRight className="size-5" />
-        </SectionButton>
+        </SectionLinkButton>
       </SectionHeader>
       <div className="max-w-4xl">
         I&apos;m web developer focused on building modern, scalable web

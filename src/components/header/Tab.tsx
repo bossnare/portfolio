@@ -20,7 +20,7 @@ export function Tab({ href = '#', label }: { href?: string; label?: string }) {
           className={cn(
             isActive
               ? 'text-primary font-medium'
-              : 'text-foreground/90 hover:text-foreground transition-colors'
+              : 'text-foreground/90 hover:text-foreground transition-colors active:bg-zinc-300 dark:active:bg-white/16 active:opacity-80'
           )}
         >
           {label}

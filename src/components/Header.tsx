@@ -67,7 +67,6 @@ export function Header() {
               <li
                 onClick={() => handleWait(handleTogleOpenMenu, 150)}
                 key={tab.label}
-                className="active:bg-zinc-300 dark:active:bg-background active:opacity-80"
               >
                 <Tab label={tab.label} href={tab.href} />
               </li>

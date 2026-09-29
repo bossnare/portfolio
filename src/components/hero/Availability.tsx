@@ -9,12 +9,12 @@ export function Availability({ className }: { className: string }) {
         className
       )}
     >
-      <span className="rounded-full size-2.5 bg-primary ml-1"></span>
+      <span className="rounded-full size-2.5 bg-[#23F0C7] ml-1"></span>
       <span className="ml-2 text-sm md:text-base text-muted-foreground">
         Available for new opportunities
       </span>
       <span className="p-1 border rounded-md border-black/10 dark:border-white/6">
-        <Terminal className="text-primary size-5" />
+        <Terminal className="text-[#23F0C7] size-5" />
       </span>
     </div>
   );
