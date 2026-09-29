@@ -14,7 +14,7 @@ export function Availability({ className }: { className: string }) {
         Available for new opportunities
       </span>
       <span className="p-1 border rounded-md border-black/10 dark:border-white/6">
-        <Terminal className="text-[#23F0C7] size-5" />
+        <Terminal className="text-muted-foreground size-5" />
       </span>
     </div>
   );

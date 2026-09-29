@@ -2,6 +2,7 @@ import { stacks } from '@/src/data/stacks';
 import { stats } from '@/src/data/stats';
 import { MoveRight, Send } from 'lucide-react';
 import { MaskedIcon } from '../MaskedIcon';
+import Link from 'next/link';
 
 function HeroIntroduction() {
   return (
@@ -24,21 +25,20 @@ function HeroIntroduction() {
 function HeroActions() {
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
-      <a
+      <Link
         className="flex h-11 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-primary-foreground transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
-        download
+        href="/projects"
       >
         View my projects
         <MoveRight />
-      </a>
-      <a
+      </Link>
+      <Link
         className="flex h-11 w-auto items-center justify-center gap-2 rounded-md border border-solid border-black/12 px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/contact"
       >
         Get in touch
         <Send className="size-5" />
-      </a>
+      </Link>
     </div>
   );
 }
