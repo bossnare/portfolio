@@ -5,7 +5,7 @@ export function Availability({ className }: { className: string }) {
   return (
     <div
       className={cn(
-        'flex items-center p-1.5 border rounded-lg bg-background/90 border-black/10 dark:border-white/6',
+        'flex items-center p-1.5 border rounded-lg bg-background/90 border-border',
         className
       )}
     >
@@ -13,7 +13,7 @@ export function Availability({ className }: { className: string }) {
       <span className="ml-2 text-sm md:text-base text-muted-foreground">
         Available for new opportunities
       </span>
-      <span className="p-1 border rounded-md border-black/10 dark:border-white/6">
+      <span className="p-1 border rounded-md border-border">
         <Terminal className="text-muted-foreground size-5" />
       </span>
     </div>

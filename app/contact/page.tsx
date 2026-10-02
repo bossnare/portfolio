@@ -15,7 +15,7 @@ export default function ContactPage() {
         description="Here are my contact details if you'd like to discuss a project,
           collaboration, or professional opportunity."
       />
-      <ul className="grid w-full grid-cols-1 gap-6 mt-4 divide-y bg-background dark:bg-transparent md:m-0 md:grid-cols-3 md:divide-x md:divide-y-0 divide-zinc-200 dark:divide-white/12">
+      <ul className="grid w-full grid-cols-1 gap-6 mt-4 divide-y bg-background dark:bg-transparent md:m-0 md:grid-cols-3 md:divide-x md:divide-y-0 divide-border">
         {contacts.map((contact) => (
           <li key={contact.name}>
             <div className="flex flex-row gap-3 py-4 md:flex-col">

@@ -1,10 +1,10 @@
 'use client';
 
 import { Download, Menu, X } from 'lucide-react';
-import { Tab, tabs } from './header/Tab';
-import { useState } from 'react';
 import { motion } from 'motion/react';
+import { useState } from 'react';
 import { handleWait } from '../utils/handle-wait';
+import { Tab, tabs } from './header/Tab';
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -36,7 +36,7 @@ export function Header() {
             Download CV
             <Download className="size-5" />
           </a>
-          <div className="p-0.5 border border-zinc-300 overflow-hidden dark:border-white/12 rounded-sm flex items-center *:px-2 *:rounded-xs">
+          <div className="p-0.5 border border-border overflow-hidden rounded-sm flex items-center *:px-2 *:rounded-xs">
             <button className="text-primary-foreground bg-primary font-medium">
               EN
             </button>
@@ -44,7 +44,7 @@ export function Header() {
           </div>
           <button
             onClick={handleTogleOpenMenu}
-            className="flex items-center justify-center border rounded-sm md:hidden size-7 border-zinc-300 dark:border-white/12 active:bg-background active:opacity-80"
+            className="flex items-center justify-center border rounded-sm md:hidden size-7 border-border active:bg-background active:opacity-80"
           >
             {isOpenMenu ? (
               <X className="size-5 text-zinc-800 dark:text-zinc-100" />
@@ -60,7 +60,7 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b bg-background dark:bg-transparent border-zinc-300 dark:border-white/12 md:hidden"
+          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b bg-background dark:bg-transparent border-border md:hidden"
         >
           <ul className="flex flex-col items-start gap-4">
             {tabs.map((tab) => (

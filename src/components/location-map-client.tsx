@@ -1,9 +1,9 @@
 'use client';
 
-import { MapContainer, Marker, TileLayer, ZoomControl } from 'react-leaflet';
 import L, { type LatLngTuple } from 'leaflet';
-import { useState, useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
+import { useEffect, useState } from 'react';
+import { MapContainer, Marker, TileLayer, ZoomControl } from 'react-leaflet';
 
 const position: LatLngTuple = [-18.909707, 47.552839]; // [lat, lng]
 
@@ -32,7 +32,7 @@ export function LocationMapClient() {
       <img src="/images/christo.png" class="absolute -right-2 -bottom-4 size-8 z-10 rounded-full object-cover" />
 
       <div class="relative flex size-8 items-center justify-center
-        rounded-full border-2 border-white
+        rounded-full border-2 border-border
         bg-primary *:stroke-primary-foreground shadow-lg shadow-black/30">
 
         <svg
@@ -74,7 +74,7 @@ export function LocationMapClient() {
   const tiles = mapTiles[theme];
 
   return (
-    <div className="overflow-hidden border rounded-3xl bg-background group border-zinc-300 dark:border-white/12">
+    <div className="overflow-hidden border rounded-3xl bg-background group border-border">
       <div className="relative w-full h-100">
         <MapContainer
           center={position}
@@ -102,7 +102,7 @@ export function LocationMapClient() {
               href={`https://www.google.com/maps/search/?api=1&query=${position[0]},${position[1]}`}
               target="_blank"
               rel="nooper noreferrer"
-              className="px-4 py-2 text-sm font-medium border rounded-full border-zinc-300 dark:border-white/12 shrink-0"
+              className="px-4 py-2 text-sm font-medium border rounded-full border-border shrink-0"
             >
               View map
             </a>

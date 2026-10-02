@@ -1,8 +1,8 @@
 import { stacks } from '@/src/data/stacks';
 import { stats } from '@/src/data/stats';
 import { MoveRight, Send } from 'lucide-react';
-import { MaskedIcon } from '../MaskedIcon';
 import Link from 'next/link';
+import { MaskedIcon } from '../MaskedIcon';
 
 function HeroIntroduction() {
   return (
@@ -33,7 +33,7 @@ function HeroActions() {
         <MoveRight />
       </Link>
       <Link
-        className="flex h-11 w-auto items-center justify-center gap-2 rounded-md border border-solid border-black/12 px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
+        className="flex h-11 w-auto items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:hover:bg-[#1a1a1a]"
         href="/contact"
       >
         Get in touch

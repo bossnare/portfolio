@@ -6,6 +6,7 @@
   --primary: #e88924; /* #5b2eff */
   --muted-foreground: #52525b;
   --primary-foreground: #0a0a0a;
+  --border: #d4d4d3;
 }
 
 @theme inline {
@@ -14,6 +15,7 @@
   --color-primary: var(--primary);
   --color-muted-foreground: var(--muted-foreground);
   --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
   --font-sans: var(--font-general-sans);
   --font-display: var(--font-clash-display);
 }
@@ -23,8 +25,9 @@
     --background: #0a0a0a;
     --foreground: #f5f5f5;
     --primary: #ffb86b;
-    --muted-foreground: #a3a3a3;
+    --muted-foreground: #80807e;
     --primary-foreground: #0a0a0a;
+    --border: #292927;
   }
 }
 
