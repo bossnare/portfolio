@@ -47,9 +47,12 @@ const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Christo Razafimanga',
+  givenName: 'Christo',
+  familyName: 'Razafimanga',
+  alternateName: ['Razafimanga Gervais Christo', 'BossNare'],
   url: 'https://christorazafimanga.is-a.dev',
   image: 'https://christorazafimanga.is-a.dev/images/christo.png',
-  jobTitle: 'Full-Stack Web Developer',
+  jobTitle: ['Full-Stack Web Developer', 'Designer'],
   sameAs: [
     'https://github.com/bossnare',
     'https://www.facebook.com/thebossnare',
@@ -58,6 +61,33 @@ const personJsonLd = {
     'https://www.x.com/thebossnare',
     'https://www/tiktok.com/@thebossnare',
   ],
+  knowsAbout: [
+    'Web Development',
+    'SaaS',
+    'Full-Stack Development',
+    'TypeScript',
+    'React',
+    'Next.js',
+    'NestJS',
+    'Symfony backend API',
+    'PostegreSQL',
+    'MySQL',
+    'Prisma',
+    'Web Design',
+    'UI Design',
+    'REST API',
+  ],
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'E-media Madagascar',
+    },
+    {
+      '@type': 'EducationalOrganization',
+      name: 'Digital Training Center(DTC)',
+    },
+  ],
+  knowsLanguage: ['English', 'French', 'Malagasy'],
 };
 
 export default function RootLayout({
