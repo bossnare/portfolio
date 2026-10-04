@@ -23,3 +23,5 @@ export const contacts = [
     link: 'https://wa.me/261382742449',
   },
 ];
+
+export type Contact = (typeof contacts)[number];

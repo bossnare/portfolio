@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 import { handleWait } from '../utils/handle-wait';
 import { Tab, tabs } from './header/Tab';
+import { LanguageSwitch } from './header/LanguageSwitch';
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -36,12 +37,7 @@ export function Header() {
             Download CV
             <Download className="size-5" />
           </a>
-          <div className="p-0.5 border border-border overflow-hidden rounded-sm flex items-center *:px-2 *:rounded-xs">
-            <button className="text-primary-foreground bg-primary font-medium">
-              EN
-            </button>
-            <button className="text-muted-foreground">FR</button>
-          </div>
+          <LanguageSwitch />
           <button
             onClick={handleTogleOpenMenu}
             className="flex items-center justify-center border rounded-sm md:hidden size-7 border-border active:bg-background active:opacity-60"
