@@ -63,7 +63,7 @@ export function Header() {
               <motion.li
                 initial={{ opacity: 0, x: -40 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: (i + 1) * 0.2 }}
+                transition={{ duration: (i + 1) * 0.09 }}
                 onClick={() => handleWait(handleTogleOpenMenu, 150)}
                 key={tab.label}
               >
