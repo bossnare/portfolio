@@ -44,7 +44,7 @@ export function Header() {
           </div>
           <button
             onClick={handleTogleOpenMenu}
-            className="flex items-center justify-center border rounded-sm md:hidden size-7 border-border active:bg-background active:opacity-80"
+            className="flex items-center justify-center border rounded-sm md:hidden size-7 border-border active:bg-background active:opacity-60"
           >
             {isOpenMenu ? (
               <X className="size-5 text-zinc-800 dark:text-zinc-100" />

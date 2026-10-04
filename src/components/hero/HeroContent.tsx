@@ -11,7 +11,7 @@ function HeroIntroduction() {
       <h1 className="max-w-xl text-[42px] md:text-5xl font-extrabold tracking-tight text-black lg:text-6xl leading-10 md:leading-14 dark:text-zinc-50">
         <span className="uppercase">Christo RAZAFIMANGA</span>
       </h1>
-      <p className="typewriter font-display pr-1.5 text-3xl font-bold border-r-2 text-primary border-primary">
+      <p className="typewriter font-display pr-1.5 text-3xl text-foreground/70 font-bold border-r-2 border-freground">
         Web Developer
       </p>
       <p className="max-w-md leading-7 text-muted-foreground">
