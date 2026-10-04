@@ -60,7 +60,7 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 py-8 border-t border-b bg-background dark:bg-background/80 border-border md:hidden"
+          className="flex flex-col gap-3 px-5 py-8 border-t border-b bg-background border-border md:hidden"
         >
           <ul className="flex flex-col items-start gap-4">
             {tabs.map((tab, i) => (
