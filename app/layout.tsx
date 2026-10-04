@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { Header } from '@/src/components/Header';
 import { Footer } from '@/src/components/Footer';
+import { ThemeProvider } from '@/src/components/theme-provider';
 
 // const dmSans = DM_Sans({
 //   variable: '--font-dm-sans',
@@ -97,25 +98,33 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
       className={`${clashDisplay.variable} ${generalSans.variable} antialiased`}
     >
       <body className="font-sans font-[optical-sizing:auto] flex flex-col">
-        <div className="flex flex-col items-center justify-center flex-1 min-h-screen">
-          <Header />
-          <main className="w-full pt-8 pb-20 md:pt-0">{children}</main>
-          <Footer />
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex flex-col items-center justify-center flex-1 min-h-screen">
+            <Header />
+            <main className="w-full pt-8 pb-20 md:pt-0">{children}</main>
+            <Footer />
+          </div>
 
-        {/* <GoogleAnalytics /> */}
-        <Analytics />
-        {/* jsonLd - SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(personJsonLd),
-          }}
-        />
+          {/* <GoogleAnalytics /> */}
+          <Analytics />
+          {/* jsonLd - SEO */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(personJsonLd),
+            }}
+          />
+        </ThemeProvider>
       </body>
     </html>
   );
