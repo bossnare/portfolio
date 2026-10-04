@@ -60,16 +60,19 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 pt-3 pb-8 border-t border-b bg-background dark:bg-transparent border-border md:hidden"
+          className="flex flex-col gap-3 px-5 py-8 border-t border-b bg-background dark:bg-background/80 border-border md:hidden"
         >
           <ul className="flex flex-col items-start gap-4">
-            {tabs.map((tab) => (
-              <li
+            {tabs.map((tab, i) => (
+              <motion.li
+                initial={{ opacity: 0, x: -40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: (i + 1) * 0.2 }}
                 onClick={() => handleWait(handleTogleOpenMenu, 150)}
                 key={tab.label}
               >
                 <Tab label={tab.label} href={tab.href} />
-              </li>
+              </motion.li>
             ))}
           </ul>
         </motion.nav>

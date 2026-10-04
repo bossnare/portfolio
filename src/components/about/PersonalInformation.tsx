@@ -1,0 +1,25 @@
+import { personalInfo } from '@/src/data/personal-info';
+
+export const PersonalInformation = () => {
+  return (
+    <section className="relative flex flex-col items-start justify-center w-full min-h-screen gap-8 md:gap-10 md:items-center">
+      <span className="absolute top-0 w-1/4 border-t border-border" />
+
+      <h3 className="max-w-md text-3xl">Personal Information</h3>
+      <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-border">
+        <div className="flex flex-col gap-3 pb-8 md:pr-20">
+          <span className="text-muted-foreground">{personalInfo.label}</span>
+          <span className="text-3xl font-medium">{personalInfo.value}</span>
+        </div>
+        <div className="md:w-1/2 pt-4 md:pt-0 md:pl-4 grid grid-cols-2 justify-between gap-10">
+          {personalInfo.data.map((info) => (
+            <div className="flex flex-col gap-3" key={info.value}>
+              <span className="text-muted-foreground">{info.label}</span>
+              <span className="text-lg">{info.value}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
