@@ -11,7 +11,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
       style={{ borderColor: project.color }}
-      className="flex gap-4 p-4 rounded-md shadow-xs border-l-3 bg-background dark:bg-background/80"
+      className="flex gap-4 p-4 rounded-md shadow-xs border-l-3 bg-background dark:bg-background"
     >
       <span
         style={{ background: `${project.color}1a` }}

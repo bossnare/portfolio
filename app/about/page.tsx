@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Page, PageHeader } from '@/src/components/Page';
-import { LocationMap } from '@/src/components/location-map';
+// import { LocationMap } from '@/src/components/location-map';
 import { Intro } from '@/src/components/about/Intro';
 import { PersonalInformation } from '@/src/components/about/PersonalInformation';
 import { StatsImpacts } from '@/src/components/about/StatsImpacts';
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <Intro />
       <PersonalInformation />
       <StatsImpacts />
-      <LocationMap />
+      {/* <LocationMap /> */}
     </Page>
   );
 }

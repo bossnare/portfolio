@@ -1,6 +1,14 @@
 export const personalInfo = {
-  label: 'Full name',
-  value: 'RAZAFIMANGA Gervais Christo',
+  name: [
+    {
+      label: 'Legal name',
+      value: 'RAZAFIMANGA Gervais Christo',
+    },
+    {
+      label: 'Professional name',
+      value: 'Christo Razafimanga',
+    },
+  ],
   data: [
     {
       label: 'Born',
