@@ -6,14 +6,14 @@ export function Hero() {
   return (
     <Section
       id="hero"
-      className="relative min-h-screen overflow-hidden md:min-h-auto pt-0"
+      className="relative min-h-screen pt-0 overflow-hidden md:min-h-auto"
     >
-      <div className="flex flex-col space-y-10 md:space-y-0 items-center justify-between md:flex-row md:items-center">
+      <div className="flex flex-col items-center justify-between space-y-10 md:space-y-0 md:flex-row md:items-center">
         <HeroContent />
         <HeroVisual />
       </div>
       {/* line */}
-      <div className="w-full border-t border-zinc-200 dark:border-white/8"></div>
+      <div className="w-full border-t border-zinc-200 dark:border-white/12"></div>
     </Section>
   );
 }

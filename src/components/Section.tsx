@@ -7,7 +7,7 @@ export function Section({ className, children, ...props }: SectionProps) {
   return (
     <section
       className={cn(
-        'mx-auto w-full md:max-w-[94%] px-5 md:px-4 dark:bg-black pt-14',
+        'mx-auto w-full md:max-w-[94%] px-5 md:px-4 dark:bg-black pt-12',
         className
       )}
       {...props}

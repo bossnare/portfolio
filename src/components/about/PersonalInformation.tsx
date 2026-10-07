@@ -7,9 +7,13 @@ export const PersonalInformation = () => {
 
       <h3 className="max-w-md text-3xl">Personal Information</h3>
       <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-border">
-        <div className="flex flex-col gap-3 pb-8 md:pr-20">
-          <span className="text-muted-foreground">{personalInfo.label}</span>
-          <span className="text-3xl font-medium">{personalInfo.value}</span>
+        <div className="flex flex-col gap-10 pb-8 md:pr-50">
+          {personalInfo.name.map((nameInfo) => (
+            <div key={nameInfo.label} className="flex flex-col gap-3">
+              <span className="text-muted-foreground">{nameInfo.label}</span>
+              <span className="text-xl font-medium">{nameInfo.value}</span>
+            </div>
+          ))}
         </div>
         <div className="md:w-1/2 pt-4 md:pt-0 md:pl-4 grid grid-cols-2 justify-between gap-10">
           {personalInfo.data.map((info) => (

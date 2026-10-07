@@ -5,7 +5,7 @@ import { useActivePath } from '../../hooks/useActivePath';
 export const tabs = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Projects', href: '/projects' },
+  { label: 'Works', href: '/projects' },
   { label: 'Experiences', href: '/experiences' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -20,7 +20,7 @@ export function Tab({ href = '#', label }: { href?: string; label?: string }) {
           className={cn(
             isActive
               ? 'text-primary font-medium'
-              : 'text-foreground/90 hover:text-foreground transition-colors active:bg-zinc-300 dark:active:bg-white/16 active:opacity-80'
+              : 'text-foreground/90 hover:text-foreground md:transition-colors px-1.5 rounded-full active:bg-zinc-300 dark:active:bg-white/20 active:opacity-80'
           )}
         >
           {label}

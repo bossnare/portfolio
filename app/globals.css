@@ -21,14 +21,14 @@
   --font-display: var(--font-clash-display);
 }
 
-  .dark {
-    --background: #0a0a0a;
-    --foreground: #f5f5f5;
-    --primary: #ffb86b;
-    --muted-foreground: #80807e;
-    --primary-foreground: #0a0a0a;
-    --border: #292927;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --primary: #ddf762;
+  --muted-foreground: #80807e;
+  --primary-foreground: #0a0a0a;
+  --border: #292927;
+}
 
 body {
   @apply bg-[#F5F5F3] dark:bg-black;
@@ -45,7 +45,7 @@ h6 {
 }
 
 button {
-  @apply cursor-pointer select-none;
+  @apply cursor-pointer select-none font-display;
 }
 
 @keyframes typewriter {
