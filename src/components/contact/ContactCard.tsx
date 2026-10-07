@@ -13,7 +13,7 @@ export function ContactCard(contact: Contact) {
         </div>
         <a
           href={contact.link}
-          className="font-semibold w-fit text-muted-foreground hover:text-primary hover:underline active:underline"
+          className="font-medium w-fit text-muted-foreground hover:text-primary hover:underline active:underline active:text-primary"
           target="_blank"
           rel="noopener noreferrer"
         >
