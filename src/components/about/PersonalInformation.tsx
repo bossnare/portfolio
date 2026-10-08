@@ -11,11 +11,13 @@ export const PersonalInformation = () => {
           {personalInfo.name.map((nameInfo) => (
             <div key={nameInfo.label} className="flex flex-col gap-3">
               <span className="text-muted-foreground">{nameInfo.label}</span>
-              <span className="text-xl font-medium">{nameInfo.value}</span>
+              <span className="text-lg font-medium md:text-xl">
+                {nameInfo.value}
+              </span>
             </div>
           ))}
         </div>
-        <div className="md:w-1/2 pt-4 md:pt-0 md:pl-4 grid grid-cols-2 justify-between gap-10">
+        <div className="grid justify-between grid-cols-2 gap-10 pt-4 md:w-1/2 md:pt-0 md:pl-4">
           {personalInfo.data.map((info) => (
             <div className="flex flex-col gap-3" key={info.value}>
               <span className="text-muted-foreground">{info.label}</span>
