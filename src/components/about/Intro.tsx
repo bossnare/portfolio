@@ -31,11 +31,12 @@ export const Intro = () => {
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-sm text-muted-foreground">Founded</span>
-              <span>23/09/2026 - September 23, 2026</span>
+              <span>September 23, 2026 | 23/09/2026</span>
             </div>
           </div>
         </div>
       </div>
+      <div className="border-t border-border/70"></div>
     </section>
   );
 };
