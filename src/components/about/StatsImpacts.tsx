@@ -30,8 +30,8 @@ export function StatsImpacts() {
             <span className="text-6xl font-medium font-display">
               <Counter value={stat.value} suffix={stat.suffix} />
             </span>
-            <span className="text-sm font-medium text-foreground/90">
-              {stat.label}
+            <span className="text-sm font-medium md:max-w-55 text-foreground/90">
+              {stat.description}
             </span>
           </div>
         ))}
