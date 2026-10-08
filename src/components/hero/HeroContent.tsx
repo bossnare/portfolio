@@ -32,7 +32,7 @@ function HeroActions() {
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
       <Link
-        className="flex items-center justify-center w-auto gap-2 px-4 transition-colors rounded-md h-11 active:opacity-70 bg-primary text-primary-foreground hover:brightness-110"
+        className="flex items-center justify-center w-auto gap-2 px-4 transition-colors rounded-md h-11 active:opacity-70 bg-primary text-primary-foreground hover:brightness-110 active:brightness-120"
         href="/projects"
         onClick={(e) => {
           e.preventDefault();

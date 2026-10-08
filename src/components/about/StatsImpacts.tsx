@@ -46,12 +46,12 @@ export function StatsImpacts() {
           href="/projects"
           onClick={(e) => {
             e.preventDefault();
-            handleWait(() => goTo({ href: '/projects' }), 300);
+            handleWait(() => goTo({ href: '/projects' }), 500);
           }}
         >
           <span className="relative z-5">Go to projects</span>
           <MoveRight className="relative z-5" />
-          <span className="absolute rounded-full transition-all z-2 size-8 left-[-30%] ease-in-out duration-1200 group-hover:size-[100rem] bg-primary" />
+          <span className="absolute rounded-full transition-all z-2 size-8 left-[-30%] ease-in-out duration-300 sm:duration-1200 group-active:size-[100rem] group-hover:size-[100rem] bg-primary" />
         </Link>
       </motion.div>
     </section>
