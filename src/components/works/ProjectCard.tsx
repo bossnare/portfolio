@@ -1,36 +1,35 @@
-import type { projects } from '@/src/data/projects';
+import type {Work} from '@/src/data/works'
 import { MoveRight } from 'lucide-react';
 
-type Project = (typeof projects)[number];
 
-type ProjectCardProps = {
-  project: Project;
+type WorkCardProps = {
+  work: Work;
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ work }: WorkCardProps) {
   return (
     <div
-      style={{ borderColor: project.color }}
+      style={{ borderColor: work.color }}
       className="flex gap-4 p-4 rounded-md shadow-xs border-l-3 bg-background dark:bg-background"
     >
       <span
-        style={{ background: `${project.color}1a` }}
+        style={{ background: `${work.color}1a` }}
         className="shrink-0 self-start p-1.5 rounded-lg"
       >
-        <project.icon style={{ color: project.color }} />
+        <work.icon style={{ color: work.color }} />
       </span>
       <div className="flex flex-col gap-1 grow">
         <span className="font-semibold capitalize font-display">
-          {project.type}
+          {work.type}
         </span>
         <span className="text-muted-foreground font-medium text-[15px]">
-          {project.description} {project.name}
+          {work.description} {work.name}
         </span>
         <a
           href="#"
           className="flex items-center self-start gap-3 py-2 mt-auto text-sm hover:underline text-muted-foreground hover:text-primary"
         >
-          <span>View project</span>
+          <span>View work</span>
           <MoveRight className="size-4" />
         </a>
       </div>

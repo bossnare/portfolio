@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { cn } from '../../lib/utils';
 import { useActivePath } from '../../hooks/useActivePath';
+import { cn } from '../../lib/utils';
 
 export const tabs = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Works', href: '/projects' },
+  { label: 'Works', href: '/works' },
   { label: 'Experiences', href: '/experiences' },
   { label: 'Contact', href: '/contact' },
 ];
