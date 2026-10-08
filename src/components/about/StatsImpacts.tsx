@@ -30,8 +30,8 @@ export function StatsImpacts() {
             <span className="text-6xl font-medium font-display">
               <Counter value={stat.value} suffix={stat.suffix} />
             </span>
-            <span className="text-sm font-medium text-foreground/90">
-              {stat.label}
+            <span className="text-sm font-medium md:max-w-55 text-foreground/90">
+              {stat.description}
             </span>
           </div>
         ))}
@@ -42,7 +42,7 @@ export function StatsImpacts() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
       >
         <Link
-          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-20 overflow-hidden font-medium transition-colors ease-in-out rounded-full hover:text-primary-foreground hover:outline-transparent duration-1200 group font-display outline outline-foreground/70 active:bg-primary active:opacity-70"
+          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-20 overflow-hidden font-medium transition-colors duration-300 ease-in-out rounded-full hover:text-primary-foreground hover:outline-transparent sm:duration-1200 group font-display outline outline-foreground/70 active:bg-primary active:opacity-70"
           href="/projects"
           onClick={(e) => {
             e.preventDefault();
