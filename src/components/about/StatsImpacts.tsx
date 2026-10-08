@@ -46,7 +46,7 @@ export function StatsImpacts() {
           href="/projects"
           onClick={(e) => {
             e.preventDefault();
-            handleWait(() => goTo('/projects'), 300);
+            handleWait(() => goTo({ href: '/projects' }), 300);
           }}
         >
           <span className="relative z-5">Go to projects</span>

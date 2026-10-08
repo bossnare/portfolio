@@ -11,9 +11,9 @@ const contactIcons = {
   message: MessageSquare,
 };
 
-export function ContactCard(contact: Contact) {
+export function ContactCard({ contact }: { contact: Contact }) {
   const { goTo } = useNavigation();
-  const Icon = contactIcons[contact.icon];
+  const Icon = contactIcons[contact.icon as keyof typeof contactIcons] ?? Mail;
 
   return (
     <div className="flex flex-row gap-3 py-4 md:flex-col">
@@ -30,7 +30,10 @@ export function ContactCard(contact: Contact) {
           className="font-medium w-fit text-muted-foreground hover:text-primary hover:underline active:underline active:text-primary dark:active:bg-[#1a1a1a]"
           onClick={(e) => {
             e.preventDefault();
-            handleWait(() => goTo({href: contact.link, openExternal: true}), 500);
+            handleWait(
+              () => goTo({ href: contact.link, openExternal: true }),
+              500
+            );
           }}
         >
           {contact.contact}
