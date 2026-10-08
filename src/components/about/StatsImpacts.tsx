@@ -6,12 +6,16 @@ import Link from 'next/link';
 import { useReveal } from '@/src/hooks/use-reveal';
 import { motion } from 'motion/react';
 import { MoveRight } from 'lucide-react';
+import { handleWait } from '@/src/utils/handle-wait';
+import { useNavigation } from '@/src/hooks/use-navigation';
 
 export function StatsImpacts() {
   const { ref, isInView } = useReveal<HTMLDivElement>({
     once: true,
     amount: 0.8,
   });
+
+  const { goTo } = useNavigation();
 
   return (
     <section className="relative flex flex-col items-start justify-center w-full min-h-screen gap-8 md:gap-10 md:items-center">
@@ -34,12 +38,16 @@ export function StatsImpacts() {
       </div>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
       >
         <Link
-          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-20 overflow-hidden font-medium transition-colors ease-in-out rounded-full dark:hover:text-background hover:outline-none duration-1200 group font-display outline outline-foreground/70 active:bg-primary"
+          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-20 overflow-hidden font-medium transition-colors ease-in-out rounded-full hover:text-primary-foreground hover:outline-transparent duration-1200 group font-display outline outline-foreground/70 active:bg-primary active:opacity-70"
           href="/projects"
+          onClick={(e) => {
+            e.preventDefault();
+            handleWait(() => goTo({ href: '/projects' }), 300);
+          }}
         >
           <span className="relative z-5">Go to projects</span>
           <MoveRight className="relative z-5" />

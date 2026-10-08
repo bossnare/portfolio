@@ -1,8 +1,12 @@
+'use client';
+
 import { stacks } from '@/src/data/stacks';
 import { stats } from '@/src/data/stats';
 import { MoveRight, Send } from 'lucide-react';
 import Link from 'next/link';
 import { MaskedIcon } from '../MaskedIcon';
+import { handleWait } from '@/src/utils/handle-wait';
+import { useNavigation } from '@/src/hooks/use-navigation';
 
 function HeroIntroduction() {
   return (
@@ -23,18 +27,28 @@ function HeroIntroduction() {
 }
 
 function HeroActions() {
+  const { goTo } = useNavigation();
+
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
       <Link
-        className="flex h-11 items-center justify-center w-auto gap-2 rounded-md bg-primary px-4 text-primary-foreground transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc]"
+        className="flex items-center justify-center w-auto gap-2 px-4 transition-colors rounded-md h-11 active:opacity-70 bg-primary text-primary-foreground hover:brightness-110"
         href="/projects"
+        onClick={(e) => {
+          e.preventDefault();
+          handleWait(() => goTo({ href: '/projects' }), 300);
+        }}
       >
-        View my projects
+        View my works
         <MoveRight />
       </Link>
       <Link
-        className="flex h-11 w-auto items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent hover:bg-black/4 dark:hover:bg-[#1a1a1a]"
+        className="flex h-11 w-auto active:opacity-70 items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent hover:bg-black/4 active:bg-black/4 dark:active:bg-[#1a1a1a] dark:hover:bg-[#1a1a1a]"
         href="/contact"
+        onClick={(e) => {
+          e.preventDefault();
+          handleWait(() => goTo({ href: '/contact' }), 300);
+        }}
       >
         Get in touch
         <Send className="size-5" />

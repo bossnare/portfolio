@@ -19,7 +19,7 @@ export default function ContactPage() {
       <ul className="grid w-full grid-cols-1 gap-6 mt-4 divide-y bg-background dark:bg-transparent md:m-0 md:grid-cols-3 md:divide-x md:divide-y-0 divide-border">
         {contacts.map((contact) => (
           <li key={contact.name}>
-            <ContactCard {...contact} />
+            <ContactCard contact={contact} />
           </li>
         ))}
       </ul>
