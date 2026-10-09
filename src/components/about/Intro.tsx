@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { intro } from '@/src/data/abouts';
 
 export const Intro = () => {
   return (
@@ -9,13 +10,12 @@ export const Intro = () => {
       <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-border">
         <div className="pb-6">
           <p className="max-w-2xl leading-6 text-muted-foreground">
-            Full-stack developer creating scalable products, polished
-            interfaces, and reliable experiences from concept to launch.
+            {intro.description}
           </p>
         </div>
-        <div className="flex md:w-[70%] items-center gap-6">
+        <div className="flex md:w-[70%] items-center flex-wrap md:flex-nowrap gap-6">
           <Image
-            src="/icon/icon.svg"
+            src={`/icon/${intro.letsgochris.image}`}
             alt="logo-icon"
             width={300}
             height={300}
@@ -23,20 +23,22 @@ export const Intro = () => {
           />
           <span className="h-12 border-l border-border/70" />
           <div className="md:w-[70%] flex flex-col justify-between gap-6">
-            <div className="flex flex-col gap-2">
-              <span className="text-sm text-muted-foreground">Company</span>
-              <span className="font-semibold uppercase font-display">
-                Let&apos;s go chris
-              </span>
-            </div>
-            <div className="flex flex-col gap-2">
-              <span className="text-sm text-muted-foreground">Founded</span>
-              <span>September 23, 2026 | 23/09/2026</span>
-            </div>
+            {intro.letsgochris.info.map((info) => (
+              <div key={info.value} className="flex flex-col gap-2">
+                <span className="text-sm text-muted-foreground">
+                  {info.label}
+                </span>
+                <span className={`font-${info.font}`}>{info.value}</span>
+              </div>
+            ))}
+          </div>
+          <span className="h-12 border-l border-border/70" />
+          <div className="max-w-lg">
+            <span className="font-display">{intro.letsgochris.name}</span>{' '}
+            {intro.letsgochris.description}
           </div>
         </div>
       </div>
-      <div className="border-t border-border/70"></div>
     </section>
   );
 };
