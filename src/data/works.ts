@@ -1,6 +1,6 @@
 import { Music, GlobeCheck, FolderKanban } from 'lucide-react';
 
-export const projects = [
+export const works = [
   {
     type: 'Music platform',
     name: 'MelodayzMusic',
@@ -26,3 +26,5 @@ export const projects = [
     color: '#55D5D0',
   },
 ];
+
+export type Work = (typeof works)[number]

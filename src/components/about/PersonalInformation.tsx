@@ -11,9 +11,7 @@ export const PersonalInformation = () => {
           {personalInfo.name.map((nameInfo) => (
             <div key={nameInfo.label} className="flex flex-col gap-3">
               <span className="text-muted-foreground">{nameInfo.label}</span>
-              <span className="text-lg font-medium md:text-xl">
-                {nameInfo.value}
-              </span>
+              <span className="font-medium md:text-xl">{nameInfo.value}</span>
             </div>
           ))}
         </div>

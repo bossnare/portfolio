@@ -1,16 +1,16 @@
-import { projects } from '@/src/data/projects';
 import { ChevronRight } from 'lucide-react';
 import {
   Section,
-  SectionHeader,
-  SectionTitle,
-  SectionParagraphe,
   SectionContent,
+  SectionHeader,
   SectionLinkButton,
+  SectionParagraphe,
+  SectionTitle,
 } from '../Section';
+import { works } from '@/src/data/works';
 import { ProjectCard } from './ProjectCard';
 
-export function FeaturedProjects() {
+export function FeaturedWorks() {
   return (
     <Section id="featured-projects" className="flex flex-col gap-8">
       <SectionHeader>
@@ -21,14 +21,14 @@ export function FeaturedProjects() {
             brought to life.
           </SectionParagraphe>
         </SectionContent>
-        <SectionLinkButton href="/projects">
+        <SectionLinkButton href="/works">
           View all projects
           <ChevronRight className="size-5" />
         </SectionLinkButton>
       </SectionHeader>
       <div className="grid gap-4 md:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.type} project={project} />
+        {works.map((work) => (
+          <ProjectCard key={work.type} work={work} />
         ))}
       </div>
     </Section>

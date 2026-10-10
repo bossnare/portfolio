@@ -1,13 +1,13 @@
 'use client';
 
 import { stats } from '@/src/data/stats';
-import { Counter } from './Counter';
-import Link from 'next/link';
-import { useReveal } from '@/src/hooks/use-reveal';
-import { motion } from 'motion/react';
-import { MoveRight } from 'lucide-react';
-import { handleWait } from '@/src/utils/handle-wait';
 import { useNavigation } from '@/src/hooks/use-navigation';
+import { useReveal } from '@/src/hooks/use-reveal';
+import { handleWait } from '@/src/utils/handle-wait';
+import { MoveRight } from 'lucide-react';
+import { motion } from 'motion/react';
+import Link from 'next/link';
+import { Counter } from './Counter';
 
 export function StatsImpacts() {
   const { ref, isInView } = useReveal<HTMLDivElement>({
@@ -43,10 +43,10 @@ export function StatsImpacts() {
       >
         <Link
           className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-20 overflow-hidden font-medium transition-colors duration-300 ease-in-out rounded-full hover:text-primary-foreground hover:outline-transparent sm:duration-1200 group font-display outline outline-foreground/70 active:bg-primary active:opacity-70"
-          href="/projects"
+          href="/works"
           onClick={(e) => {
             e.preventDefault();
-            handleWait(() => goTo({ href: '/projects' }), 500);
+            handleWait(() => goTo({ href: '/works' }), 500);
           }}
         >
           <span className="relative z-5">Go to projects</span>
