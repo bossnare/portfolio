@@ -88,9 +88,9 @@ button {
   }
 }
 
-/* @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .typewriter {
     animation: none;
     width: 18ch;
   }
-} */
+}
