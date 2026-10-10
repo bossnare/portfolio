@@ -20,7 +20,7 @@ export function LanguageSwitch() {
           className={cn(
             lng === language.lng
               ? 'text-primary-foreground bg-primary font-medium'
-              : 'text-muted-foreground hover:bg-black/4 dark:hover:bg-[#1a1a1a] active:opacity-60'
+              : 'text-muted-foreground hover:bg-black/4 hover:text-foreground dark:hover:bg-[#1a1a1a] active:opacity-60'
           )}
         >
           {language.label}
