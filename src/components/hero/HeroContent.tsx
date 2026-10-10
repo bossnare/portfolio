@@ -12,12 +12,14 @@ function HeroIntroduction() {
   return (
     <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
       <p className="uppercase text-muted-foreground">Hi, I&apos;m...</p>
-      <h1 className="max-w-xl text-lg text-black dark:text-zinc-50">
-        <span className="font-sans">Christo Razafimanga</span>
+      <h1 className="max-w-xl text-black dark:text-zinc-50">
+        <span className="uppercase border-r animate-typewriter [word-spacing:0.3rem]">
+          Christo Razafimanga
+        </span>
       </h1>
-      <p className="max-w-xl text-3xl font-medium leading-10 md:text-3xl font-display">
-        Full-stack developer creating scalable products, polished interfaces,
-        and{' '}
+      <p className="max-w-xl text-3xl font-medium leading-10 md:text-4xl font-display">
+        Full-stack developer & Designer creating scalable products, polished
+        interfaces, and{' '}
         <span className="text-muted-foreground">
           reliable experiences from concept to launch.
         </span>
@@ -72,21 +74,26 @@ function HeroActions() {
 
 function Technologies() {
   return (
-    <div className="flex flex-col items-center md:items-start">
+    <div className="flex flex-col items-center w-full overflow-hidden md:items-start">
       <span className="uppercase text-muted-foreground font-display">
-        Technologies
+        Technologies & Tools
       </span>
-      <ul className="flex items-center gap-4 mt-4">
-        {stacks.map((stack) => (
-          <li
-            title={stack.name}
-            key={stack.name}
-            className="p-2 rounded-md bg-background"
-          >
-            <MaskedIcon icon={stack.icon} className="size-6" />
-          </li>
-        ))}
-      </ul>
+      <div className="overflow-hidden w-full md:w-[85%] mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <ul className="flex items-center gap-4 mt-4 w-max animate-marquee">
+          {[...stacks, ...stacks].map((stack, index) => (
+            <li
+              title={stack.name}
+              key={`${stack}-${index}`}
+              className="p-2 rounded-md bg-background"
+            >
+              <MaskedIcon
+                icon={stack.icon}
+                className="size-6 bg-muted-foreground"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

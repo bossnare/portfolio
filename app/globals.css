@@ -53,18 +53,28 @@ button {
     width: 0;
   }
   to {
-    width: 11ch;
+    width: 18ch;
   }
 }
 
-.typewriter {
+.animate-typewriter {
   display: inline-block;
-  width: 11ch;
+  width: 18ch;
   overflow: hidden;
   white-space: nowrap;
   animation:
-    typewriter 1.4s steps(13, end) both,
+    typewriter 1.4s steps(18, end) both,
     typewriter-cursor 0.75s steps(1, end) infinite;
+}
+
+.animate-marquee {
+  animation: animate-marquee 25s linear infinite;
+}
+
+@keyframes animate-marquee {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes typewriter-cursor {
@@ -81,6 +91,6 @@ button {
 @media (prefers-reduced-motion: reduce) {
   .typewriter {
     animation: none;
-    width: 11ch;
+    width: 18ch;
   }
 }
