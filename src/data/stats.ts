@@ -1,7 +1,7 @@
 export const stats = [
   {
     label: 'Years of experience',
-    value: 1,
+    value: 2,
     suffix: '+',
     description: 'Years spent building and refering real-word projects.',
   },
@@ -13,7 +13,7 @@ export const stats = [
   },
   {
     label: 'Satisfied clients',
-    value: 2,
+    value: 3,
     suffix: '+',
     description: 'Clients who trusted the work and valued the results.',
   },
