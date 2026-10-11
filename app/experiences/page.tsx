@@ -63,7 +63,7 @@ const experiences = [
 
 export default function ExperiencesPage() {
   return (
-    <Page id="experiences-page" className="space-y-8 pb-12">
+    <Page id="experiences-page" className="pb-12 space-y-8">
       <PageHeader
         title="Experiences"
         description="I design and build digital experiences at the intersection of strategy, interface design, and modern web development."
@@ -73,9 +73,9 @@ export default function ExperiencesPage() {
         {expertise.map(({ title, description, icon: Icon }) => (
           <article
             key={title}
-            className="rounded-2xl border border-border bg-background/80 p-5 shadow-sm"
+            className="p-5 border shadow-sm rounded-xl border-border bg-background/80"
           >
-            <div className="mb-4 inline-flex rounded-xl border border-border bg-muted/60 p-2.5">
+            <div className="mb-4 inline-flex rounded-lg border border-border bg-muted/60 p-2.5">
               <Icon className="size-5 text-foreground" />
             </div>
             <h2 className="mb-2 text-lg font-semibold text-foreground">
@@ -92,7 +92,7 @@ export default function ExperiencesPage() {
         {experiences.map((item) => (
           <article
             key={item.role}
-            className="grid gap-5 rounded-2xl border border-border bg-background/80 p-5 md:grid-cols-[160px_1fr] md:p-6"
+            className="grid gap-5 rounded-xl border border-border bg-background/80 p-5 md:grid-cols-[160px_1fr] md:p-6"
           >
             <div className="text-sm font-medium text-muted-foreground">
               {item.period}
@@ -122,7 +122,7 @@ export default function ExperiencesPage() {
                 {item.highlights.map((highlight) => (
                   <li
                     key={highlight}
-                    className="rounded-full border border-border bg-muted/60 px-3 py-1 text-xs text-foreground"
+                    className="px-3 py-1 text-xs border rounded-full border-border bg-muted/60 text-foreground"
                   >
                     {highlight}
                   </li>
@@ -133,7 +133,7 @@ export default function ExperiencesPage() {
         ))}
       </section>
 
-      <div className="flex items-center justify-between gap-4 rounded-2xl border border-border bg-gradient-to-r from-muted/70 to-transparent p-5">
+      <div className="flex items-center justify-between gap-4 p-5 border rounded-xl border-border bg-linear-to-r from-muted/70 to-transparent">
         <div>
           <p className="text-sm uppercase tracking-[0.12em] text-muted-foreground">
             Current focus
@@ -144,7 +144,7 @@ export default function ExperiencesPage() {
         </div>
         <a
           href="/contact"
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-foreground px-4 py-2 text-sm font-medium text-background transition hover:opacity-90"
+          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium transition border rounded-full border-border bg-foreground text-background hover:opacity-90"
         >
           Let&apos;s talk
           <ArrowUpRight className="size-4" />

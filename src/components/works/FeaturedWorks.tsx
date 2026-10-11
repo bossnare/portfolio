@@ -15,19 +15,19 @@ export function FeaturedWorks() {
     <Section id="featured-projects" className="flex flex-col gap-8">
       <SectionHeader>
         <SectionContent>
-          <SectionTitle>Featured projects</SectionTitle>
+          <SectionTitle>Featured works</SectionTitle>
           <SectionParagraphe>
             A curated selection of projects I&apos;ve built, explored, and
             brought to life.
           </SectionParagraphe>
         </SectionContent>
         <SectionLinkButton href="/works">
-          View all projects
+          View all works
           <ChevronRight className="size-5" />
         </SectionLinkButton>
       </SectionHeader>
       <div className="grid gap-4 md:grid-cols-3">
-        {works.map((work) => (
+        {works.slice(0, 3).map((work) => (
           <ProjectCard key={work.type} work={work} />
         ))}
       </div>

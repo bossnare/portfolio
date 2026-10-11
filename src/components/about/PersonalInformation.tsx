@@ -7,7 +7,7 @@ export const PersonalInformation = () => {
       <span className="absolute top-0 w-1/4 border-t border-border" />
 
       <h3 className="max-w-md text-3xl">Personal Information</h3>
-      <div className="flex flex-col justify-center gap-8 p-4 border divide-y md:items-center rounded-xl md:divide-x md:divide-y-0 md:flex-row divide-border border-border">
+      <div className="flex flex-col justify-center gap-8 p-4 border divide-y bg-background md:items-center rounded-xl md:divide-x md:divide-y-0 md:flex-row divide-border border-border">
         <Image
           src="/images/id_photo.jpg"
           alt="id_photo"

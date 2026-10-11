@@ -12,7 +12,7 @@ export function AboutMe() {
   return (
     <Section
       id="about"
-      className="flex flex-col gap-8 pb-8 border-b border-zinc-300 dark:border-white/12"
+      className="flex flex-col gap-8 border-b border-zinc-300 dark:border-white/12"
     >
       <SectionHeader>
         <SectionContent>
