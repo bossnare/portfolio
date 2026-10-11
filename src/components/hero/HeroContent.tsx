@@ -47,7 +47,7 @@ function HeroActions() {
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
       <Link
-        className="flex items-center justify-center w-auto h-10 gap-2 px-4 transition-colors rounded-md active:opacity-70 bg-primary text-primary-foreground hover:brightness-110 active:brightness-120"
+        className="flex items-center justify-center w-auto h-11 gap-2 px-4 transition-colors rounded-md active:opacity-70 bg-primary text-primary-foreground hover:brightness-110 active:brightness-120"
         href="/works"
         onClick={(e) => {
           e.preventDefault();
@@ -58,7 +58,7 @@ function HeroActions() {
         <ChevronRight />
       </Link>
       <Link
-        className="flex h-10 w-auto active:opacity-70 items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent hover:bg-black/4 active:bg-black/4 dark:active:bg-[#1a1a1a] dark:hover:bg-[#1a1a1a]"
+        className="flex h-11 w-auto active:opacity-70 items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent hover:bg-black/4 active:bg-black/4 dark:active:bg-[#1a1a1a] dark:hover:bg-[#1a1a1a]"
         href="/contact"
         onClick={(e) => {
           e.preventDefault();
@@ -84,7 +84,7 @@ function Technologies() {
             <li
               title={stack.name}
               key={`${stack}-${index}`}
-              className="p-2 rounded-md bg-background"
+              className="p-2 rounded-md bg-muted/50"
             >
               <MaskedIcon
                 icon={stack.icon}

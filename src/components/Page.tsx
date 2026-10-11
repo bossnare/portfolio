@@ -30,7 +30,7 @@ export function PageHeader({
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.9, ease: "easeInOut" }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
       className="space-y-4"
     >
       <h1 className="px-2 border rounded-sm w-fit border-border text-muted-foreground">

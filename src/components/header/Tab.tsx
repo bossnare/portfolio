@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useActivePath } from '../../hooks/useActivePath';
 import { cn } from '../../lib/utils';
+import { motion } from 'motion/react';
+
 
 export const tabs = [
   { label: 'Home', href: '/' },
@@ -10,7 +12,7 @@ export const tabs = [
   { label: 'Contact', href: '/contact' },
 ];
 
-export function Tab({ href = '#', label }: { href?: string; label?: string }) {
+export function Tab({ href = '#', label, dir = 1 }: { href?: string; label?: string; dir?: number }) {
   const isActive = useActivePath(href);
 
   return (
@@ -27,7 +29,11 @@ export function Tab({ href = '#', label }: { href?: string; label?: string }) {
           {label}
         </span>
         {isActive && (
-          <span className="absolute hidden md:block w-1/3 h-0.75 rounded-full -bottom-2 bg-primary"></span>
+          <motion.span
+          initial={{ opacity: 0, x: dir > 0 ? -20 : 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="absolute hidden md:block w-1/3 h-0.75 rounded-full -bottom-2 bg-primary"></motion.span>
         )}
       </Link>
     </>
