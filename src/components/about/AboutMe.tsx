@@ -30,7 +30,7 @@ export function AboutMe() {
       <div className="max-w-4xl">
         I&apos;m web developer focused on building modern, scalable web
         applications with{' '}
-        <span className="font-medium text-black bg-primary">
+        <span className="bg-linear-to-r from-muted to-transparent">
           TypeScript, Next.js, and NestJS
         </span>
         . I enjoy turning ideas and business needs into clean, reliable digital
