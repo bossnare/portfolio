@@ -32,7 +32,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         <span className="text-sm">View work</span>
         <a
           href="#"
-          className="flex items-center self-start gap-3 hover:text-foreground hover:bg-black/4 p-4 rounded-full dark:hover:bg-[#1a1a1a]"
+          className="flex items-center self-start gap-3 hover:text-foreground active;text-foreground hover:bg-black/4 p-4 rounded-full dark:hover:bg-[#1a1a1a]"
         >
           <MoveRight className="size-4" />
         </a>

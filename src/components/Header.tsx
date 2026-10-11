@@ -2,15 +2,33 @@
 
 import { Download, Menu, X } from 'lucide-react';
 import { motion } from 'motion/react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { handleWait } from '../utils/handle-wait';
 import { Tab, tabs } from './header/Tab';
 import { LanguageSwitch } from './header/LanguageSwitch';
+import { usePathname } from 'next/navigation';
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleTogleOpenMenu = () => setIsOpenMenu((prev) => !prev);
+
+  const pathname = usePathname();
+
+  const currentIndex = tabs.findIndex(
+    (tab) => tab.href === pathname
+  );
+
+  const previousIndexRef = useRef(currentIndex);
+
+  const direction =
+    currentIndex >= previousIndexRef.current ? 1 : -1;
+
+  useEffect(() => {
+    if (currentIndex !== -1) {
+      previousIndexRef.current = currentIndex;
+    }
+  }, [currentIndex]);
 
   return (
     <header className="sticky w-full top-0 z-1000 bg-[#F5F5F3] dark:bg-black">
@@ -24,7 +42,7 @@ export function Header() {
         <ul className="items-center hidden gap-10 tracking-tight lg:flex">
           {tabs.map((tab) => (
             <li key={tab.label}>
-              <Tab label={tab.label} href={tab.href} />
+              <Tab label={tab.label} href={tab.href} dir={direction} />
             </li>
           ))}
         </ul>
@@ -72,7 +90,7 @@ export function Header() {
             ))}
           </ul>
           <a
-            className="flex h-10 mt-5 items-center justify-center font-medium gap-2 rounded-lg px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc]"
+            className="flex h-11 mt-5 items-center justify-center font-medium gap-2 rounded-lg px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc]"
             href="/cv/Christo_Razafimanga_Dev_CV.pdf"
             download
           >
