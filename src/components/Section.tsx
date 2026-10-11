@@ -7,7 +7,7 @@ export function Section({ className, children, ...props }: SectionProps) {
   return (
     <section
       className={cn(
-        'mx-auto w-full md:max-w-[94%] px-5 md:px-4 dark:bg-black pt-12',
+        'mx-auto w-full md:max-w-[94%] px-5 md:px-4 dark:bg-black pt-12 pb-8',
         className
       )}
       {...props}
@@ -30,7 +30,7 @@ export function SectionContent({ children }: { children: React.ReactNode }) {
 }
 
 export function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-3xl font-semibold">{children}</h3>;
+  return <h3 className="text-3xl font-medium">{children}</h3>;
 }
 
 export function SectionParagraphe({ children }: { children: React.ReactNode }) {

@@ -11,7 +11,7 @@ export const Intro = () => {
         <div className="pb-6 pr-6">
           <p className="max-w-2xl leading-6">{intro.description}</p>
         </div>
-        <div className="flex md:w-[70%] items-center gap-6">
+        <div className="flex md:w-[70%] items-center gap-8">
           <Image
             src={`/icon/${intro.letsgochris.image}`}
             alt="logo-icon"

@@ -1,6 +1,7 @@
 import { Page, PageHeader } from '@/src/components/Page';
+import { ProjectCard } from '@/src/components/works/ProjectCard';
 import { works } from '@/src/data/works';
-import { ArrowUpRight, FolderKanban, Layers3, Sparkles } from 'lucide-react';
+import { FolderKanban, Layers3, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const summaryStats = [
-  { value: '03', label: 'Selected projects' },
+  { value: '04', label: 'Selected projects' },
   { value: '08+', label: 'Design iterations' },
   { value: '100%', label: 'Care and detail' },
 ];
@@ -36,7 +37,7 @@ const process = [
 
 export default function WorksPage() {
   return (
-    <Page id="works-page" className="space-y-8 pb-12">
+    <Page id="works-page" className="pb-12 space-y-8">
       <PageHeader
         title="Works"
         description="A collection of product ideas, web experiences, and design-driven projects built with clarity and purpose."
@@ -46,7 +47,7 @@ export default function WorksPage() {
         {summaryStats.map((item) => (
           <div
             key={item.label}
-            className="rounded-2xl border border-border bg-background/80 p-5 shadow-sm"
+            className="p-5 border shadow-sm rounded-xl border-border bg-background/80"
           >
             <p className="text-3xl font-semibold text-foreground font-display">
               {item.value}
@@ -56,8 +57,8 @@ export default function WorksPage() {
         ))}
       </section>
 
-      <section className="rounded-2xl border border-border bg-background/80 p-5 md:p-6">
-        <div className="mb-5 flex items-center justify-between gap-4">
+      <section className="p-5 border rounded-2xl border-border bg-background/80 md:p-6">
+        <div className="flex items-center justify-between gap-4 mb-5">
           <div>
             <p className="text-sm uppercase tracking-[0.12em] text-muted-foreground">
               Method
@@ -72,7 +73,7 @@ export default function WorksPage() {
           {process.map(({ title, description, icon: Icon }) => (
             <div
               key={title}
-              className="rounded-xl border border-border bg-muted/40 p-4"
+              className="p-4 border rounded-lg border-border bg-muted/40"
             >
               <div className="mb-3 inline-flex rounded-lg border border-border bg-background p-2.5">
                 <Icon className="size-5 text-foreground" />
@@ -100,47 +101,9 @@ export default function WorksPage() {
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {works.map((work) => {
-            const Icon = work.icon;
-
             return (
-              <article
-                key={work.name}
-                style={{ borderColor: work.color }}
-                className="flex h-full flex-col gap-4 rounded-2xl border bg-background/80 p-5 shadow-sm"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div
-                    style={{ backgroundColor: `${work.color}1a` }}
-                    className="inline-flex rounded-xl p-3"
-                  >
-                    <Icon style={{ color: work.color }} className="size-6" />
-                  </div>
-                  <span className="text-xs uppercase tracking-[0.12em] text-muted-foreground">
-                    {work.type}
-                  </span>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-foreground">
-                    {work.name}
-                  </h3>
-                  <p className="text-sm leading-6 text-muted-foreground">
-                    {work.description}
-                  </p>
-                </div>
-
-                <div className="mt-auto flex items-center justify-between border-t border-border pt-4 text-sm">
-                  <span className="text-muted-foreground">
-                    Explore case study
-                  </span>
-                  <a
-                    href="/contact"
-                    className="inline-flex items-center gap-2 text-foreground hover:opacity-80"
-                  >
-                    View
-                    <ArrowUpRight className="size-4" />
-                  </a>
-                </div>
+              <article key={work.name}>
+                <ProjectCard work={work} />
               </article>
             );
           })}
