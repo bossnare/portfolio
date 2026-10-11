@@ -9,7 +9,7 @@ export function ProjectCard({ work }: WorkCardProps) {
   const Icon = work.icon;
 
   return (
-    <div className="flex flex-col h-full gap-8 p-8 border rounded-md shadow-xs border-border/40 bg-background dark:bg-background">
+    <div className="flex flex-col h-full gap-8 p-8 border rounded-md shadow-xs border-border/60 bg-background dark:bg-background">
       <div className="flex gap-5">
         <span
           style={{ background: `${work.color}1a` }}
