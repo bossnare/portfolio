@@ -73,7 +73,7 @@ export default function WorksPage() {
           {process.map(({ title, description, icon: Icon }) => (
             <div
               key={title}
-              className="p-4 border rounded-lg border-border bg-muted/40"
+              className="p-4 border rounded-lg border-border bg-muted/60"
             >
               <div className="mb-3 inline-flex rounded-lg border border-border bg-background p-2.5">
                 <Icon className="size-5 text-foreground" />

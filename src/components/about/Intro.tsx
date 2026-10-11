@@ -11,7 +11,7 @@ export const Intro = () => {
         <div className="pb-6 pr-6">
           <p className="max-w-2xl leading-6">{intro.description}</p>
         </div>
-        <div className="flex md:w-[70%] items-center gap-8">
+        <div className="flex md:w-[70%] items-start md:items-center gap-8">
           <Image
             src={`/icon/${intro.letsgochris.image}`}
             alt="logo-icon"
@@ -20,7 +20,7 @@ export const Intro = () => {
             className="h-auto w-35 dark:invert"
           />
           <div className="flex flex-col gap-4">
-            <div className="flex gap-6">
+            <div className="flex flex-col md:flex-row gap-6">
               {intro.letsgochris.info.map((info) => (
                 <div key={info.value} className="flex flex-col gap-2">
                   <span className="text-sm text-muted-foreground">

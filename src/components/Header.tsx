@@ -58,11 +58,11 @@ export function Header() {
           transition={{ duration: 0.5 }}
           className="flex flex-col gap-3 px-5 py-8 border-t border-b bg-background border-border md:hidden"
         >
-          <ul className="flex flex-col items-start gap-4">
+          <ul className="flex flex-col items-start gap-5">
             {tabs.map((tab, i) => (
               <motion.li
-                initial={{ opacity: 0, x: -40 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: (i + 1) * 0.09 }}
                 onClick={() => handleWait(handleTogleOpenMenu, 150)}
                 key={tab.label}
@@ -71,6 +71,14 @@ export function Header() {
               </motion.li>
             ))}
           </ul>
+          <a
+            className="flex h-10 mt-5 items-center justify-center font-medium gap-2 rounded-lg px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc]"
+            href="/cv/Christo_Razafimanga_Dev_CV.pdf"
+            download
+          >
+            Download CV
+            <Download className="size-5" />
+          </a>
         </motion.nav>
       )}
     </header>
