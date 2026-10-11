@@ -48,7 +48,7 @@ export default function WorksPage() {
             key={item.label}
             className="rounded-2xl border border-border bg-background/80 p-5 shadow-sm"
           >
-            <p className="text-3xl font-semibold text-foreground">
+            <p className="text-3xl font-semibold text-foreground font-display">
               {item.value}
             </p>
             <p className="mt-2 text-sm text-muted-foreground">{item.label}</p>
