@@ -51,7 +51,6 @@ export function HeroVisual() {
       <div className="absolute z-20 rounded-full bottom-50 right-14 md:bottom-80 md:right-38">
         <Plus className="size-5" />
       </div>
-      <Availability className="absolute right-0 z-16 bottom-4" />
     </div>
   );
 }
