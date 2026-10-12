@@ -7,11 +7,13 @@ import { handleWait } from '@/src/utils/handle-wait';
 import { ChevronRight, Send } from 'lucide-react';
 import Link from 'next/link';
 import { MaskedIcon } from '../MaskedIcon';
+import { Availability } from './Availability';
 
 function HeroIntroduction() {
   return (
     <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
-      <p className="uppercase text-muted-foreground">Hi, I&apos;m...</p>
+      <Availability />
+      {/* <p className="uppercase text-muted-foreground">Hi, I&apos;m...</p> */}
       <h1 className="max-w-xl text-black dark:text-zinc-50">
         <span className="uppercase border-r animate-typewriter [word-spacing:0.3rem]">
           Christo Razafimanga

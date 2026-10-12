@@ -8,6 +8,7 @@ import { MoveRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import { Counter } from './Counter';
+import { Availability } from '../hero/Availability';
 
 export function StatsImpacts() {
   const { ref, isInView } = useReveal<HTMLDivElement>({
@@ -36,13 +37,14 @@ export function StatsImpacts() {
           </div>
         ))}
       </div>
+      <Availability className="mt-10" />
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
       >
         <Link
-          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-20 overflow-hidden font-medium transition-colors duration-300 ease-in-out rounded-full hover:text-background hover:outline-transparent active:text-background sm:duration-1200 group font-display outline outline-foreground/70 active:opacity-70"
+          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-10 overflow-hidden font-medium transition-colors duration-300 ease-in-out rounded-full hover:text-background hover:outline-transparent active:text-background sm:duration-1200 group font-display outline outline-foreground/70 active:opacity-70"
           href="/works"
           onClick={(e) => {
             e.preventDefault();
