@@ -14,6 +14,7 @@ export default function AboutPage() {
     <Page id="about-page">
       <PageHeader
         title="About"
+        endTitle="me"
         description="A little bit about me and what I do, highlighting the skills, and expertise I bring to every digital experience I create."
       />
       <Intro />

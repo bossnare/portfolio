@@ -12,6 +12,7 @@ export default function ContactPage() {
   return (
     <Page id="contact-page">
       <PageHeader
+        startTitle="my"
         title="Contact"
         description="Here are my contact details if you'd like to discuss a project,
           collaboration, or professional opportunity."

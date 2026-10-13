@@ -65,7 +65,8 @@ export default function ExperiencesPage() {
   return (
     <Page id="experiences-page" className="pb-12 space-y-8">
       <PageHeader
-        title="Experiences"
+        startTitle="my"
+        title="experience"
         description="I design and build digital experiences at the intersection of strategy, interface design, and modern web development."
       />
 
@@ -73,9 +74,9 @@ export default function ExperiencesPage() {
         {expertise.map(({ title, description, icon: Icon }) => (
           <article
             key={title}
-            className="p-5 border shadow-sm rounded-xl border-border bg-background/80"
+            className="p-5 border shadow-sm rounded-lg border-border bg-background/80"
           >
-            <div className="mb-4 inline-flex rounded-lg border border-border bg-muted/60 p-2.5">
+            <div className="mb-4 inline-flex rounded-md border border-border bg-muted/60 p-2.5">
               <Icon className="size-5 text-foreground" />
             </div>
             <h2 className="mb-2 text-lg font-semibold text-foreground">
@@ -92,7 +93,7 @@ export default function ExperiencesPage() {
         {experiences.map((item) => (
           <article
             key={item.role}
-            className="grid gap-5 rounded-xl border border-border bg-background/80 p-5 md:grid-cols-[160px_1fr] md:p-6"
+            className="grid gap-5 rounded-lg border border-border bg-background/80 p-5 md:grid-cols-[160px_1fr] md:p-6"
           >
             <div className="text-sm font-medium text-muted-foreground">
               {item.period}
@@ -133,7 +134,7 @@ export default function ExperiencesPage() {
         ))}
       </section>
 
-      <div className="flex items-center justify-between gap-4 p-5 border rounded-xl border-border bg-linear-to-r from-muted/70 to-transparent">
+      <div className="flex items-center justify-between gap-4 p-5 border rounded-lg border-border bg-linear-to-r from-muted/70 to-transparent">
         <div>
           <p className="text-sm uppercase tracking-[0.12em] text-muted-foreground">
             Current focus

@@ -20,9 +20,13 @@ export const Page = ({ className, children, ...props }: PageProps) => {
 };
 
 export function PageHeader({
-  title = 'Title',
-  description = 'Here is the description',
+  startTitle = '',
+  endTitle = '',
+  title = '',
+  description = '',
 }: {
+  startTitle?: string;
+  endTitle?: string;
   title?: string;
   description?: string;
 }) {
@@ -30,13 +34,18 @@ export function PageHeader({
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="space-y-4"
+      transition={{ duration: 0.6, ease: 'easeInOut' }}
+      className="pb-4 space-y-6"
     >
-      <h1 className="px-2 border rounded-sm w-fit border-border text-muted-foreground">
+      {/* <h1 className="px-2 border rounded-sm w-fit border-border text-muted-foreground">
         {title}
+      </h1> */}
+      <h1 className="text-4xl capitalize w-fit text-muted-foreground">
+        <span className="text-foreground">{startTitle} </span>
+        <span>{title} </span>
+        <span className="text-foreground">{endTitle}</span>
       </h1>
-      <p className="max-w-2xl text-2xl font-medium leading-8 font-display">
+      <p className="max-w-2xl text-3xl leading-10 font-display">
         {description}
       </p>
     </motion.div>

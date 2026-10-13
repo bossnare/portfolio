@@ -15,14 +15,11 @@ export function Header() {
 
   const pathname = usePathname();
 
-  const currentIndex = tabs.findIndex(
-    (tab) => tab.href === pathname
-  );
+  const currentIndex = tabs.findIndex((tab) => tab.href === pathname);
 
   const previousIndexRef = useRef(currentIndex);
 
-  const direction =
-    currentIndex >= previousIndexRef.current ? 1 : -1;
+  const direction = currentIndex >= previousIndexRef.current ? 1 : -1;
 
   useEffect(() => {
     if (currentIndex !== -1) {
@@ -48,7 +45,7 @@ export function Header() {
         </ul>
         <div className="flex items-center gap-3">
           <a
-            className="hidden lg:flex h-8 items-center justify-center gap-2 rounded-md px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc] font-medium"
+            className="hidden lg:flex h-8 items-center justify-center gap-2 rounded-sm px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc] font-medium"
             href="/cv/Christo_Razafimanga_Dev_CV.pdf"
             download
           >

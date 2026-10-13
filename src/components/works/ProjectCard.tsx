@@ -9,8 +9,8 @@ export function ProjectCard({ work }: WorkCardProps) {
   const Icon = work.icon;
 
   return (
-    <div className="flex flex-col h-full gap-8 p-8 border rounded-md shadow-xs cursor-pointer hover:bg-muted/40! active:bg-muted! border-border/60 bg-background dark:bg-background">
-      <div className="flex gap-5">
+    <div className="flex flex-col h-full p-8 border rounded-lg shadow-xs has-[.content:hover]:bg-muted/40! has-[.content:hover]:border-border! transition has-[&_.content:active]:bg-muted! border-border/60 bg-background">
+      <div className="flex gap-5 pb-8 cursor-pointer grow content">
         <span
           style={{ background: `${work.color}1a` }}
           className="self-start p-3 rounded-full shrink-0"
@@ -23,12 +23,12 @@ export function ProjectCard({ work }: WorkCardProps) {
           </span>
           <span className="text-2xl capitalize font-display">{work.name}</span>
           <span style={{ borderColor: work.color }} className="w-6 border-t" />
-          <span className="text-muted-foreground font-medium text-[15px] leading-7 line-clamp-3">
+          <span className="text-sm font-medium leading-7 text-[15px] text-muted-foreground line-clamp-3">
             {work.description}
           </span>
         </div>
       </div>
-      <div className="flex items-center justify-between mt-auto text-muted-foreground">
+      <div className="flex items-center justify-between pt-2 mt-auto border-t border-border/60 text-muted-foreground">
         <span className="text-sm">View work</span>
         <a
           href="#"

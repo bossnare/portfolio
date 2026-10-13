@@ -39,7 +39,8 @@ export default function WorksPage() {
   return (
     <Page id="works-page" className="pb-12 space-y-8">
       <PageHeader
-        title="Works"
+        startTitle="my"
+        title="works"
         description="A collection of product ideas, web experiences, and design-driven projects built with clarity and purpose."
       />
 
@@ -47,7 +48,7 @@ export default function WorksPage() {
         {summaryStats.map((item) => (
           <div
             key={item.label}
-            className="p-5 border shadow-sm rounded-xl border-border bg-background/80"
+            className="p-5 border rounded-lg shadow-sm border-border bg-background/80"
           >
             <p className="text-3xl font-semibold text-foreground font-display">
               {item.value}
@@ -57,7 +58,7 @@ export default function WorksPage() {
         ))}
       </section>
 
-      <section className="p-5 border rounded-2xl border-border bg-background/80 md:p-6">
+      <section className="p-5 border rounded-lg border-border bg-background/80 md:p-6">
         <div className="flex items-center justify-between gap-4 mb-5">
           <div>
             <p className="text-sm uppercase tracking-[0.12em] text-muted-foreground">
@@ -73,9 +74,9 @@ export default function WorksPage() {
           {process.map(({ title, description, icon: Icon }) => (
             <div
               key={title}
-              className="p-4 border rounded-lg border-border bg-muted/50"
+              className="p-4 border rounded-md border-border bg-muted/50"
             >
-              <div className="mb-3 inline-flex rounded-lg border border-border bg-background p-2.5 bg-[linear-gradient(to_right,rgba(148,163,184,0.6)_1px,transparent_1px),linear-gradient(to_bottom,rgba(121, 136, 151, 0.2)_1px,transparent_1px)] bg-size-[8px_8px]">
+              <div className="mb-3 inline-flex rounded-md border border-border bg-background p-2.5 bg-[linear-gradient(to_right,rgba(148,163,184,0.6)_1px,transparent_1px),linear-gradient(to_bottom,rgba(121, 136, 151, 0.2)_1px,transparent_1px)] bg-size-[8px_8px]">
                 <Icon className="size-5 text-foreground" />
               </div>
               <h3 className="mb-2 text-lg font-medium text-foreground">
