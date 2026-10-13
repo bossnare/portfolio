@@ -40,7 +40,7 @@ export function PageHeader({
       {/* <h1 className="px-2 border rounded-sm w-fit border-border text-muted-foreground">
         {title}
       </h1> */}
-      <h1 className="text-4xl capitalize w-fit text-muted-foreground">
+      <h1 className="text-4xl capitalize w-fit text-muted-foreground mask-[linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
         <span className="text-foreground">{startTitle} </span>
         <span>{title} </span>
         <span className="text-foreground">{endTitle}</span>

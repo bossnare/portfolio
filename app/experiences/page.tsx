@@ -74,7 +74,7 @@ export default function ExperiencesPage() {
         {expertise.map(({ title, description, icon: Icon }) => (
           <article
             key={title}
-            className="p-5 border shadow-sm rounded-lg border-border bg-background/80"
+            className="p-5 border rounded-lg shadow-sm border-border bg-background/80"
           >
             <div className="mb-4 inline-flex rounded-md border border-border bg-muted/60 p-2.5">
               <Icon className="size-5 text-foreground" />
@@ -102,7 +102,7 @@ export default function ExperiencesPage() {
             <div className="space-y-4">
               <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div>
-                  <p className="text-xl font-semibold text-foreground">
+                  <p className="text-xl font-semibold text-foreground font-display">
                     {item.role}
                   </p>
                   <p className="text-sm text-muted-foreground">
