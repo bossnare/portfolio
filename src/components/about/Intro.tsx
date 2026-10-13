@@ -8,8 +8,9 @@ export const Intro = () => {
 
       <h3 className="max-w-md text-3xl">Intro</h3>
       <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-border">
-        <div className="pb-6 pr-6">
-          <p className="max-w-2xl leading-6">{intro.description}</p>
+        <div className="pb-6 pr-6 space-y-3">
+          <p className="max-w-2xl">{intro.description[0]}</p>
+          <p className="max-w-2xl">{intro.description[1]}</p>
         </div>
         <div className="flex md:w-[70%] items-start md:items-center gap-8">
           <Image

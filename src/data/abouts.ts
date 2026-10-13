@@ -1,7 +1,8 @@
 export const abouts = {
   intro: {
     description:
-      'Full-stack developer and designer with 1 year of experience, creating scalable products, polished interfaces, and reliable experiences from concept to launch. I specialize in cleaning up bad architecture and turning messy designs into great ones.',
+      ['Full-stack developer and designer with 1 year of experience, creating scalable products, polished interfaces, and reliable experiences from concept to launch.', 'I specialize in cleaning up bad architecture and turning messy designs into great ones.'],
+
     letsgochris: {
       image: 'icon.svg',
       name: "Let's Go Chris",
