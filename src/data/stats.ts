@@ -18,7 +18,7 @@ export const stats = [
     description: 'Clients who trusted the work and valued the results.',
   },
   {
-    label: 'Passion & discipline',
+    label: 'Single-mindedness',
     value: 100,
     suffix: '%',
     description: 'Drive to learn, build, and improve.',

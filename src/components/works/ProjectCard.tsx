@@ -9,7 +9,7 @@ export function ProjectCard({ work }: WorkCardProps) {
   const Icon = work.icon;
 
   return (
-    <div className="flex flex-col h-full gap-8 p-8 border rounded-md shadow-xs border-border/60 bg-background dark:bg-background">
+    <div className="flex flex-col h-full gap-8 p-8 border rounded-md shadow-xs cursor-pointer hover:bg-muted/40! active:bg-muted! border-border/60 bg-background dark:bg-background">
       <div className="flex gap-5">
         <span
           style={{ background: `${work.color}1a` }}
@@ -23,8 +23,8 @@ export function ProjectCard({ work }: WorkCardProps) {
           </span>
           <span className="text-2xl capitalize font-display">{work.name}</span>
           <span style={{ borderColor: work.color }} className="w-6 border-t" />
-          <span className="text-muted-foreground font-medium text-[15px] leading-7">
-            {work.description} {work.name}
+          <span className="text-muted-foreground font-medium text-[15px] leading-7 line-clamp-3">
+            {work.description}
           </span>
         </div>
       </div>

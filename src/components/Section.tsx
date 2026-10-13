@@ -19,9 +19,7 @@ export function Section({ className, children, ...props }: SectionProps) {
 
 export function SectionHeader({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col items-start justify-between gap-3 md:flex-row">
-      {children}
-    </div>
+    <div className="flex items-start justify-between gap-3">{children}</div>
   );
 }
 

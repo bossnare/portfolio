@@ -4,7 +4,6 @@ import { Plus } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { useReveal } from '@/src/hooks/use-reveal';
-import { Availability } from './Availability';
 
 export function HeroVisual() {
   const { ref, isInView } = useReveal<HTMLDivElement>({
