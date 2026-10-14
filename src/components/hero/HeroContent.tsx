@@ -14,18 +14,18 @@ function HeroIntroduction() {
     <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
       <Availability />
       {/* <p className="uppercase text-muted-foreground">Hi, I&apos;m...</p> */}
-      <h1 className="max-w-xl text-black dark:text-zinc-50">
+      <div className="max-w-xl text-black dark:text-zinc-50">
         <span className="uppercase border-r animate-typewriter [word-spacing:0.3rem]">
           Christo Razafimanga
         </span>
-      </h1>
-      <p className="max-w-xl text-3xl font-medium leading-10 md:text-4xl font-display">
+      </div>
+      <h1 className="max-w-xl text-3xl font-medium leading-10 md:text-4xl">
         Full-stack developer & Designer creating scalable products, polished
         interfaces, and{' '}
         <span className="text-muted-foreground">
           reliable experiences from concept to launch.
         </span>
-      </p>
+      </h1>
     </div>
     // <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
     //   <p className="uppercase font-display">Hi, I&apos;m...</p>

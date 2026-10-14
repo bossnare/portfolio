@@ -9,7 +9,7 @@ export function ProjectCard({ work }: WorkCardProps) {
   const Icon = work.icon;
 
   return (
-    <div className="flex flex-col h-full p-8 border rounded-lg shadow-xs has-[.content:hover]:bg-muted/40! has-[.content:hover]:border-border! has-[.content:active]:bg-muted! has-[.content:active]:border-border! transition border-border/60 bg-background">
+    <div tabIndex="0" className="flex flex-col h-full p-8 border rounded-lg shadow-xs has-[.content:hover]:bg-muted/40! has-[.content:hover]:border-border! has-[.content:active]:bg-muted! has-[.content:active]:border-border! transition border-border/60 bg-background">
       <div className="flex gap-5 pb-8 cursor-pointer grow content">
         <span
           style={{ background: `${work.color}1a` }}
