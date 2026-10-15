@@ -39,7 +39,7 @@ export function Tab({
           <motion.span
             initial={{ opacity: 0, x: dir > 0 ? -20 : 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.4 }}
             className="absolute hidden md:block w-1/3 h-0.75 rounded-full -bottom-2 bg-primary"
           ></motion.span>
         )}

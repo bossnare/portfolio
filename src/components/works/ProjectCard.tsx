@@ -9,30 +9,39 @@ export function ProjectCard({ work }: WorkCardProps) {
   const Icon = work.icon;
 
   return (
-    <div tabIndex="0" className="flex flex-col h-full p-8 border rounded-lg shadow-xs has-[.content:hover]:bg-muted/40! has-[.content:hover]:border-border! has-[.content:active]:bg-muted! has-[.content:active]:border-border! transition border-border/60 bg-background">
-      <div className="flex gap-5 pb-8 cursor-pointer grow content">
+    <div
+      tabIndex={0}
+      className="flex h-full flex-col rounded-lg border border-border/60 bg-background p-8 shadow-xs transition-colors hover:border-border hover:bg-muted/40 active:border-border active:bg-muted cursor-pointer"
+    >
+      <div className="content flex grow gap-5 pb-8">
         <span
           style={{ background: `${work.color}1a` }}
-          className="self-start p-3 rounded-full shrink-0"
+          className="shrink-0 self-start rounded-full p-3"
         >
           <Icon />
         </span>
-        <div className="flex flex-col gap-3 grow">
+
+        <div className="flex grow flex-col gap-3">
           <span style={{ color: work.color }} className="text-sm">
             {work.type}
           </span>
-          <span className="text-2xl capitalize font-display">{work.name}</span>
+
+          <span className="font-display text-2xl capitalize">{work.name}</span>
+
           <span style={{ borderColor: work.color }} className="w-6 border-t" />
-          <span className="text-sm font-medium leading-7 text-[15px] text-muted-foreground line-clamp-3">
+
+          <span className="line-clamp-3 text-[15px] leading-7 text-muted-foreground">
             {work.description}
           </span>
         </div>
       </div>
-      <div className="flex items-center justify-between pt-2 mt-auto border-t border-border/60 text-muted-foreground">
+
+      <div className="mt-auto flex items-center justify-between border-t border-border/60 pt-2 text-muted-foreground">
         <span className="text-sm">View work</span>
+
         <a
           href="#"
-          className="flex items-center self-start gap-3 hover:text-foreground active:text-foreground hover:bg-black/4 p-4 rounded-full dark:hover:bg-[#1a1a1a]"
+          className="flex items-center self-start gap-3 rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground dark:hover:bg-[#1a1a1a]"
         >
           <MoveRight className="size-4" />
         </a>
