@@ -49,9 +49,9 @@ export function AboutMe() {
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-xs font-medium uppercase text-muted-foreground">
-                Approach
+                Design
               </span>
-              <span className="text-sm">Thoughtful · dependable</span>
+              <span className="text-sm">Adobe suite</span>
             </div>
           </div>
         </div>
