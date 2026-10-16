@@ -9,6 +9,8 @@ export const works = [
       'A modern music streaming platform built with Next.js and Tailwind CSS. Features seamless audio playback, personalized playlist creation, and a responsive user interface.',
     icon: Music,
     color: '#2D7DD2',
+    link: ""
+
   },
   { case: 'web',
     type: 'Task management app',
@@ -17,6 +19,7 @@ export const works = [
       'A collaborative task management application featuring intercative Kanban boards, drag-and-drop functionality, and real-time updates powered by React/Vite and NestJS.',
     icon: FolderKanban,
     color: '#A9E5BB',
+    link: ""
   },
   { case: 'web',
     type: 'Portfolio website',
@@ -25,6 +28,7 @@ export const works = [
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: GlobeCheck,
     color: '#55D5D0',
+    link: ""
   },
   { case: 'web',
     type: 'RH management',
@@ -33,6 +37,7 @@ export const works = [
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: PersonStanding,
     color: '#EEB902',
+    link: ""
   },
 ];
 

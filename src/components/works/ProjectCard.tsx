@@ -41,7 +41,7 @@ export function ProjectCard({ work }: WorkCardProps) {
 
         <a
           href="#"
-          className="flex items-center self-start gap-3 rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground dark:hover:bg-[#1a1a1a]"
+          className="flex items-center self-start gap-3 rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground active:bg-muted dark:hover:bg-[#1a1a1a]"
         >
           <MoveRight className="size-4" />
         </a>
