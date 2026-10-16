@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     template: '%s | Christo Razafimanga',
   },
   description:
-    'Full-stack web developer building high-impact digital products, scalable systems, and polished user experiences from concept to deployment.',
+    'Full-stack developer and designer with 2 years of experience, creating scalable products, polished interfaces, and reliable experiences from concept to launch.',
   alternates: {
     canonical: '/',
   },
@@ -75,6 +75,7 @@ const personJsonLd = {
     'MySQL',
     'Prisma',
     'Web Design',
+    'Graphic design',
     'UI Design',
     'REST API',
   ],

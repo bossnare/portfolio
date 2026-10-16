@@ -145,7 +145,7 @@ export default function ExperiencesPage() {
         </div>
         <a
           href="/contact"
-          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium transition border rounded-full border-border bg-foreground text-background hover:opacity-90"
+          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium transition border rounded-full border-border bg-foreground text-background hover:opacity-90 active:opacity-80"
         >
           Let&apos;s talk
           <ArrowUpRight className="size-4" />
