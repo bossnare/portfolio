@@ -3,15 +3,9 @@ import { ChevronRight } from 'lucide-react';
 
 export function AboutMe() {
   return (
-    <Section
-      id="about"
-      className="border-b border-zinc-300 dark:border-white/12"
-    >
+    <Section id="about" className="border-b border-border/70">
       <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <div className="flex flex-col items-start gap-5">
-          <span className="text-xs font-medium uppercase text-primary">
-            About / 01
-          </span>
           <div className="flex flex-col items-start gap-4">
             <h2 className="font-display text-3xl font-medium">About me</h2>
             <p className="max-w-sm text-sm leading-6 text-muted-foreground">
@@ -25,21 +19,18 @@ export function AboutMe() {
           </SectionLinkButton>
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <p className="max-w-3xl font-display text-2xl leading-snug md:text-3xl">
-            I turn ideas and business needs into clean, reliable web
-            applications and design with{' '}
-            <span className="text-muted-foreground">
-              TypeScript, Next.js, and NestJS. Adobe suite
-            </span>
+            From architecture to interface, I build digital products that
+            balance functionality and design.
           </p>
 
-          <div className="grid gap-5 border-t border-border/70 pt-5 sm:grid-cols-3">
+          <div className="grid gap-5 border-t border-border/70 pt-6 sm:grid-cols-3">
             <div className="flex flex-col gap-2">
               <span className="text-xs font-medium uppercase text-muted-foreground">
                 Frontend
               </span>
-              <span className="text-sm">TypeScript · Next.js</span>
+              <span className="text-sm">TypeScript · React/Next.js</span>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-xs font-medium uppercase text-muted-foreground">

@@ -93,7 +93,7 @@ export default function WorksPage() {
       <section className="space-y-5">
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-2xl font-semibold text-foreground">
-            Selected projects
+            Selected works
           </h2>
           <span className="text-sm text-muted-foreground">
             {works.length} featured builds

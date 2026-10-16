@@ -28,9 +28,9 @@ export function Tab({
         <span
           className={cn(
             isActive
-              ? 'text-primary font-medium'
-              : 'text-foreground/90 hover:text-foreground md:transition-colors active:bg-zinc-300 dark:active:bg-white/20 active:opacity-80',
-            'px-2 rounded-full'
+              ? 'text-primary'
+              : 'text-foreground hover:text-foreground/90 md:transition-colors active:bg-zinc-300 dark:active:bg-white/20 active:opacity-80',
+            'px-2 rounded-full font-medium'
           )}
         >
           {label}

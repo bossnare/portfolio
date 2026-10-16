@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #e88924; /* #5b2eff */
+  --primary: #ddf762; /* #5b2eff */
   --muted: #f4f4f5;
   --muted-foreground: #52525b;
   --primary-foreground: #0a0a0a;
@@ -56,13 +56,13 @@ button {
     width: 0;
   }
   to {
-    width: 18ch;
+    width: 21ch;
   }
 }
 
 .animate-typewriter {
   display: inline-block;
-  width: 18ch;
+  width: 21ch;
   overflow: hidden;
   white-space: nowrap;
   animation:
@@ -94,6 +94,6 @@ button {
 @media (prefers-reduced-motion: reduce) {
   .typewriter {
     animation: none;
-    width: 18ch;
+    width: 21ch;
   }
 }
