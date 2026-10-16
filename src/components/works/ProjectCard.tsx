@@ -36,7 +36,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         </div>
       </div>
 
-      <div className="mt-auto flex items-center justify-between border-t border-border/60 pt-2 text-muted-foreground">
+      <div className="mt-auto flex items-center justify-between pt-2 text-muted-foreground">
         <span className="text-sm">View work</span>
 
         <a
