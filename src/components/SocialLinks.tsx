@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { MaskedIcon } from './MaskedIcon';
 
 const socialLinks = [
   {
@@ -21,11 +21,6 @@ const socialLinks = [
     icon: 'github.svg',
     href: `https://github.com/bossnare`,
   },
-  {
-    name: 'TikTok',
-    icon: 'tiktok.svg',
-    href: 'https://www.tiktok.com/@thebossnare',
-  },
 ];
 
 export function SocialLinks() {
@@ -34,19 +29,14 @@ export function SocialLinks() {
       {socialLinks.map((socialLink) => (
         <a
           href={socialLink.href}
+          title={socialLink.name}
           aria-label={`Send me a message ${socialLink.name}`}
           key={socialLink.icon}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-1 rounded hover:opacity-80 active:bg-black/4 dark:active:bg-[#1a1a1a]"
+          className="p-3 rounded-full bg-muted/40 hover:opacity-80 active:bg-muted"
         >
-          <Image
-            width={60}
-            height={60}
-            src={`/icon/color/${socialLink.icon}`}
-            className="size-6"
-            alt={socialLink.name}
-          />
+          <MaskedIcon icon={socialLink.icon} className="size-5" />
         </a>
       ))}
     </div>

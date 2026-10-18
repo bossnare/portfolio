@@ -30,19 +30,19 @@ export function Footer() {
             className="flex flex-wrap gap-x-5 gap-y-2"
           >
             <a
-              className="transition-colors hover:text-background dark:hover:text-foreground"
+              className="transition-colors hover:text-background dark:hover:text-foreground active:bg-muted"
               href="#about"
             >
               About
             </a>
             <a
-              className="transition-colors hover:text-background dark:hover:text-foreground"
+              className="transition-colors hover:text-background dark:hover:text-foreground active:bg-muted"
               href="#featured-projects"
             >
-              Projects
+              Works
             </a>
             <a
-              className="transition-colors hover:text-background dark:hover:text-foreground"
+              className="transition-colors hover:text-background dark:hover:text-foreground active:bg-muted"
               href="#hero"
             >
               Home

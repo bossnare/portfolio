@@ -1,5 +1,3 @@
-import { Music, GlobeCheck, FolderKanban, PersonStanding } from 'lucide-react';
-
 export const works = [
   {
     case: 'web',
@@ -7,7 +5,7 @@ export const works = [
     name: 'MelodayzMusic',
     description:
       'A modern music streaming platform built with Next.js and Tailwind CSS. Features seamless audio playback, personalized playlist creation, and a responsive user interface.',
-    icon: Music,
+    icon: 'music',
     color: '#2D7DD2',
     link: 'https://melodayzmusic.vercel.app',
   },
@@ -17,7 +15,7 @@ export const works = [
     name: 'Talor',
     description:
       'A collaborative task management application featuring intercative Kanban boards, drag-and-drop functionality, and real-time updates powered by React/Vite and NestJS.',
-    icon: FolderKanban,
+    icon: 'folder-kanban',
     color: '#A9E5BB',
     link: 'https://talor.vercel.app',
   },
@@ -27,7 +25,7 @@ export const works = [
     name: 'Christo Razafimanga',
     description:
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
-    icon: GlobeCheck,
+    icon: 'globe-check',
     color: '#55D5D0',
     link: 'https://christorazafimanga.is-a.dev',
   },
@@ -37,7 +35,7 @@ export const works = [
     name: 'Cabinet Excellent',
     description:
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
-    icon: PersonStanding,
+    icon: 'person-standing',
     color: '#EEB902',
     link: '#',
   },

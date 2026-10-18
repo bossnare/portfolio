@@ -1,13 +1,28 @@
+'use client';
+
+import {
+  MoveRight,
+  FolderKanban,
+  GlobeCheck,
+  Music,
+  PersonStanding,
+} from 'lucide-react';
 import type { Work } from '@/src/data/works';
-import { MoveRight } from 'lucide-react';
 import { OpenExternalLink } from '../link';
+
+const workIcons = {
+  music: Music,
+  'folder-kanban': FolderKanban,
+  'globe-check': GlobeCheck,
+  'person-standing': PersonStanding,
+};
 
 type WorkCardProps = {
   work: Work;
 };
 
 export function ProjectCard({ work }: WorkCardProps) {
-  const Icon = work.icon;
+  const Icon = workIcons[work.icon as keyof typeof workIcons];
 
   return (
     <div
@@ -41,6 +56,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         <span className="text-sm">View work</span>
 
         <OpenExternalLink
+          onClick={(e) => e.stopPropagation()}
           href={work.link}
           className="self-start rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground active:bg-muted dark:hover:bg-[#1a1a1a]"
         >
