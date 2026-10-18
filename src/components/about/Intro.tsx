@@ -7,21 +7,21 @@ export const Intro = () => {
       <span className="absolute top-0 w-1/4 border-t border-border" />
 
       <h3 className="max-w-md text-3xl">Intro</h3>
-      <div className="flex flex-col justify-between w-full gap-6 divide-y md:divide-x md:divide-y-0 md:flex-row divide-border">
-        <div className="pb-6 pr-6 space-y-3">
-          <p className="max-w-2xl">{intro.description[0]}</p>
-          <p className="max-w-2xl">{intro.description[1]}</p>
+      <div className="flex flex-col items-center justify-between w-full gap-6 divide-y divide-border">
+        <div className="max-w-2xl pb-6 space-y-3">
+          <p>{intro.description[0]}</p>
+          <p>{intro.description[1]}</p>
         </div>
-        <div className="flex md:w-[70%] items-start md:items-center gap-8">
-          <Image
-            src={`/icon/${intro.letsgochris.image}`}
-            alt="logo-icon"
-            width={300}
-            height={300}
-            className="h-auto w-35 dark:invert"
-          />
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col items-start gap-6 md:items-center">
+          <div className="flex items-center gap-8">
+            <Image
+              src={`/icon/${intro.letsgochris.image}`}
+              alt="logo-icon"
+              width={300}
+              height={300}
+              className="h-auto w-30 dark:invert"
+            />
+            <div className="flex flex-col gap-4">
               {intro.letsgochris.info.map((info) => (
                 <div key={info.value} className="flex flex-col gap-2">
                   <span className="text-sm text-muted-foreground">
@@ -32,10 +32,11 @@ export const Intro = () => {
               ))}
             </div>
             <span className="border-t border-border/70" />
-            <div className="max-w-lg">
-              <span className="font-display">{intro.letsgochris.name}</span>{' '}
-              {intro.letsgochris.description}
-            </div>
+          </div>
+
+          <div className="max-w-lg md:text-center">
+            <span className="font-display">{intro.letsgochris.name}</span>{' '}
+            {intro.letsgochris.description}
           </div>
         </div>
       </div>

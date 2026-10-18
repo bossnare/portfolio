@@ -1,17 +1,33 @@
+'use client';
+
+import {
+  MoveRight,
+  FolderKanban,
+  GlobeCheck,
+  Music,
+  PersonStanding,
+} from 'lucide-react';
 import type { Work } from '@/src/data/works';
-import { MoveRight } from 'lucide-react';
 import { OpenExternalLink } from '../link';
+
+const workIcons = {
+  music: Music,
+  'folder-kanban': FolderKanban,
+  'globe-check': GlobeCheck,
+  'person-standing': PersonStanding,
+};
 
 type WorkCardProps = {
   work: Work;
 };
 
 export function ProjectCard({ work }: WorkCardProps) {
-  const Icon = work.icon;
+  const Icon = workIcons[work.icon as keyof typeof workIcons];
 
   return (
     <div
       tabIndex={0}
+      onClick={() => alert('Mandeha')}
       className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/60 bg-background hover:border-border hover:bg-muted/40 active:border-border active:bg-muted"
     >
       <div className="flex gap-5 pb-8 content grow">
@@ -41,6 +57,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         <span className="text-sm">View work</span>
 
         <OpenExternalLink
+          onClick={(e) => e.stopPropagation()}
           href={work.link}
           className="self-start rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground active:bg-muted dark:hover:bg-[#1a1a1a]"
         >
