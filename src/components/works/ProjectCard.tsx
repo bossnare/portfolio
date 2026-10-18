@@ -27,7 +27,6 @@ export function ProjectCard({ work }: WorkCardProps) {
   return (
     <div
       tabIndex={0}
-      onClick={() => alert('Mandeha')}
       className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/60 bg-background hover:border-border hover:bg-muted/40 active:border-border active:bg-muted"
     >
       <div className="flex gap-5 pb-8 content grow">

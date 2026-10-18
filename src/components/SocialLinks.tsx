@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { MaskedIcon } from './MaskedIcon';
 
 const socialLinks = [
@@ -35,9 +34,9 @@ export function SocialLinks() {
           key={socialLink.icon}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-1 rounded hover:opacity-80 active:bg-muted"
+          className="p-3 rounded-full bg-muted/40 hover:opacity-80 active:bg-muted"
         >
-          <MaskedIcon icon={socialLink.icon} className="size-6" />
+          <MaskedIcon icon={socialLink.icon} className="size-5" />
         </a>
       ))}
     </div>
