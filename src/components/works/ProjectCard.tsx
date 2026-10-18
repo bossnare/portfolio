@@ -1,5 +1,6 @@
 import type { Work } from '@/src/data/works';
 import { MoveRight } from 'lucide-react';
+import { OpenExternalLink } from '../link';
 
 type WorkCardProps = {
   work: Work;
@@ -11,22 +12,22 @@ export function ProjectCard({ work }: WorkCardProps) {
   return (
     <div
       tabIndex={0}
-      className="flex h-full flex-col rounded-lg border border-border/60 bg-background p-8 shadow-xs transition-colors hover:border-border hover:bg-muted/40 active:border-border active:bg-muted cursor-pointer"
+      className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/60 bg-background hover:border-border hover:bg-muted/40 active:border-border active:bg-muted"
     >
-      <div className="content flex grow gap-5 pb-8">
+      <div className="flex gap-5 pb-8 content grow">
         <span
           style={{ background: `${work.color}1a` }}
-          className="shrink-0 self-start rounded-full p-3"
+          className="self-start p-3 rounded-full shrink-0"
         >
           <Icon />
         </span>
 
-        <div className="flex grow flex-col gap-3">
+        <div className="flex flex-col gap-3 grow">
           <span style={{ color: work.color }} className="text-sm">
             {work.type}
           </span>
 
-          <span className="font-display text-2xl capitalize">{work.name}</span>
+          <span className="text-2xl capitalize font-display">{work.name}</span>
 
           <span style={{ borderColor: work.color }} className="w-6 border-t" />
 
@@ -36,15 +37,15 @@ export function ProjectCard({ work }: WorkCardProps) {
         </div>
       </div>
 
-      <div className="mt-auto flex items-center justify-between pt-2 text-muted-foreground">
+      <div className="flex items-center justify-between pt-2 mt-auto text-muted-foreground">
         <span className="text-sm">View work</span>
 
-        <a
-          href="#"
-          className="flex items-center self-start gap-3 rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground active:bg-muted dark:hover:bg-[#1a1a1a]"
+        <OpenExternalLink
+          href={work.link}
+          className="self-start rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground active:bg-muted dark:hover:bg-[#1a1a1a]"
         >
           <MoveRight className="size-4" />
-        </a>
+        </OpenExternalLink>
       </div>
     </div>
   );
