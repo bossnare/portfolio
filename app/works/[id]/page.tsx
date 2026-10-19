@@ -1,6 +1,8 @@
 import {works} from '@/src/data/works'
 import {Page} from '@/src/components/Page'
 
+type Props = {params: Promise<{ id: string }>}
+
 export async function generateMetadata({params}: Props) {
     const {id} = await params
     const work = works.find((w) => w.id === Number(id))
