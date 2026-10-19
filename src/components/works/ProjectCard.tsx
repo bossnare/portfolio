@@ -9,9 +9,10 @@ import {
 } from 'lucide-react';
 import type { Work } from '@/src/data/works';
 import { OpenExternalLink } from '../link';
+import {useNavigation} from '@/src/hooks/use-navigation'
 
 const workIcons = {
-  music: Music,
+  'music': Music,
   'folder-kanban': FolderKanban,
   'globe-check': GlobeCheck,
   'person-standing': PersonStanding,
@@ -23,10 +24,12 @@ type WorkCardProps = {
 
 export function ProjectCard({ work }: WorkCardProps) {
   const Icon = workIcons[work.icon as keyof typeof workIcons];
+  const {goTo} = useNavigation()
 
   return (
     <div
       tabIndex={0}
+      onClick={() => goTo({href: `/works/${work.id}`})}
       className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/60 bg-background hover:border-border hover:bg-muted/40 active:border-border active:bg-muted"
     >
       <div className="flex gap-5 pb-8 content grow">

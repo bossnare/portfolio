@@ -1,6 +1,7 @@
 export const works = [
   {
-    case: 'web',
+    id: 1,
+    category: 'web',
     type: 'Music platform',
     name: 'MelodayzMusic',
     description:
@@ -10,7 +11,8 @@ export const works = [
     link: 'https://melodayzmusic.vercel.app',
   },
   {
-    case: 'web',
+    id: 2,
+    category: 'web',
     type: 'Task management app',
     name: 'Talor',
     description:
@@ -20,7 +22,8 @@ export const works = [
     link: 'https://talor.vercel.app',
   },
   {
-    case: 'web',
+    id: 3,
+    category: 'web',
     type: 'Portfolio website',
     name: 'Christo Razafimanga',
     description:
@@ -30,7 +33,8 @@ export const works = [
     link: 'https://christorazafimanga.is-a.dev',
   },
   {
-    case: 'web',
+    id: 4,
+    category: 'web',
     type: 'RH management',
     name: 'Cabinet Excellent',
     description:
