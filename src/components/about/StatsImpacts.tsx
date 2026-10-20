@@ -19,8 +19,7 @@ export function StatsImpacts() {
   const { goTo } = useNavigation();
 
   return (
-    <section className="relative flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
-      <span className="absolute top-0 w-1/4 border-t border-border" />
+    <section className="flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
       <h3 className="max-w-md text-3xl">My stats & impacts</h3>
       <div className="grid justify-between grid-cols-2 gap-12 md:grid-cols-4">
         {stats.map((stat) => (

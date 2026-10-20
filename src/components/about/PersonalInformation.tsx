@@ -3,9 +3,7 @@ import Image from 'next/image';
 
 export const PersonalInformation = () => {
   return (
-    <section className="relative flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
-      <span className="absolute top-0 w-1/4 border-t border-border" />
-
+    <section className="flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
       <h3 className="max-w-md text-3xl">Personal Information</h3>
       <div className="flex flex-col justify-center gap-8 p-4 border divide-y rounded-lg bg-background md:items-center md:divide-x md:divide-y-0 md:flex-row divide-border border-border">
         <Image
