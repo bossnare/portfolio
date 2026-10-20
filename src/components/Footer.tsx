@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { SocialLinks } from './SocialLinks';
 
 export function Footer() {
@@ -29,24 +30,24 @@ export function Footer() {
             aria-label="Footer navigation"
             className="flex flex-wrap gap-x-5 gap-y-2"
           >
-            <a
-              className="transition-colors hover:text-background dark:hover:text-foreground active:bg-muted"
-              href="#about"
+            <Link
+              className="transition-colors hover:text-white active:text-white active:bg-muted"
+              href="/about"
             >
               About
-            </a>
-            <a
-              className="transition-colors hover:text-background dark:hover:text-foreground active:bg-muted"
-              href="#featured-projects"
+            </Link>
+            <Link
+              className="transition-colors hover:text-white active:text-white active:bg-muted"
+              href="/works"
             >
               Works
-            </a>
-            <a
-              className="transition-colors hover:text-background dark:hover:text-foreground active:bg-muted"
+            </Link>
+            <Link
+              className="transition-colors hover:text-white active:text-white active:bg-muted"
               href="#hero"
             >
               Home
-            </a>
+            </Link>
           </nav>
           <span>© {new Date().getFullYear()} Christo Razafimanga</span>
         </div>
