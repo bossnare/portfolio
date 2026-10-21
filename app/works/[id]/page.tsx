@@ -5,7 +5,7 @@ type Props = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
-  const work = works.find((w) => w.id === Number(id));
+  const work = works.find((w) => w.id === id);
 
   return {
     title: work ? work.name : 'Work not found',
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function WorkPage({ params }: Props) {
   const { id } = await params;
-  const work = works.find((w) => w.id === Number(id));
+  const work = works.find((w) => w.id === id);
 
   if (!work) return null;
 

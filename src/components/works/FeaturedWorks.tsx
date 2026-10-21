@@ -28,7 +28,7 @@ export function FeaturedWorks() {
       </SectionHeader>
       <div className="grid gap-4 md:grid-cols-3">
         {works.slice(0, 3).map((work) => (
-          <ProjectCard key={work.type} work={work} />
+          <ProjectCard key={work.id} work={work} />
         ))}
       </div>
     </Section>

@@ -32,7 +32,7 @@ export function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 export function SectionParagraphe({ children }: { children: React.ReactNode }) {
-  return <p className="text-muted-foreground">{children}</p>;
+  return <p className="text-muted-foreground text-sm">{children}</p>;
 }
 
 export function SectionLinkButton({
