@@ -66,7 +66,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         <OpenExternalLink
           onClick={(e) => e.stopPropagation()}
           href={work.link}
-          className="self-start rounded-full p-4 hover:bg-black/4 hover:text-foreground active:text-foreground active:bg-muted dark:hover:bg-[#1a1a1a]"
+          className="self-start rounded-full p-4 hover:bg-foreground hover:text-background active:text-background active:bg-foreground"
         >
           <MoveRight className="size-4" />
         </OpenExternalLink>
