@@ -4,6 +4,9 @@ import { Page, PageHeader } from '@/src/components/Page';
 import { Intro } from '@/src/components/about/Intro';
 import { PersonalInformation } from '@/src/components/about/PersonalInformation';
 import { StatsImpacts } from '@/src/components/about/StatsImpacts';
+import { LetsWork } from '@/src/components/LetsWork';
+import { SkillsExpertise } from '@/src/components/about/SkillsExpertise';
+import { Education } from '@/src/components/about/Education';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -20,7 +23,9 @@ export default function AboutPage() {
       <Intro />
       <PersonalInformation />
       <StatsImpacts />
-      {/* <LocationMap /> */}
+      <SkillsExpertise />
+      <Education />
+      <LetsWork />
     </Page>
   );
 }

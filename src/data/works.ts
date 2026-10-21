@@ -1,6 +1,6 @@
 export const works = [
   {
-    id: 1,
+    id: 'melodayz-music',
     category: 'web',
     type: 'Music platform',
     name: 'MelodayzMusic',
@@ -9,9 +9,10 @@ export const works = [
     icon: 'music',
     color: '#2D7DD2',
     link: 'https://melodayzmusic.vercel.app',
+    cover: 'melodayzmusic_cover.png',
   },
   {
-    id: 2,
+    id: 'talor',
     category: 'web',
     type: 'Task management app',
     name: 'Talor',
@@ -20,9 +21,10 @@ export const works = [
     icon: 'folder-kanban',
     color: '#A9E5BB',
     link: 'https://talor.vercel.app',
+    cover: 'talor_cover.png',
   },
   {
-    id: 3,
+    id: 'portfolio',
     category: 'web',
     type: 'Portfolio website',
     name: 'Christo Razafimanga',
@@ -31,9 +33,10 @@ export const works = [
     icon: 'globe-check',
     color: '#55D5D0',
     link: 'https://christorazafimanga.is-a.dev',
+    cover: 'christo_cover.png',
   },
   {
-    id: 4,
+    id: 'cabinet-excellent',
     category: 'web',
     type: 'RH management',
     name: 'Cabinet Excellent',
@@ -42,6 +45,7 @@ export const works = [
     icon: 'person-standing',
     color: '#EEB902',
     link: '#',
+    cover: 'cabinet_excellent_cover.png',
   },
 ];
 

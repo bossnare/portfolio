@@ -103,7 +103,7 @@ export default function WorksPage() {
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {works.map((work) => {
             return (
-              <article key={work.name}>
+              <article key={work.id}>
                 <ProjectCard work={work} />
               </article>
             );
