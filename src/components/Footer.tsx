@@ -44,7 +44,7 @@ export function Footer() {
             </Link>
             <Link
               className="transition-colors hover:text-white active:text-white active:bg-muted"
-              href="#hero"
+              href="/"
             >
               Home
             </Link>
