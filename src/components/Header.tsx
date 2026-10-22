@@ -31,7 +31,7 @@ export function Header() {
     <header className="sticky w-full top-0 z-1000 bg-[#F5F5F3] dark:bg-black">
       <nav className="flex items-center justify-between px-5 py-2.5 md:py-5 md:px-14">
         <div className="flex items-center gap-2">
-          <span className="text-lg font-bold font-display">
+          <span className="text-lg font-semibold font-display">
             CHRISTO <span className="font-medium">™</span>
           </span>
         </div>

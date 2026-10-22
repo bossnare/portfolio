@@ -16,7 +16,9 @@ export const PersonalInformation = () => {
         <div className="grid justify-between gap-8 pb-8 md:gap-12 md:pr-8 md:pb-0">
           {personalInfo.name.map((nameInfo) => (
             <div key={nameInfo.label} className="flex flex-col gap-3">
-              <span className="text-muted-foreground">{nameInfo.label}</span>
+              <span className="text-muted-foreground text-sm">
+                {nameInfo.label}
+              </span>
               <span>{nameInfo.value}</span>
             </div>
           ))}
@@ -24,7 +26,9 @@ export const PersonalInformation = () => {
         <div className="grid justify-between grid-cols-2 gap-8 md:gap-12">
           {personalInfo.data.map((info) => (
             <div className="flex flex-col gap-3" key={info.value}>
-              <span className="text-muted-foreground">{info.label}</span>
+              <span className="text-muted-foreground text-sm">
+                {info.label}
+              </span>
               <span>{info.value}</span>
             </div>
           ))}
