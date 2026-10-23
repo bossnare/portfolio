@@ -14,10 +14,10 @@ export function SkillsExpertise() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col gap-4 p-4 border rounded-md bg-background border-border"
+            className="flex flex-col gap-4 p-4 border rounded-lg bg-card border-border"
           >
             <div className="flex items-center gap-3">
-              <span className="p-1 border rounded-sm bg-background border-border/80">
+              <span className="p-2 border rounded-md bg-background border-border/80">
                 <skill.icon />
               </span>
               <span className="font-medium font-display">{skill.name}</span>
@@ -35,13 +35,13 @@ export function SkillsExpertise() {
           </div>
         ))}
 
-        <div className="flex flex-col gap-4 p-4 border rounded-md md:col-span-2 bg-background border-border">
+        <div className="flex flex-col gap-4 p-4 border rounded-lg md:col-span-2 bg-card border-border">
           <span className="font-medium">Expertise Level</span>
           <div className="grid items-center w-full gap-3 md:gap-6 md:grid-cols-2">
             {expertiseLevel.map((level) => (
               <div key={level.name} className="flex items-center gap-4">
                 <span className="min-w-18">{level.name}</span>
-                <div className="relative h-2 overflow-hidden rounded-full grow bg-muted">
+                <div className="relative h-2 overflow-hidden rounded-full grow bg-background">
                   <span
                     className="absolute inset-y-0 top-0 left-0 rounded-full bg-primary"
                     style={{ width: `${level.percent}%` }}
