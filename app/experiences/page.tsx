@@ -94,7 +94,7 @@ export default function ExperiencesPage() {
         {experiences.map((item) => (
           <article
             key={item.role}
-            className="grid gap-5 rounded-lg border border-border bg-background/80 p-5 md:grid-cols-[160px_1fr] md:p-6"
+            className="grid gap-5 rounded-lg border border-border bg-card/80 p-5 md:grid-cols-[160px_1fr] md:p-6"
           >
             <div className="text-sm font-medium text-muted-foreground">
               {item.period}
