@@ -14,10 +14,10 @@ export function SkillsExpertise() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col gap-4 p-4 border rounded-md bg-background border-border/90"
+            className="flex flex-col gap-4 p-4 border rounded-md bg-background border-border"
           >
             <div className="flex items-center gap-3">
-              <span className="p-1 border rounded-sm bg-background border-border/90">
+              <span className="p-1 border rounded-sm bg-background border-border/80">
                 <skill.icon />
               </span>
               <span className="font-medium font-display">{skill.name}</span>
@@ -26,7 +26,7 @@ export function SkillsExpertise() {
               {skill.skillItems.map((item) => (
                 <li
                   key={item}
-                  className="p-1 px-4 text-sm border rounded-sm text-muted-foreground border-border/80 bg-muted/90"
+                  className="p-1 px-4 text-sm border rounded-sm text-muted-foreground border-border bg-muted"
                 >
                   {item}
                 </li>
@@ -35,13 +35,13 @@ export function SkillsExpertise() {
           </div>
         ))}
 
-        <div className="flex flex-col gap-4 p-4 border rounded-md md:col-span-2 bg-background border-border/60">
+        <div className="flex flex-col gap-4 p-4 border rounded-md md:col-span-2 bg-background border-border">
           <span className="font-medium">Expertise Level</span>
           <div className="grid items-center w-full gap-3 md:gap-6 md:grid-cols-2">
             {expertiseLevel.map((level) => (
               <div key={level.name} className="flex items-center gap-4">
                 <span className="min-w-18">{level.name}</span>
-                <div className="relative h-2 overflow-hidden rounded-full grow bg-muted/90">
+                <div className="relative h-2 overflow-hidden rounded-full grow bg-muted">
                   <span
                     className="absolute inset-y-0 top-0 left-0 rounded-full bg-primary"
                     style={{ width: `${level.percent}%` }}
