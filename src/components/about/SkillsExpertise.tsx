@@ -14,19 +14,19 @@ export function SkillsExpertise() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col gap-4 p-4 border rounded-md bg-background border-border/60"
+            className="flex flex-col gap-4 p-4 border rounded-md bg-background border-border/90"
           >
             <div className="flex items-center gap-3">
-              <span className="p-2 border rounded-md bg-muted/60 border-border">
+              <span className="p-1 border rounded-sm bg-background border-border/90">
                 <skill.icon />
               </span>
-              <span className="font-medium">{skill.name}</span>
+              <span className="font-medium font-display">{skill.name}</span>
             </div>
             <ul className="flex flex-wrap gap-2">
               {skill.skillItems.map((item) => (
                 <li
                   key={item}
-                  className="p-1 px-4 text-sm border rounded-sm text-muted-foreground border-border/60 bg-muted/50"
+                  className="p-1 px-4 text-sm border rounded-sm text-muted-foreground border-border/80 bg-muted/90"
                 >
                   {item}
                 </li>
@@ -41,7 +41,7 @@ export function SkillsExpertise() {
             {expertiseLevel.map((level) => (
               <div key={level.name} className="flex items-center gap-4">
                 <span className="min-w-18">{level.name}</span>
-                <div className="relative h-2 overflow-hidden rounded-full grow bg-muted/80">
+                <div className="relative h-2 overflow-hidden rounded-full grow bg-muted/90">
                   <span
                     className="absolute inset-y-0 top-0 left-0 rounded-full bg-primary"
                     style={{ width: `${level.percent}%` }}
