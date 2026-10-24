@@ -31,7 +31,7 @@ export function ProjectCard({ work }: WorkCardProps) {
     <div
       tabIndex={0}
       onClick={() => goTo({ href: `/works/${work.id}` })}
-      className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/80 bg-card dark:bg-card/80 hover:border-border hover:bg-muted/60 active:border-border active:bg-muted"
+      className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/80 bg-card dark:bg-card/80 hover:border-border hover:bg-red active:border-border active:bg-muted"
     >
       <div className="flex flex-col gap-5">
         <div className="w-full h-40">
@@ -39,19 +39,21 @@ export function ProjectCard({ work }: WorkCardProps) {
             src={`/images/${work.cover}`}
             width={800}
             height={600}
-            className="object-cover size-full rounded-sm"
+            className="object-cover rounded-sm invert dark:invert-0 size-full"
             alt={work.cover}
           />
         </div>
         <div className="flex gap-5 pb-3 grow">
           <div className="flex flex-col gap-3 grow">
-            {/* <span
-              style={{ background: `${work.color}1a` }}
-              className="self-start p-2 rounded-full shrink-0"
-            >
-              <Icon />
-            </span> */}
-            <span className="text-sm">{work.type}</span>
+            <div className="flex items-center gap-2">
+              <span
+                style={{ background: `${work.color}1a` }}
+                className="self-start p-2 rounded-full shrink-0"
+              >
+                <Icon className="size-5" />
+              </span>
+              <span className="text-sm">{work.type}</span>
+            </div>
 
             <span className="line-clamp-3 text-[15px] leading-7 text-muted-foreground">
               {work.description}
@@ -66,7 +68,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         <OpenExternalLink
           onClick={(e) => e.stopPropagation()}
           href={work.link}
-          className="self-start rounded-full p-4 hover:bg-foreground hover:text-background active:text-background active:bg-foreground"
+          className="self-start p-4 rounded-full hover:bg-foreground hover:text-background active:text-background active:bg-foreground"
         >
           <MoveRight className="size-4" />
         </OpenExternalLink>

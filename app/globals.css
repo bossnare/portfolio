@@ -2,13 +2,14 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
+  --background: #f5f5f5;
   --foreground: #171717;
-  --primary: #ddf762; /* #5b2eff */
-  --muted: #f4f4f5;
-  --muted-foreground: #52525b;
+  --primary: #b8d83c;
+  --card: #fafafa;
+  --muted: #eaeaea;
+  --muted-foreground: #737373;
   --primary-foreground: #0a0a0a;
-  --border: #d4d4d3;
+  --border: #dedede;
 }
 
 @theme inline {
