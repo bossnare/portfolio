@@ -30,7 +30,7 @@ export function HeroVisual() {
       </motion.div>
       <div className="absolute inset-0 z-10 bg-[radial-gradient(circle,rgba(115,115,115)_1px,transparent_1px)] dark:bg-[radial-gradient(circle,rgba(148,163,184,0.6)_1px,transparent_1px)] bg-size-[24px_24px] opacity-50 mask-[radial-gradient(circle_at_center,black_35%,transparent_100%)] [-webkit-mask-image:radial-gradient(circle_at_center,black_35%,transparent_100%)]"></div>
       <Image
-        className="absolute top-0 object-contain h-auto dark:invert -right-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
+        className="absolute hidden top-0 object-contain h-auto dark:invert -right-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
         src="/icon/graphic-1.svg"
         alt="graphic-1"
         width={600}
@@ -38,7 +38,7 @@ export function HeroVisual() {
         priority
       />
       <Image
-        className="absolute left-0 object-contain h-auto dark:invert -bottom-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
+        className="absolute hidden left-0 object-contain h-auto dark:invert -bottom-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
         src="/icon/graphic-2.svg"
         alt="graphic-2"
         width={600}
