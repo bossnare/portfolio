@@ -8,7 +8,7 @@ import {
   PersonStanding,
 } from 'lucide-react';
 import type { Work } from '@/src/data/works';
-import { OpenExternalLink } from '../link';
+import { OpenExternalLink, OpenLink } from '../link';
 import { useNavigation } from '@/src/hooks/use-navigation';
 import Image from 'next/image';
 
@@ -23,6 +23,9 @@ type WorkCardProps = {
   work: Work;
 };
 
+const linkButtonCn =
+  'p-4 rounded-full hover:bg-foreground hover:text-background active:text-background active:bg-foreground';
+
 export function ProjectCard({ work }: WorkCardProps) {
   const Icon = workIcons[work.icon as keyof typeof workIcons];
   const { goTo } = useNavigation();
@@ -31,7 +34,7 @@ export function ProjectCard({ work }: WorkCardProps) {
     <div
       tabIndex={0}
       onClick={() => goTo({ href: `/works/${work.id}` })}
-      className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-xs cursor-pointer border-border/80 bg-card dark:bg-card/80 hover:border-border hover:bg-red active:border-border active:bg-muted"
+      className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-sm cursor-pointer border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
     >
       <div className="flex flex-col gap-5">
         <div className="w-full h-40">
@@ -63,15 +66,28 @@ export function ProjectCard({ work }: WorkCardProps) {
       </div>
 
       <div className="flex items-center justify-between pt-2 mt-auto text-muted-foreground">
-        <span className="text-sm">View work</span>
+        <span className="text-sm">
+          {work.personal ? 'View work' : 'View detail'}
+        </span>
 
-        <OpenExternalLink
-          onClick={(e) => e.stopPropagation()}
-          href={work.link}
-          className="self-start p-4 rounded-full hover:bg-foreground hover:text-background active:text-background active:bg-foreground"
-        >
-          <MoveRight className="size-4" />
-        </OpenExternalLink>
+        {work.personal ? (
+          <OpenExternalLink
+            onClick={(e) => e.stopPropagation()}
+            href={work.link}
+            className={linkButtonCn}
+          >
+            <MoveRight className="size-4" />
+          </OpenExternalLink>
+        ) : (
+          <OpenLink
+            className={linkButtonCn}
+            onClick={(e) => e.stopPropagation()}
+            href={`/works/${work.id}`}
+          >
+            {' '}
+            <MoveRight className="size-4" />
+          </OpenLink>
+        )}
       </div>
     </div>
   );

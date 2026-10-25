@@ -34,9 +34,9 @@ export function SocialLinks() {
           key={socialLink.icon}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-3 rounded-full bg-muted/40 hover:opacity-80 active:bg-muted"
+          className="p-3 rounded-full bg-[#242424]/40 hover:opacity-80 active:bg-[#242424]"
         >
-          <MaskedIcon icon={socialLink.icon} className="size-5" />
+          <MaskedIcon icon={socialLink.icon} className="size-5 bg-[#f5f5f5]!" />
         </a>
       ))}
     </div>

@@ -1,6 +1,6 @@
 import { LetsWork } from '@/src/components/LetsWork';
 import { Page, PageHeader } from '@/src/components/Page';
-import { ArrowUpRight, BriefcaseBusiness, Code2, Sparkles } from 'lucide-react';
+import { BriefcaseBusiness, Code2, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -30,21 +30,27 @@ const expertise = [
 
 const experiences = [
   {
-    period: '2025 — Present',
+    period: '2026 — Present',
     type: 'Freelance',
     role: 'Frontend Developer & Product Designer',
     company: 'Independent projects',
     summary:
       'I help startups and personal brands turn ideas into clean, high-impact web experiences with strong storytelling and modern interfaces.',
-    highlights: ['UX writing', 'UI systems', 'Next.js builds'],
+    highlights: [
+      'UX writing',
+      'UI systems',
+      'React',
+      'Next.js builds',
+      'TypeScript',
+    ],
   },
   {
-    period: '2024 — 2025',
-    type: 'Web dev',
-    role: 'Junior Full-Stack Developer',
-    company: 'Creative digital studio',
+    period: 'June - October 2026',
+    type: 'Stage Web dev',
+    role: 'Web integrator',
+    company: 'Société Créative',
     summary:
-      'Worked on product pages, landing experiences, dashboards, and marketing websites, improving visual coherence and front-end performance.',
+      'Worked on product pages, landing experiences, dashboards, and marketing websites, improving visual coherence and front-end performance. Work in HTML, CSS and JavaScript',
     highlights: [
       'Responsive layouts',
       'Component architecture',
@@ -77,7 +83,7 @@ export default function ExperiencesPage() {
             key={title}
             className="p-5 border rounded-lg shadow-sm border-border bg-background/80"
           >
-            <div className="mb-4 inline-flex rounded-md border border-border bg-muted/60 p-2.5">
+            <div className="mb-4 inline-flex rounded-md border border-border bg-muted/80 p-2.5">
               <Icon className="size-5 text-foreground" />
             </div>
             <h2 className="mb-2 text-lg font-semibold text-foreground">
@@ -124,7 +130,7 @@ export default function ExperiencesPage() {
                 {item.highlights.map((highlight) => (
                   <li
                     key={highlight}
-                    className="px-3 py-1 text-xs border rounded-full border-border bg-muted/60 text-foreground"
+                    className="px-3 py-1 text-xs border rounded-full border-border bg-muted/80 text-foreground"
                   >
                     {highlight}
                   </li>
