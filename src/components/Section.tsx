@@ -32,7 +32,7 @@ export function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 export function SectionParagraphe({ children }: { children: React.ReactNode }) {
-  return <p className="text-muted-foreground text-sm">{children}</p>;
+  return <p className="text-sm text-muted-foreground">{children}</p>;
 }
 
 export function SectionLinkButton({
@@ -45,7 +45,7 @@ export function SectionLinkButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center gap-1 md:px-1 rounded text-muted-foreground hover:text-foreground hover:bg-black/4 dark:hover:bg-[#1a1a1a] active:bg-black/4 dark:active:bg-[#1a1a1a] text-sm active:opacity-80"
+      className="inline-flex items-center gap-1 text-sm rounded md:px-1 text-muted-foreground hover:text-foreground hover:bg-muted active:bg-muted active:opacity-80"
     >
       {children}
     </Link>

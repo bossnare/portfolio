@@ -10,6 +10,7 @@ export const works = [
     color: '#2D7DD2',
     link: 'https://melodayzmusic.vercel.app',
     cover: 'melodayzmusic_cover.png',
+    personal: true,
   },
   {
     id: 'talor',
@@ -22,6 +23,7 @@ export const works = [
     color: '#A9E5BB',
     link: 'https://talor.vercel.app',
     cover: 'talor_cover.png',
+    personal: true,
   },
   {
     id: 'portfolio',
@@ -34,6 +36,7 @@ export const works = [
     color: '#55D5D0',
     link: 'https://christorazafimanga.is-a.dev',
     cover: 'christo_cover.png',
+    personal: true,
   },
   {
     id: 'cabinet-excellent',
@@ -43,8 +46,9 @@ export const works = [
     description:
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: 'person-standing',
-    color: '#EEB902',
+    color: '#688E26',
     link: '#',
+    personal: false,
     cover: 'cabinet_excellent_cover.png',
   },
 ];

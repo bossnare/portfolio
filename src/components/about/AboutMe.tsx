@@ -3,11 +3,14 @@ import { ChevronRight } from 'lucide-react';
 
 export function AboutMe() {
   return (
-    <Section id="about" className="border-b border-border/70">
+    <Section
+      id="about"
+      className="border-b pt-18 border-border dark:border-border/70"
+    >
       <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <div className="flex flex-col items-start gap-5">
           <div className="flex flex-col items-start gap-4">
-            <h2 className="font-display text-3xl font-medium">About me</h2>
+            <h2 className="text-3xl font-medium font-display">About me</h2>
             <p className="max-w-sm text-sm leading-6 text-muted-foreground">
               A full-stack developer focused on thoughtful, dependable digital
               products.
@@ -20,12 +23,12 @@ export function AboutMe() {
         </div>
 
         <div className="flex flex-col gap-6">
-          <p className="max-w-3xl font-display text-2xl leading-snug md:text-3xl">
+          <p className="max-w-3xl text-2xl leading-snug font-display md:text-3xl">
             From architecture to interface, I build digital products that
             balance functionality and design.
           </p>
 
-          <div className="grid gap-5 border-t border-border/70 pt-6 sm:grid-cols-3">
+          <div className="grid gap-5 pt-6 border-t border-border dark:border-border/70 sm:grid-cols-3">
             <div className="flex flex-col gap-2">
               <span className="text-xs font-medium uppercase text-muted-foreground">
                 Frontend

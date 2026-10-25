@@ -26,6 +26,7 @@ export const skills = [
       'TypeScript',
       'REST API',
       'Swagger',
+      'Security',
     ],
   },
   {

@@ -16,13 +16,13 @@ export const Intro = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-5 border-t-2 border-primary bg-muted p-5 md:border-l-2 md:border-t-0 md:p-7">
+        <div className="flex flex-col gap-5 border-t-2 border-primary bg-card p-5 md:border-l-2 md:border-t-0 md:p-7">
           <div className="flex items-center gap-4">
             <Image
               src={`/icon/${intro.letsgochris.image}`}
               alt={`${intro.letsgochris.name} mark`}
-              width={56}
-              height={56}
+              width={60}
+              height={60}
               className="size-12 shrink-0 dark:"
             />
             <div>
