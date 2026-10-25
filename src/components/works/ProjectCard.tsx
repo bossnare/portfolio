@@ -34,7 +34,7 @@ export function ProjectCard({ work }: WorkCardProps) {
     <div
       tabIndex={0}
       onClick={() => goTo({ href: `/works/${work.id}` })}
-      className="flex flex-col h-full p-8 transition-colors border rounded-lg shadow-sm cursor-pointer border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
+      className="flex flex-col h-full p-8 transition-colors border shadow-sm cursor-pointer rounded-3xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
     >
       <div className="flex flex-col gap-5">
         <div className="w-full h-40">
@@ -42,7 +42,7 @@ export function ProjectCard({ work }: WorkCardProps) {
             src={`/images/${work.cover}`}
             width={800}
             height={600}
-            className="object-cover rounded-sm invert dark:invert-0 size-full"
+            className="object-cover rounded-2xl invert dark:invert-0 size-full"
             alt={work.cover}
           />
         </div>
@@ -55,7 +55,12 @@ export function ProjectCard({ work }: WorkCardProps) {
               >
                 <Icon className="size-5" />
               </span>
-              <span className="text-sm">{work.type}</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-semibold font-display">
+                  {work.name}
+                </span>
+                <span className="text-xs">{work.type}</span>
+              </div>
             </div>
 
             <span className="line-clamp-3 text-[15px] leading-7 text-muted-foreground">

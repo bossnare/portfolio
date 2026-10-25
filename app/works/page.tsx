@@ -58,7 +58,7 @@ export default function WorksPage() {
         ))}
       </section>
 
-      <section className="p-5 border rounded-lg border-border bg-background/80 md:p-6">
+      <section className="p-5 border rounded-lg border-border bg-background/90 md:p-6">
         <div className="flex items-center justify-between gap-4 mb-5">
           <div>
             <p className="text-sm uppercase tracking-[0.12em] text-muted-foreground">
