@@ -7,6 +7,7 @@ import { handleWait } from '../utils/handle-wait';
 import { Tab, tabs } from './header/Tab';
 import { LanguageSwitch } from './header/LanguageSwitch';
 import { usePathname } from 'next/navigation';
+import {cn} from "@/src/lib/utils"
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -43,7 +44,7 @@ export function Header() {
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4 md:gap-3">
           <a
             className="hidden lg:flex h-8 items-center justify-center gap-2 rounded-sm px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc] font-medium"
             href="/cv/Christo_Razafimanga_Dev_CV.pdf"
@@ -55,12 +56,12 @@ export function Header() {
           <LanguageSwitch />
           <button
             onClick={handleTogleOpenMenu}
-            className="flex items-center justify-center border rounded-sm md:hidden size-7 border-border active:bg-background active:opacity-60"
+            className={cn(isOpenMenu ? "border" : "border-0", "flex items-center justify-center rounded-sm md:hidden size-7.5 border-border active:bg-background active:opacity-60")}
           >
             {isOpenMenu ? (
-              <X className="size-5 text-zinc-800 dark:text-zinc-100" />
+              <X className="text-zinc-800 dark:text-zinc-100" />
             ) : (
-              <Menu className="size-5 text-zinc-800 dark:text-zinc-100" />
+              <Menu className="size-10 text-zinc-800 dark:text-zinc-100" />
             )}
           </button>
         </div>
