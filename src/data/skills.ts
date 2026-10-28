@@ -48,6 +48,7 @@ export const skills = [
       'Vercel',
       'CI/CD',
       'Adobe',
+      'AI tools'
     ],
   },
 ];
@@ -68,5 +69,9 @@ export const expertiseLevel = [
   {
     name: 'DevOps',
     percent: 55,
+  },
+  {
+    name: 'AI Integration',
+    percent: 35,
   },
 ];
