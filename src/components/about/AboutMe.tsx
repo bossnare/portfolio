@@ -13,7 +13,7 @@ export function AboutMe() {
             <h2 className="text-3xl font-medium font-display">About me</h2>
             <p className="max-w-sm text-sm leading-6 text-muted-foreground">
               A full-stack developer focused on thoughtful, dependable digital
-              products.
+              products and modern technologies.
             </p>
           </div>
           <SectionLinkButton href="/about">
