@@ -18,7 +18,7 @@ export function SkillsExpertise() {
           >
             <div className="flex items-center gap-3">
               <span className="p-1.5 border rounded-md bg-background border-border">
-                <skill.icon />
+                <skill.icon className="size-5" aria-hidden={true} />
               </span>
               <span className="font-medium font-display text-xl">{skill.name}</span>
             </div>

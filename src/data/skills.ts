@@ -1,8 +1,8 @@
-import { Database, LayoutPanelLeft, Package2, Toolbox } from 'lucide-react';
+import { Database, PanelsTopLeft, Server, Palette } from 'lucide-react';
 
 export const skills = [
   {
-    icon: LayoutPanelLeft,
+    icon: PanelsTopLeft,
 
     name: 'Frontend',
     skillItems: [
@@ -16,7 +16,7 @@ export const skills = [
     ],
   },
   {
-    icon: Package2,
+    icon: Server,
     name: 'Backend',
     skillItems: [
       'NodeJS',
@@ -35,7 +35,7 @@ export const skills = [
     skillItems: ['PostgreSQL', 'MySQL', 'MongoDB', 'Prisma ORM'],
   },
   {
-    icon: Toolbox,
+    icon: Palette,
 
     name: 'Design & Tools',
     skillItems: [
