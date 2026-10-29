@@ -1,4 +1,5 @@
 import { expertiseLevel, skills } from '@/src/data/skills';
+import { Gauge } from 'lucide-react'
 
 export function SkillsExpertise() {
   return (
@@ -36,7 +37,12 @@ export function SkillsExpertise() {
         ))}
 
         <div className="flex flex-col gap-4 p-4 border rounded-lg md:col-span-2 bg-card border-border">
-          <span className="font-medium font-display text-xl">Expertise Level</span>
+          <div className="flex items-center gap-3">
+              <span className="p-1.5 border rounded-md bg-background border-border">
+                <Gauge className="size-5" aria-hidden={true} />
+              </span>
+              <span className="font-medium font-display text-xl">Expertise Level</span>
+            </div>
           <div className="grid items-center w-full gap-3 md:gap-6 md:grid-cols-2">
             {expertiseLevel.map((level) => (
               <div key={level.name} className="flex items-center gap-4 text-sm">

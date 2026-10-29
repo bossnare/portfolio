@@ -1,6 +1,6 @@
 import { LetsWork } from '@/src/components/LetsWork';
 import { Page, PageHeader } from '@/src/components/Page';
-import { BriefcaseBusiness, Code2, Sparkles } from 'lucide-react';
+import { BriefcaseBusiness, PanelsTopLeft, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,21 +9,21 @@ export const metadata: Metadata = {
 
 const expertise = [
   {
+    title: 'Frontend dev',
+    description:
+      'Modern web experiences with TypeScript, Next.js, everything around them and responsive UI patterns.',
+    icon: PanelsTopLeft,
+  },
+  {
     title: 'Product design',
     description:
       'User-focused interfaces built around clarity, rhythm, and conversion.',
     icon: Sparkles,
   },
   {
-    title: 'Frontend dev',
+    title: 'Backend development',
     description:
-      'Modern web experiences with TypeScript, Next.js, and responsive UI patterns.',
-    icon: Code2,
-  },
-  {
-    title: 'Digital strategy',
-    description:
-      'Turning ideas into usable products, polished flows, and measurable outcomes.',
+      'Scalable APIs and backend systems with a focus on security, performance, and maintainability.',
     icon: BriefcaseBusiness,
   },
 ];
@@ -32,7 +32,7 @@ const experiences = [
   {
     period: '2026 — Present',
     type: 'Freelance',
-    role: 'Frontend Developer & Product Designer',
+    role: 'Full-stack Web Developer & Product Designer',
     company: 'Independent projects',
     summary:
       'I help startups and personal brands turn ideas into clean, high-impact web experiences with strong storytelling and modern interfaces.',
@@ -41,11 +41,13 @@ const experiences = [
       'UI systems',
       'React',
       'Next.js builds',
+      'NestJS/Express',
+      'REST API',
       'TypeScript',
     ],
   },
   {
-    period: 'June - October 2026',
+    period: 'June — October 2026',
     type: 'Stage Web dev',
     role: 'Web integrator',
     company: 'Société Créative',
@@ -55,6 +57,9 @@ const experiences = [
       'Responsive layouts',
       'Component architecture',
       'CMS integrations',
+      'HTML',
+      'CSS',
+      'JavaScript'
     ],
   },
   {
@@ -64,7 +69,7 @@ const experiences = [
     company: 'Personal projects',
     summary:
       'Developed a portfolio of experiments and client-ready prototypes focused on clean code, design quality, and practical business value.',
-    highlights: ['Design sprints', 'Prototyping', 'Iterative improvement'],
+    highlights: ['Design sprints', 'Prototyping', 'Iterative improvement', 'HTML', 'Tailwind CSS', 'JavaScript/TypeScript', 'Linux', 'WSL'],
   },
 ];
 
