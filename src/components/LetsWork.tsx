@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export function LetsWork() {
   return (
-    <div className="flex items-center justify-between gap-4 p-5 border rounded-lg border-border bg-linear-to-r from-muted/70 to-transparent">
+    <div className="flex items-center justify-between gap-4 p-5 border rounded-lg border-border bg-linear-to-r from-muted/70 to-background dark:to-transparent">
       <div>
         <p className="text-sm uppercase tracking-[0.12em] text-muted-foreground">
           Current focus
