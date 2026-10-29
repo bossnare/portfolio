@@ -37,6 +37,11 @@ export function HeroVisual() {
         height={600}
         priority
       />
+      <div className="flex z-10 bottom-15 md:bottom-40 absolute">
+            {Array.from({length:4}).map((box, i) => (
+              <div key={i} style={{marginTop: i % 2 ? '-24px' : '0px'}} className="bg-foreground size-7" />
+            ))}
+      </div>
       <Image
         className="absolute hidden left-0 object-contain h-auto dark:invert -bottom-10 w-35 lg:w-45 sm:w-40 xl:w-50 z-11"
         src="/icon/graphic-2.svg"
@@ -45,9 +50,8 @@ export function HeroVisual() {
         height={600}
         priority
       />
-      <div className="absolute z-20 rounded-full border-3 size-3 md:size-4 border-primary top-10 left-8 md:top-20 md:left-30"></div>
-      <div className="absolute z-20 rounded-full bg-foreground size-2 bottom-20 right-4 md:size-3 md:bottom-26 md:right-16"></div>
-      <div className="absolute z-20 rounded-full bottom-50 right-14 md:bottom-80 md:right-38">
+      <div className="absolute z-20 rounded-full border-3 size-3 md:size-4 border-foreground top-10 left-8 md:top-20 md:left-30"></div>
+      <div className="absolute z-20 bottom-50 right-14 md:bottom-80 md:right-38">
         <Plus className="size-5" />
       </div>
     </div>

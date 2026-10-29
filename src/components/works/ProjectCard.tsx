@@ -35,14 +35,14 @@ export function ProjectCard({ work }: WorkCardProps) {
     <div
       tabIndex={0}
       onClick={() => goTo({ href: `/works/${work.id}` })}
-      className="flex flex-col h-full p-8 transition-colors border shadow-sm cursor-pointer rounded-3xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
+      className="flex flex-col h-full p-5 transition-colors border shadow-sm cursor-pointer rounded-2xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
     >
       <div className="flex flex-col gap-5">
-        <div style={{backgroundColor: work.color}} className="flex flex-col items-center gap-2 justify-center w-full h-40 rounded-2xl">
+        <div style={{backgroundColor: work.color}} className="flex flex-col items-center gap-2 justify-center w-full h-40 rounded-lg">
           {work.logoIcon && <MaskedIcon
             style={{backgroundColor: work.textColor}}
             icon={work.logoIcon}
-            className="size-12"
+            className="size-13"
           />}
           <span style={{color: work.textColor}} className={cn(!work.logoIcon && "max-w-40 text-center" ,"text-3xl font-medium font-display")}>{work.nameBrand}</span>
         </div>
@@ -51,15 +51,15 @@ export function ProjectCard({ work }: WorkCardProps) {
             <div className="flex items-center gap-2">
               <span
                 style={{ background: `${work.color}1a` }}
-                className="self-start p-2 rounded-full shrink-0"
+                className="p-3 rounded-full shrink-0"
               >
                 <Icon className="size-5" aria-hidden={true} />
               </span>
               <div className="flex flex-col">
-                <span className="text-lg font-semibold font-display">
+                <span className="text-lg font-semibold">
                   {work.type}
                 </span>
-                <span className="text-xs capitalize">{work.category}</span>
+                <span className="text-xs capitalize text-muted-foreground">{work.category}</span>
               </div>
             </div>
 
@@ -70,9 +70,9 @@ export function ProjectCard({ work }: WorkCardProps) {
         </div>
       </div>
 
-      <div className="flex items-center justify-between pt-2 mt-auto text-muted-foreground">
+      <div className="flex items-center justify-between pt-2 mt-auto text-">
         <span className="text-sm">
-          {work.personal ? 'View work' : 'View detail'}
+          {work.personal ? 'View work' : 'View details'}
         </span>
 
         {work.personal ? (
