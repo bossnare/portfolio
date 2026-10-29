@@ -10,7 +10,8 @@ import {
 import type { Work } from '@/src/data/works';
 import { OpenExternalLink, OpenLink } from '../link';
 import { useNavigation } from '@/src/hooks/use-navigation';
-import Image from 'next/image';
+import {MaskedIcon} from '@/src/components/MaskedIcon'
+import {cn} from '@/src/lib/utils'
 
 const workIcons = {
   music: Music,
@@ -37,14 +38,13 @@ export function ProjectCard({ work }: WorkCardProps) {
       className="flex flex-col h-full p-8 transition-colors border shadow-sm cursor-pointer rounded-3xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
     >
       <div className="flex flex-col gap-5">
-        <div className="w-full h-40">
-          <Image
-            src={`/images/${work.cover}`}
-            width={800}
-            height={600}
-            className="object-cover rounded-2xl invert dark:invert-0 size-full"
-            alt={work.cover}
-          />
+        <div style={{backgroundColor: work.color}} className="flex flex-col items-center gap-2 justify-center w-full h-40 rounded-2xl">
+          {work.logoIcon && <MaskedIcon
+            style={{backgroundColor: work.textColor}}
+            icon={work.logoIcon}
+            className="size-12"
+          />}
+          <span style={{color: work.textColor}} className={cn(!work.logoIcon && "max-w-40 text-center" ,"text-3xl font-medium font-display")}>{work.nameBrand}</span>
         </div>
         <div className="flex gap-5 pb-3 grow">
           <div className="flex flex-col gap-3 grow">
@@ -53,13 +53,13 @@ export function ProjectCard({ work }: WorkCardProps) {
                 style={{ background: `${work.color}1a` }}
                 className="self-start p-2 rounded-full shrink-0"
               >
-                <Icon className="size-5" />
+                <Icon className="size-5" aria-hidden={true} />
               </span>
               <div className="flex flex-col">
-                <span className="text-xl font-semibold font-display">
-                  {work.name}
+                <span className="text-lg font-semibold font-display">
+                  {work.type}
                 </span>
-                <span className="text-xs">{work.type}</span>
+                <span className="text-xs capitalize">{work.category}</span>
               </div>
             </div>
 

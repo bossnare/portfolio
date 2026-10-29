@@ -1,9 +1,11 @@
-type MaskedIconProps = {
+type Props = React.ComponentProps<'span'>;
+
+type MaskedIconProps = Props & {
   icon: string;
   className?: string;
 };
 
-export function MaskedIcon({ icon, className = '' }: MaskedIconProps) {
+export function MaskedIcon({style, icon, className = '' }: MaskedIconProps) {
   return (
     <span
       className={`bg-foreground flex ${className}`}
@@ -17,6 +19,7 @@ export function MaskedIcon({ icon, className = '' }: MaskedIconProps) {
           WebkitMaskRepeat: 'no-repeat',
           WebkitMaskPosition: 'center',
           WebkitMaskSize: 'contain',
+          ...style
         } as React.CSSProperties
       }
     />
