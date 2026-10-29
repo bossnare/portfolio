@@ -5,13 +5,13 @@ export const PersonalInformation = () => {
   return (
     <section className="flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
       <h3 className="max-w-md text-3xl">Personal Information</h3>
-      <div className="flex flex-col justify-center gap-8 p-4 border divide-y rounded-lg bg-background md:items-center md:divide-x md:divide-y-0 md:flex-row divide-border border-border">
+      <div className="flex flex-col justify-center gap-6 sm:gap-8 p-4 border divide-y rounded-lg bg-background md:items-center md:divide-x md:divide-y-0 md:flex-row divide-border border-border">
         <Image
           src="/images/id_photo.jpg"
           alt="id_photo"
           width={1200}
           height={1200}
-          className="h-auto rounded-md w-50"
+          className="h-auto rounded-md w-35 sm:w-45 grayscale hover:grayscale-0 transition-[filter] duration-300"
         />
         <div className="grid justify-between gap-8 pb-8 md:gap-12 md:pr-8 md:pb-0">
           {personalInfo.name.map((nameInfo) => (
