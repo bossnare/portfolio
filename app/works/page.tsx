@@ -76,8 +76,8 @@ export default function WorksPage() {
               key={title}
               className="p-4 border rounded-md border-border dark:border-0 bg-card dark:bg-linear-to-r from-black to-black/60"
             >
-              <div className="mb-3 inline-flex rounded-md border border-border bg-primary p-2.5 bg-[linear-gradient(to_right,rgba(148,163,184,0.6)_1px,transparent_1px),linear-gradient(to_bottom,rgba(121, 136, 151, 0.2)_1px,transparent_1px)] bg-size-[8px_8px]">
-                <Icon className="size-5 text-primary-foreground" />
+              <div className="mb-3 inline-flex rounded-md border border-border bg-primary-foreground p-2.5 bg-[linear-gradient(to_right,rgba(148,163,184,0.6)_1px,transparent_1px),linear-gradient(to_bottom,rgba(121, 136, 151, 0.2)_1px,transparent_1px)] bg-size-[8px_8px]">
+                <Icon className="size-5 text-primary" />
               </div>
               <h3 className="mb-2 text-lg font-medium">
                 {title}
