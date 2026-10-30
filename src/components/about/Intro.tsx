@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Intro = () => {
   return (
-    <section className="flex w-full flex-col items-start justify-center gap-8">
+    <section className="flex w-full flex-col pb-10 md:pb-0 items-start justify-center gap-8">
       <h2 className="max-w-md text-3xl">Intro</h2>
 
       <div className="grid w-full gap-8 md:grid-cols-[1.1fr_0.9fr] md:gap-12">
@@ -16,7 +16,7 @@ export const Intro = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-5 border-t-2 border-primary bg-card p-5 md:border-l-2 md:border-t-0 md:p-7">
+        <div className="flex flex-col gap-5 border-t-2 border-foreground bg-card p-5 md:border-l-2 md:border-t-0 md:p-7">
           <div className="flex items-center gap-4">
             <Image
               src={`/icon/${intro.letsgochris.image}`}
@@ -29,7 +29,7 @@ export const Intro = () => {
               <p className="text-xs font-medium uppercase text-muted-foreground">
                 Independent studio
               </p>
-              <p className="mt-1 font-display text-xl">
+              <p className="mt-1 font-display font-medium text-lg">
                 {intro.letsgochris.name}
               </p>
             </div>
