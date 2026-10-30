@@ -15,6 +15,8 @@ export const works = [
     cover: 'melodayzmusic_cover.png',
     personal: true,
     status: 'In-progress',
+    github: 'https://github.com/bossnare/melodayzmusic',
+    technologies: ['Tailwind CSS', 'TypeScript', 'Next.js', 'NestJS', 'PostgreSQL'] ,
     metadata: [
       {
         label: 'Year',
@@ -45,7 +47,9 @@ export const works = [
     link: 'https://talor.vercel.app',
     cover: 'talor_cover.png',
     personal: true,
+    github: 'https://github.com/bossnare/talor',
     status: 'In-progress',
+    technologies: ['Tailwind CSS', 'TypeScript', 'React', 'Vite', 'NestJS', 'PostgreSQL'] ,
     metadata: [
       {
         label: 'Year',
@@ -76,7 +80,9 @@ export const works = [
     link: 'https://christorazafimanga.is-a.dev',
     cover: 'christo_cover.png',
     personal: true,
+    github: 'https://github.com/bossnare/portfolio',
     status: 'Completed',
+    technologies: ['Tailwind CSS', 'TypeScript', 'Next.js'] ,
     metadata: [
       {
         label: 'Year',
@@ -107,6 +113,7 @@ export const works = [
     personal: false,
     cover: 'cabinet_excellent_cover.png',
     status: 'In-progress',
+    technologies: ['Tailwind CSS', 'TypeScript', 'Express', 'React', 'Vite', 'MySQL'] ,
     metadata: [
       {
         label: 'Year',
