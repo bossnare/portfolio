@@ -49,7 +49,7 @@ return(
             educations.map((education) => (
               <article
             key={education.title}
-            className="grid gap-4 pb-6 items-center p-2 md:grid-cols-[160px_1fr] md:p-4"
+            className="grid gap-4 pb-6 md:pb-2 items-center p-2 md:grid-cols-[160px_1fr] md:p-4"
           >
             <div className="text-sm font-medium text-muted-foreground">
               {education.period}
