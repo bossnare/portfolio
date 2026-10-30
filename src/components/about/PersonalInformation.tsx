@@ -1,7 +1,13 @@
+"use client";
+
 import { personalInfo } from '@/src/data/abouts';
 import Image from 'next/image';
+import {motion} from 'motion/react'
+import {useReveal} from '@/src/hooks/use-reveal'
 
 export const PersonalInformation = () => {
+  const {ref, isInView} = useReveal({amount: 0.9})
+
   return (
     <section className="flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
       <h3 className="max-w-md text-3xl">Personal Information</h3>
@@ -25,7 +31,12 @@ export const PersonalInformation = () => {
           </p>
           <div className="flex mt-40 md:mt-auto">
             {Array.from({length:10}).map((box, i) => (
-              <div key={i} style={{marginTop: i % 2 ? '-50px' : '0px'}} className="bg-foreground size-12" />
+              <motion.div
+              ref={ref}
+              initial={{ opacity: 0, x: -40 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: (i + 1) * 0.4 }}
+              key={i} style={{marginTop: i % 2 ? '-50px' : '0px'}} className="bg-foreground size-12" />
             ))}
           </div>
 

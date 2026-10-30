@@ -15,7 +15,7 @@ export function SkillsExpertise() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col gap-4 p-4 border rounded-lg bg-card border-border"
+            className="flex flex-col gap-4 p-4 border rounded-md bg-card border-border"
           >
             <div className="flex items-center gap-3">
               <span className="p-1.5 border rounded-md bg-background border-border">
@@ -27,7 +27,7 @@ export function SkillsExpertise() {
               {skill.skillItems.map((item) => (
                 <li
                   key={item}
-                  className="p-1 px-4 text-sm border rounded text-foreground border-border bg-muted"
+                  className="p-0.5 px-2.5 text-sm border text-foreground border-border bg-muted"
                 >
                   {item}
                 </li>

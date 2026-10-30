@@ -22,3 +22,5 @@ export const educations = [
         degree: 'Bachelor'
     },
 ]
+
+export type Education = (typeof education)[number]
