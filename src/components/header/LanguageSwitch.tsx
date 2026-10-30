@@ -12,7 +12,7 @@ export function LanguageSwitch() {
   const [lng, setLng] = useState('en');
 
   return (
-    <div className="p-0.5 border border-border overflow-hidden rounded-sm flex items-center *:px-2 *:rounded-xs">
+    <div className="p-0.5 border border-border hover:border-foreground overflow-hidden rounded-sm flex items-center *:px-2 *:rounded-xs">
       {languages.map((language) => (
         <button
           key={language.lng}

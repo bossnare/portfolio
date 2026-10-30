@@ -44,7 +44,7 @@ export function ProjectCard({ work }: WorkCardProps) {
             icon={work.logoIcon}
             className="size-13"
           />}
-          <span style={{color: work.textColor}} className={cn(!work.logoIcon && "max-w-40 text-center" ,"text-3xl font-medium font-display")}>{work.nameBrand}</span>
+          <span style={{color: work.textColor}} className={cn(!work.logoIcon && "max-w-40 text-center" ,"text-3xl font-medium font-display")}>{work.brandName}</span>
         </div>
         <div className="flex gap-5 pb-3 grow">
           <div className="flex flex-col gap-3 grow">

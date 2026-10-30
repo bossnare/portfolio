@@ -3,7 +3,7 @@ import { Gauge } from 'lucide-react'
 
 export function SkillsExpertise() {
   return (
-    <section className="flex flex-col items-start justify-center w-full min-h-screen gap-10 md:gap-10 md:items-center">
+    <section className="flex flex-col items-start justify-center w-full min-h-screen pb-10 md:pb-0 gap-10 md:gap-10 md:items-center">
       <div className="space-y-5 md:text-center">
         <h3 className="max-w-md text-3xl">Skills & Expertise</h3>
         <p className="max-w-md text-sm text-muted-foreground">
@@ -15,7 +15,7 @@ export function SkillsExpertise() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col gap-4 p-4 border rounded-lg bg-card border-border"
+            className="flex flex-col gap-4 p-4 border rounded-md bg-card border-border"
           >
             <div className="flex items-center gap-3">
               <span className="p-1.5 border rounded-md bg-background border-border">
@@ -27,7 +27,7 @@ export function SkillsExpertise() {
               {skill.skillItems.map((item) => (
                 <li
                   key={item}
-                  className="p-1 px-4 text-sm border rounded-sm text-foreground border-border bg-muted"
+                  className="p-0.5 px-2.5 text-sm border text-foreground border-border bg-muted"
                 >
                   {item}
                 </li>
@@ -47,13 +47,13 @@ export function SkillsExpertise() {
             {expertiseLevel.map((level) => (
               <div key={level.name} className="flex items-center gap-4 text-sm">
                 <span className="min-w-22">{level.name}</span>
-                <div className="relative h-2 overflow-hidden rounded-full grow bg-muted">
+                <div className="relative h-2 overflow-hidden grow bg-muted">
                   <span
-                    className="absolute inset-y-0 top-0 left-0 rounded-full bg-primary"
+                    className="absolute inset-y-0 top-0 left-0 bg-foreground"
                     style={{ width: `${level.percent}%` }}
                   />
                 </div>
-                <span className="min-w-10 text-muted-foreground">
+                <span className="min-w-10">
                   {level.percent}%
                 </span>
               </div>
