@@ -9,7 +9,7 @@ export function Availability({ className }: { className?: string }) {
         className
       )}
     >
-      <span className="rounded-full size-2.5 bg-[#23F0C7] ml-1"></span>
+      <span className="rounded-full size-2.5 bg-primary ml-1"></span>
       <span className="ml-2 text-sm text-muted-foreground">
         Open to new challenges
       </span>

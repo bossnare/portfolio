@@ -4,7 +4,7 @@ export const works = [
     category: 'web',
     type: 'Music platform',
     name: 'MelodayzMusic',
-    nameBrand: 'MelodayzMusic',
+    brandName: 'MelodayzMusic',
     description:
       'A modern music streaming platform built with Next.js and Tailwind CSS. Features seamless audio playback, personalized playlist creation, and a responsive user interface.',
     icon: 'music',
@@ -14,13 +14,28 @@ export const works = [
     link: 'https://melodayzmusic.vercel.app',
     cover: 'melodayzmusic_cover.png',
     personal: true,
+    status: 'In-progress',
+    metadata: [
+      {
+        label: 'Year',
+        value: ['2025']
+      },
+      {
+        label: 'Framework',
+        value: ['Next.js', 'NestJS']
+      },
+      {
+        label: 'Category',
+        value: ['Full-stack']
+      }
+    ]
   },
   {
     id: 'talor',
     category: 'web',
     type: 'Task management app',
     name: 'Talor',
-    nameBrand: 'Talor',
+    brandName: 'Talor',
     description:
       'A collaborative task management application featuring intercative Kanban boards, drag-and-drop functionality, and real-time updates powered by React/Vite and NestJS.',
     icon: 'folder-kanban',
@@ -30,13 +45,28 @@ export const works = [
     link: 'https://talor.vercel.app',
     cover: 'talor_cover.png',
     personal: true,
+    status: 'In-progress',
+    metadata: [
+      {
+        label: 'Year',
+        value: ['2026']
+      },
+      {
+        label: 'Framework',
+        value: ['React/Vite', 'NestJS']
+      },
+      {
+        label: 'Category',
+        value: ['Full-stack']
+      }
+    ]
   },
   {
     id: 'portfolio',
     category: 'web',
     type: 'Portfolio website',
     name: 'Christo Razafimanga',
-    nameBrand: 'CHRISTO',
+    brandName: 'CHRISTO',
     description:
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: 'globe-check',
@@ -46,13 +76,28 @@ export const works = [
     link: 'https://christorazafimanga.is-a.dev',
     cover: 'christo_cover.png',
     personal: true,
+    status: 'Completed',
+    metadata: [
+      {
+        label: 'Year',
+        value: ['2026']
+      },
+      {
+        label: 'Framework',
+        value: ['Next.js']
+      },
+      {
+        label: 'Category',
+        value: ['Full-stack']
+      }
+    ]
   },
   {
     id: 'cabinet-excellent',
     category: 'web',
     type: 'RH management',
     name: 'Cabinet Excellent',
-    nameBrand: 'Cabinet Excellent',
+    brandName: 'Cabinet Excellent',
     description:
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: 'person-standing',
@@ -61,6 +106,21 @@ export const works = [
     link: '#',
     personal: false,
     cover: 'cabinet_excellent_cover.png',
+    status: 'In-progress',
+    metadata: [
+      {
+        label: 'Year',
+        value: ['2026']
+      },
+      {
+        label: 'Framework',
+        value: ['React/Vite', 'Express']
+      },
+      {
+        label: 'Category',
+        value: ['UI/UX Design']
+      }
+    ]
   },
 ];
 
