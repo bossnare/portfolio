@@ -17,6 +17,12 @@ export const works = [
     status: 'In-progress',
     github: 'https://github.com/bossnare/melodayzmusic',
     technologies: ['Tailwind CSS', 'TypeScript', 'Next.js', 'NestJS', 'PostgreSQL'] ,
+    previews: [
+      {title: 'Home page', description: 'Explore more home design.'},
+      {title: 'Alignment', description: 'Look like clean space, try it.'},
+      {title: 'Design', description: 'What a clean space. Love it.'},
+      {title: 'UI/UX', description: 'Smooth and clean for your rythm.'}
+    ],
     metadata: [
       {
         label: 'Year',
@@ -50,6 +56,12 @@ export const works = [
     github: 'https://github.com/bossnare/talor',
     status: 'In-progress',
     technologies: ['Tailwind CSS', 'TypeScript', 'React', 'Vite', 'NestJS', 'PostgreSQL'] ,
+    previews: [
+      {title: 'Home page', description: 'Explore more home design.'},
+      {title: 'Alignment', description: 'Look like clean space, try it.'},
+      {title: 'Design', description: 'What a clean space. Love it.'},
+      {title: 'UI/UX', description: 'Smooth and clean for your rythm.'}
+    ],
     metadata: [
       {
         label: 'Year',
@@ -75,7 +87,7 @@ export const works = [
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: 'globe-check',
     logoIcon: 'letsgochris.svg',
-    color: '#080a08',
+    color: '#191414',
     textColor: '#F1f1f1',
     link: 'https://christorazafimanga.is-a.dev',
     cover: 'christo_cover.png',
@@ -83,6 +95,12 @@ export const works = [
     github: 'https://github.com/bossnare/portfolio',
     status: 'Completed',
     technologies: ['Tailwind CSS', 'TypeScript', 'Next.js'] ,
+    previews: [
+      {title: 'Home page', description: 'Explore more home design.'},
+      {title: 'Alignment', description: 'Look like clean space, try it.'},
+      {title: 'Design', description: 'What a clean space. Love it.'},
+      {title: 'UI/UX', description: 'Smooth and clean for your rythm.'}
+    ],
     metadata: [
       {
         label: 'Year',
@@ -114,6 +132,12 @@ export const works = [
     cover: 'cabinet_excellent_cover.png',
     status: 'In-progress',
     technologies: ['Tailwind CSS', 'TypeScript', 'Express', 'React', 'Vite', 'MySQL'] ,
+    previews: [
+      {title: 'Home page', description: 'Explore more home design.'},
+      {title: 'Alignment', description: 'Look like clean space, try it.'},
+      {title: 'Design', description: 'What a clean space. Love it.'},
+      {title: 'UI/UX', description: 'Smooth and clean for your rythm.'}
+    ],
     metadata: [
       {
         label: 'Year',
