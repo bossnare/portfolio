@@ -18,7 +18,7 @@ export function EducationCard({ education }: EducationProps) {
             <p className="text-lg font-medium text-foreground">
               {education.title}
             </p>
-            <p>{education.school}</p>
+            <p className="text-primary font-medium">{education.school}</p>
             <p className="text-sm text-muted-foreground">
               {education.description}
             </p>

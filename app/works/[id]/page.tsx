@@ -3,7 +3,6 @@ import { Page } from '@/src/components/Page';
 import { MaskedIcon } from '@/src/components/MaskedIcon';
 import { OpenExternalLink } from '@/src/components/link';
 import Link from 'next/link'
-import {ArrowRight} from 'lucide-react'
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -77,7 +76,7 @@ export default async function WorkPage({ params }: Props) {
           {work.metadata.map((info, i) => (
             <div
               key={`${info}, ${i}`}
-              className="flex flex-col items-center gap-2"
+              className="flex flex-col items-center gap-1"
             >
               <ul className="flex gap-1 text-sm font-medium">
                 <li>{info.value.join(' | ')}</li>
@@ -94,15 +93,13 @@ export default async function WorkPage({ params }: Props) {
         {work.personal && (
           <>
             <OpenExternalLink
-              className="w-full relative h-10 font-medium rounded-full md:w-60 bg-primary hover:brightness-120 active:opacity-70 text-primary-foreground"
+              className="w-full transition h-10 font-medium rounded-full md:w-60 bg-primary hover:brightness-120 active:opacity-70 text-primary-foreground"
               href={work.link}
             >
-              View work <span className="p-1 bg-primary-foreground text-foreground rounded-full absolute right-2">
-                    <ArrowRight className="size-5" />
-              </span>
+              View work
             </OpenExternalLink>
             <OpenExternalLink
-              className="w-full h-10 px-6 font-medium rounded-full md:w-fit group hover:text-foreground hover:bg-muted active:opacity-70 active:text-foreground text-primary"
+              className="w-full transition h-10 px-6 font-medium rounded-full md:w-fit group hover:text-foreground hover:bg-muted active:opacity-70 active:text-foreground text-primary"
               href={work.github}
             >
               <MaskedIcon
@@ -116,59 +113,68 @@ export default async function WorkPage({ params }: Props) {
       </div>
 
       <div className="flex w-full gap-3 overflow-x-auto">
-        {Array.from({ length: 4 }).map((_, i) => (
-          <div key={i} className="rounded bg-muted h-80 w-70"></div>
+        {work.previews.map((preview, i) => (
+          <div style={{backgroundColor: work.color}} key={i} className="rounded p-4 py-2 shrink-0 flex flex-col gap-3 items-center justify-center bg-linear-to-b from-transparent to-black/80 dark:to-white/80 h-120 w-70 md:w-[calc(100%/4-12px)]">
+            <div className="flex flex-col text-center items-center">
+              <span style={{color: work.textColor}} className="font-bold text-3xl font-display">{preview.title}</span>
+              <span style={{color: work.textColor}} className="text-sm max-w-40 opacity-98">{preview.description}</span>
+            </div> 
+            <div style={{backgroundColor: work.textColor}} className="grow w-full rounded-sm"></div>
+            {work.personal && <div className="text-white dark:text-black font-semibold font-display text-xs flex gap-1 items-center">
+              <MaskedIcon icon={work.logoIcon} className="bg-white! dark:bg-black! size-3" />
+              <span className="text-white dark:text-black font-semibold font-display text-xs">{work.brandName}</span>
+            </div>}
+          </div>
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start w-full gap-8 md:gap-8 pt-2">
-        <div className="space-y-4">
-          <div className="space-y-3">
-            <h2 className="font-medium font-sans! text-lg">About this project</h2>
-            <p className="font-medium text-muted-foreground max-w-lg text-xl">{work.description}</p>
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-8 pt-8">
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-3">
+            <h2 className="font-medium font-sans!">About this project</h2>
+            <p className="font-medium text-muted-foreground max-w-lg text-lg">{work.description}</p>
           </div>
-          <div className="space-y-3">
-            <h2 className="font-medium font-sans! text-lg">Technologies</h2>
+          <div className="flex flex-col gap-3">
+            <h2 className="font-medium font-sans!">Technologies</h2>
             <ul className="max-w-md flex gap-2 flex-wrap">
               {work.technologies.map((tech) => (
-                <li key={tech} className="p-1 px-3 bg-muted font-medium">{tech}</li>
+                <li key={tech} className="p-1 px-3 bg-muted">{tech}</li>
               ))}
             </ul>
           </div>
+          <span className="text-primary">#{work.type}</span>
         </div>
-        <div>
-        <div className="space-y-5 min-w-lg">
-          <h2 className="font-medium font-sans! text-lg">Others projects</h2>
-          <div className="flex gap-5">
-            {othersWorks.map((other) => (
-              <Link href={`/works/${other.id}`} key={other.id} className="flex flex-col cursor-pointer hover:bg-muted active:bg-muted active:opacity-60 items-center gap-2">
-                <div className="p-2 rounded-3xl bg-muted">
+        <div className="flex flex-col gap-5 max-w-lg w-full">
+          <h2 className="font-medium font-sans!">Others projects</h2>
+          <div className="flex gap-5 flex-wrap">
+            {othersWorks.map((otherwork) => (
+          <Link href={`/works/${otherwork.id}`} key={otherwork.id} className="flex flex-col cursor-pointer hover:bg-muted/70 dark:hover:bg-muted active:bg-primary/20 dark:active:bg-muted active:opacity-70 items-center gap-2">
+                <div className="p-2 rounded-3xl bg-muted dark:bg-card">
                 <div
-            style={{ backgroundColor: other.color }}
+            style={{ backgroundColor: otherwork.color }}
             className="flex items-center justify-center shrink-0 size-20 rounded-full"
           >
-            {other.personal && other.logoIcon ? (
+            {otherwork.personal && otherwork.logoIcon ? (
               <MaskedIcon
-                style={{ backgroundColor: other.textColor }}
-                icon={other.logoIcon}
+                style={{ backgroundColor: otherwork.textColor }}
+                icon={otherwork.logoIcon}
                 className="size-12"
               />
             ) : (
               <span
-                style={{ color: other.textColor }}
+                style={{ color: otherwork.textColor }}
                 className="font-semibold leading-4 text-center text-sm max-w-18 md:max-w-22 font-display"
               >
-                {other.brandName}
+                {otherwork.brandName}
               </span>
             )}
           </div>
-              </div>
-              <span className="font-semibold text-sm max-w-26 text-center">{other.brandName}</span>
-              </Link>
-            ))}
-          </div>
         </div>
-        </div>
+        <span className="font-medium text-sm max-w-26 text-center">{otherwork.brandName}</span>
+      </Link>
+      ))}
+      </div>
+      </div>
       </div>
     </Page>
   );
