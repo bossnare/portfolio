@@ -60,7 +60,7 @@ function HeroActions() {
         <ChevronRight />
       </Link>
       <Link
-        className="flex h-11 w-auto active:opacity-70 items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent bg-muted/60 dark:bg-[#1a1a1a]/80 hover:bg-black/4 active:bg-black/4 dark:active:bg-background dark:hover:bg-background"
+        className="flex h-11 w-auto active:opacity-70 items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent bg-black/4 dark:bg-[#1a1a1a]/80 hover:bg-black/8 active:bg-black/8 dark:active:bg-background dark:hover:bg-background"
         href="/contact"
         onClick={(e) => {
           e.preventDefault();

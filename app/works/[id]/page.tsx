@@ -120,7 +120,7 @@ export default async function WorkPage({ params }: Props) {
               <span style={{color: work.textColor}} className="text-sm max-w-40 opacity-98">{preview.description}</span>
             </div> 
             <div style={{backgroundColor: work.textColor}} className="grow w-full rounded-sm"></div>
-            {work.personal && <div className="text-white dark:text-black font-semibold font-display text-xs flex gap-1 items-center">
+            {work.personal && work.logoIcon && <div className="text-white dark:text-black font-semibold font-display text-xs flex gap-1 items-center">
               <MaskedIcon icon={work.logoIcon} className="bg-white! dark:bg-black! size-3" />
               <span className="text-white dark:text-black font-semibold font-display text-xs">{work.brandName}</span>
             </div>}
