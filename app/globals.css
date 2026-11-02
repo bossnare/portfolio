@@ -38,12 +38,12 @@
   --card: #151515;
   --muted: #242424;
   --muted-foreground: oklch(0.75 0 0);
-  --primary-foreground: #0a0a0a;
+  --primary-foreground: #191414;
   --border: #303030;
 }
 
 body {
-  @apply bg-[#EDEDED] dark:bg-black;
+  @apply bg-[#EDEDED] dark:bg-black; 
   color: var(--foreground);
 }
 

@@ -8,7 +8,7 @@ export const Intro = () => {
 
       <div className="grid w-full gap-8 md:grid-cols-[1.1fr_0.9fr] md:gap-12">
         <div className="flex flex-col justify-center gap-5 md:py-5">
-          <p className="max-w-2xl font-display text-2xl leading-snug">
+          <p className="max-w-2xl font-display font-medium text-2xl leading-snug">
             {intro.description[0]}
           </p>
           <p className="max-w-xl leading-7 text-muted-foreground">
