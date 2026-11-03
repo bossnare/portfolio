@@ -23,12 +23,12 @@ return(
           </div>
           <span className="border-border h-full border-l"></span>
         </div> */}
-        <div className="flex flex-col justify-between divide-y divide-border bg-background dark:bg-transparent grow">
+        <div className="flex flex-col justify-between divide-y divide-border/80 bg-background dark:bg-transparent grow">
           {
             educations.map((education) => (
               <article
             key={education.title}
-            className="grid gap-4 pb-6 md:pb-2 items-center p-2 md:grid-cols-[160px_1fr] md:p-4"
+            className="grid gap-4 pb-6 md:pb-2 items-center p-2 md:grid-cols-[120px_1fr] md:p-4"
           >
             <EducationCard education={education} />
           </article>

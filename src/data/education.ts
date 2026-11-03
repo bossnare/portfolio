@@ -1,24 +1,24 @@
 export const educations = [
   {
     period: '2024 - 2026',
-    title: "Master's Degree in Computer Science",
-    school: 'E-media Madagascar',
-    description: 'Lorem ipsum dolor sit amet, dolor ipsum dolor sit amet.',
-    degree: 'Master',
+    title: "Audiovisual Communication and Technology",
+    school: 'E-media University Madagascar',
+    description: 'Focusing on digital media and visual storytelling.',
+    degree: 'Bachelor',
   },
   {
     period: '2023 - 2024',
-    title: "Bachelor's Degree in Computer Science",
-    school: 'DTC Madagascar',
-    description: 'Lorem ipsum dolor sit amet, dolor ipsum dolor sit amet.',
-    degree: 'License',
+    title: "Web development",
+    school: 'Digital Training Center(DTC) Madagascar',
+    description: 'Modern technologies and interactive web applications.',
+    degree: 'Certificate',
   },
   {
     period: '2021 - 2022',
-    title: 'High School Diploma - Scientific Series',
-    school: 'Saint Jean Paul II, Mandritsara Madagascar',
-    description: 'Lorem ipsum dolor sit amet, dolor ipsum dolor sit amet.',
-    degree: 'Bachelor',
+    title: 'Baccalaureate - A2',
+    school: 'Saint Jean Paul II, Madagascar',
+    description: 'Completed secondary education.',
+    degree: 'High School Diploma',
   },
 ];
 

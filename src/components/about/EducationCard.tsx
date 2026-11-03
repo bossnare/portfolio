@@ -24,7 +24,7 @@ export function EducationCard({ education }: EducationProps) {
             </p>
           </div>
 
-          <span className="inline-flex space-x-1 w-fit items-center rounded-md border border-border px-2.5 py-1 text-xs tracking-[0.08em] text-muted-foreground">
+          <span className="inline-flex space-x-1 w-fit items-center rounded border border-border px-2.5 py-1 text-xs tracking-[0.08em] text-muted-foreground">
             <Award className="size-4 text-primary" />{' '}
             <span>{education.degree}</span>
           </span>
