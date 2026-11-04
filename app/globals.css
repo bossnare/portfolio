@@ -25,7 +25,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-primary-foreground: var(--primary-foreground);
   --color-border: var(--border);
-  --font-sans: var(--font-general-sans);
+  --font-sans: var(--font-satoshi);
   --font-display: var(--font-clash-display);
 }
 
@@ -43,7 +43,7 @@
 }
 
 body {
-  @apply bg-[#EDEDED] dark:bg-black; 
+  @apply bg-[#EDEDED] dark:bg-black selection:bg-primary selection:text-primary-foreground; 
   color: var(--foreground);
 }
 
