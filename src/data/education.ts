@@ -3,7 +3,7 @@ export const educations = [
     period: '2024 - 2026',
     title: "Audiovisual Communication and Technology",
     school: 'E-media University Madagascar',
-    description: 'Digital media and visual storytelling, and web ddevelopment',
+    description: 'Digital media and visual storytelling, and web development.',
     degree: 'Bachelor',
   },
   {

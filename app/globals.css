@@ -25,7 +25,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-primary-foreground: var(--primary-foreground);
   --color-border: var(--border);
-  --font-sans: var(--font-general-sans);
+  --font-sans: var(--font-satoshi);
   --font-display: var(--font-clash-display);
 }
 

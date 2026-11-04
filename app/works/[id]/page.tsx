@@ -128,7 +128,7 @@ export default async function WorkPage({ params }: Props) {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3">
             <h2 className="font-medium font-sans! text-lg">About this project</h2>
-            <p className="text-muted-foreground max-w-lg text-xl">{work.description}</p>
+            <p className="text-muted-foreground max-w-lg text-lg">{work.description}</p>
           </div>
           <div className="flex flex-col gap-3">
             <h2 className="font-medium font-sans! text-lg">Technologies</h2>

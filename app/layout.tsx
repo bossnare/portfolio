@@ -7,27 +7,21 @@ import { Header } from '@/src/components/Header';
 import { Footer } from '@/src/components/Footer';
 import { ThemeProvider } from '@/src/components/theme-provider';
 
-// const dmSans = DM_Sans({
-//   variable: '--font-dm-sans',
-//   subsets: ['latin'],
-//   display: 'swap',
-// });
-
-// const dmMono = DM_Mono({
-//   variable: '--font-dm-mono',
-//   subsets: ['latin'],
-//   weight: ['400', '500'],
-// });
-
 const clashDisplay = localFont({
   src: './fonts/ClashDisplay-Variable.woff2',
   variable: '--font-clash-display',
   display: 'swap',
 });
 
-const generalSans = localFont({
-  src: './fonts/GeneralSans-Variable.woff2',
-  variable: '--font-general-sans',
+// const generalSans = localFont({
+//   src: './fonts/GeneralSans-Variable.woff2',
+//   variable: '--font-general-sans',
+//   display: 'swap',
+// });
+
+const satoshi = localFont({
+  src: './fonts/Satoshi-Variable.woff2',
+  variable: '--font-satoshi',
   display: 'swap',
 });
 
@@ -101,7 +95,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className={`${clashDisplay.variable} ${generalSans.variable} antialiased`}
+      className={`${clashDisplay.variable} ${satoshi.variable} antialiased`}
     >
       <body className="font-sans font-[optical-sizing:auto] flex flex-col">
         <ThemeProvider
