@@ -40,6 +40,7 @@ export const metadata: Metadata = {
 
 const personJsonLd = {
   '@context': 'https://schema.org',
+  '@id': "https://christorazafimanga.is-a.dev/#person",
   '@type': 'Person',
   name: 'Razafimanga Gervais Christo',
   givenName: 'Christo',
@@ -50,9 +51,12 @@ const personJsonLd = {
   jobTitle: 'Full-Stack Web Developer & Designer',
   brand: {
     '@type': "Brand",
+    '@id': "https://christorazafimanga.is-a.dev/#brand",
     'name': "Let's Go Chris",
+    'logo': "https://christorazafimanga.is-a.dev/lgc.png",
     'url': "https://christorazafimanga.is-a.dev"
   },
+  
   sameAs: [
     'https://github.com/bossnare',
     'https://www.facebook.com/thebossnare',

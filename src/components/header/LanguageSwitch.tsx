@@ -19,7 +19,7 @@ export function LanguageSwitch() {
           onClick={() => setLng(language.lng)}
           className={cn(
             lng === language.lng
-              ? 'bg-secondary text-secondary-foreground font-semibold'
+              ? 'bg-secondary text-secondary-foreground font-medium'
               : 'text-muted-foreground hover:bg-black/4 hover:text-foreground dark:hover:bg-muted active:opacity-60'
           )}
         >
