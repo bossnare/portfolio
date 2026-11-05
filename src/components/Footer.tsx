@@ -4,13 +4,13 @@ import { SocialLinks } from './SocialLinks';
 
 export function Footer() {
   return (
-    <footer className="w-full mt-auto px-4 py-10 border-t bg-secondary text-background dark:text-foreground border-[#ffffff0a] dark:bg-[#070807] md:px-0 md:py-12">
+    <footer className="w-full mt-auto px-4 py-10 border-t bg-black text-background dark:text-foreground border-[#ffffff0a] dark:bg-[#070807] md:px-0 md:py-12">
       <div className="flex flex-col w-full max-w-6xl gap-8 mx-auto">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm space-y-2">
             <p className="text-lg font-semibold font-display flex items-center gap-3">
-              <Image width={800} height={850} alt="logo icon" className="size-5 dark:invert" src='/icon/letsgochris.svg' />
-              <Image src="/icon/lgc.svg" width={400} height={200} className="w-30 dark:invert" alt="lgc_wordmark" />
+              <Image width={800} height={850} alt="logo icon" className="size-5 invert" src='/icon/letsgochris.svg' />
+              <Image src="/icon/lgc.svg" width={400} height={200} className="w-30" alt="lgc_wordmark" />
             </p>
             <p className="text-sm leading-6 text-[#a1a1aa]">
               Full-stack developer & designer creating scalable products,
