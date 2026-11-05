@@ -33,7 +33,7 @@ export function Header() {
     <header className="sticky w-full top-0 z-1000 bg-background dark:bg-black [#131313]">
       <nav className="flex items-center justify-between px-5 py-2.5 md:py-5 md:px-14">
         <div className="flex items-center gap-2">
-          <Image src="/icon/lgc.svg" width={400} height={200} className="w-30 dark:invert" alt="lgc_wordmark" />
+          <Image src="/icon/lgc.svg" width={400} height={200} className="w-30 invert dark:invert-0" alt="lgc_wordmark" />
           {/* <span className="text-lg font-semibold font-display">
             CHRISTO <span className="font-medium">™</span>
           </span> */}

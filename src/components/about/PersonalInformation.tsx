@@ -30,9 +30,9 @@ export const PersonalInformation = () => {
           </div>
           <p className="text-">
             I am Razafimanga Gervais Christo, professionally known as Christo
-            Razafimanga, a Malagasy full-stack web developer based in
+            Razafimanga, a Malagasy full-stack web developer and designer based in
             Antananarivo, Madagascar. Born on December 9, 2003, I speak Malagasy
-            and English and am passionate about technology, software
+            and English and am ready to work about technology, software
             development, design.
           </p>
           <div className="flex mt-40 md:mt-auto">
@@ -43,8 +43,8 @@ export const PersonalInformation = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: (i + 1) * 0.4 }}
                 key={i}
-                style={{ marginTop: i % 2 ? '-50px' : '0px' }}
-                className="bg-foreground size-12"
+                style={{ marginTop: i % 2 ? '-40px' : '0px' }}
+                className="bg-foreground size-10"
               />
             ))}
           </div>

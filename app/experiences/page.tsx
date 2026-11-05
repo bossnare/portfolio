@@ -86,7 +86,7 @@ export default function ExperiencesPage() {
         {expertise.map(({ title, description, icon: Icon }) => (
           <article
             key={title}
-            className="p-5 border rounded-lg shadow-sm border-border bg-background/80"
+            className="p-5 border rounded-lg shadow-md border-border bg-background/80"
           >
             <div className="mb-4 inline-flex rounded-md border border-border bg-muted/80 p-2.5">
               <Icon className="size-5 text-foreground" />

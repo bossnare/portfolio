@@ -40,14 +40,23 @@ export const metadata: Metadata = {
 
 const personJsonLd = {
   '@context': 'https://schema.org',
+  '@id': "https://christorazafimanga.is-a.dev/#person",
   '@type': 'Person',
-  name: 'Christo Razafimanga',
+  name: 'Razafimanga Gervais Christo',
   givenName: 'Christo',
   familyName: 'Razafimanga',
-  alternateName: ['Razafimanga Gervais Christo', 'BossNare'],
+  alternateName: ['Christo Razafimanga', 'BossNare'],
   url: 'https://christorazafimanga.is-a.dev',
   image: 'https://christorazafimanga.is-a.dev/images/christo.png',
-  jobTitle: ['Full-Stack Web Developer', 'Designer'],
+  jobTitle: 'Full-Stack Web Developer & Designer',
+  brand: {
+    '@type': "Brand",
+    '@id': "https://christorazafimanga.is-a.dev/#brand",
+    'name': "Let's Go Chris",
+    'logo': "https://christorazafimanga.is-a.dev/lgc.png",
+    'url': "https://christorazafimanga.is-a.dev"
+  },
+  
   sameAs: [
     'https://github.com/bossnare',
     'https://www.facebook.com/thebossnare',
