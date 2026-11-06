@@ -109,7 +109,7 @@ export default function RootLayout({
       <body className="font-sans font-[optical-sizing:auto] flex flex-col">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
