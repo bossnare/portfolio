@@ -48,6 +48,7 @@ export const skills = [
       'Vercel',
       'CI/CD',
       'Adobe',
+      'UI/UX Design',
       'AI tools'
     ],
   },

@@ -7,6 +7,7 @@ import { StatsImpacts } from '@/src/components/about/StatsImpacts';
 import { LetsWork } from '@/src/components/LetsWork';
 import { SkillsExpertise } from '@/src/components/about/SkillsExpertise';
 import { Education } from '@/src/components/about/Education';
+import { BeyondCode } from '@/src/components/about/BeyondCode';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -25,6 +26,7 @@ export default function AboutPage() {
       <StatsImpacts />
       <SkillsExpertise />
       <Education />
+      <BeyondCode />
       <LetsWork />
     </Page>
   );
