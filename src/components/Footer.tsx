@@ -11,7 +11,7 @@ export function Footer() {
           {Array.from({ length: 15 }).map((box, i) => (
               <div
                 key={i}
-                className={cn(i % 2 ? 'bg-linear-to-b from-[#242424]/60 to-transparent' : 'bg-[#242424]/2 bg-linear-to-b from-transparent to-[#242424]/20 -mt-20', 'size-20 shrink-0')}
+                className={cn(i % 2 ? 'bg-linear-to-b from-[#242424]/60 to-transparent' : 'bg-[#242424]/2 bg-linear-to-b from-transparent to-[#242424]/20 dark:to-[#242424]/40 -mt-20', 'size-20 shrink-0')}
               />
             ))}
         </div>
