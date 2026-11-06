@@ -13,8 +13,8 @@ return(
     <div className="flex flex-wrap gap-5">
         {interests.map((interest) => (
             <article key={interest.title} className="flex flex-col items-center gap-2">
-                <div className="p-6 shadow-lg bg-secondary text-secondary-foreground dark:bg-muted/60 dark:text-foreground rounded-full">
-                    <interest.icon className="size-10" />
+                <div className="p-8 shadow-lg bg-secondary text-secondary-foreground dark:bg-muted/80 dark:text-neutral-300 rounded-full">
+                    <interest.icon className="size-12" />
                 </div>
                 <span className="font-medium">{interest.title}</span>
             </article>
