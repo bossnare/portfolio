@@ -1,4 +1,4 @@
-import {Headphones, GamepadDirectional, Eclipse} from 'lucide-react'
+import {Headphones, Gamepad2, Moon} from 'lucide-react'
 
 export const interests = [
     {
@@ -7,10 +7,10 @@ export const interests = [
     },
     {
         title: 'Gaming',
-        icon: GamepadDirectional
+        icon: Gamepad2
     },
     {
         title: 'Lifestyle',
-        icon: Eclipse
+        icon: Moon
     }
 ]
