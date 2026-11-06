@@ -7,7 +7,7 @@ export const tabs = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Works', href: '/works' },
-  { label: 'Experience', href: '/experiences' },
+  { label: 'Experience', href: '/experience' },
   { label: 'Contact', href: '/contact' },
 ];
 

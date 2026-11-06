@@ -39,7 +39,7 @@ export function HeroVisual() {
       />
       <div className="flex z-10 bottom-15 md:bottom-40 absolute">
             {Array.from({length:4}).map((box, i) => (
-              <div key={i} style={{marginTop: i % 2 ? '-24px' : '0px'}} className="bg-foreground size-7" />
+              <div key={i} style={{marginTop: i % 2 ? '-28px' : '0px'}} className="bg-foreground size-7" />
             ))}
       </div>
       <Image
