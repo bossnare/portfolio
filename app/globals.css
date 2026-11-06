@@ -65,13 +65,13 @@ button {
     width: 0;
   }
   to {
-    width: 21ch;
+    width: 18ch;
   }
 }
 
 .animate-typewriter {
   display: inline-block;
-  width: 21ch;
+  width: 18ch;
   overflow: hidden;
   white-space: nowrap;
   animation:
@@ -103,6 +103,6 @@ button {
 @media (prefers-reduced-motion: reduce) {
   .typewriter {
     animation: none;
-    width: 21ch;
+    width: 18ch;
   }
 }

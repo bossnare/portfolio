@@ -5,13 +5,13 @@ import {cn} from '@/src/lib/utils'
 
 export function Footer() {
   return (
-    <footer className="w-full mt-auto px-4 py-10 overflow-x-hidden bg-black text-background dark:text-foreground dark:bg-linear-to-b from-transparent to-zinc-950 md:px-0 md:py-12">
+    <footer className="w-full mt-auto px-4 py-10 overflow-x-hidden bg-linear-to-b from-transparent via-black via-30% to-black text-background dark:text-foreground dark:bg-linear-to-b from-transparent to-zinc-950 md:px-0 md:py-12">
       <div className="flex flex-col w-full max-w-6xl gap-8 mx-auto">
         <div className="flex mt-10 md:mt-8 w-full">
           {Array.from({ length: 15 }).map((box, i) => (
               <div
                 key={i}
-                className={cn(i % 2 ? 'bg-linear-to-b from-muted-foreground/60 to-transparent' : 'bg-muted-foreground/20 dark:bg-linear-to-b dark:from-transparent dark:to-muted-foreground/20 -mt-20', 'size-20 shrink-0')}
+                className={cn(i % 2 ? 'bg-linear-to-b from-[#242424]/60 to-transparent' : 'bg-[#242424]/2 bg-linear-to-b from-transparent to-[#242424]/20 -mt-20', 'size-20 shrink-0')}
               />
             ))}
         </div>

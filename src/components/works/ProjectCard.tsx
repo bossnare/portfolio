@@ -35,7 +35,7 @@ export function ProjectCard({ work }: WorkCardProps) {
     <div
       tabIndex={0}
       onClick={() => goTo({ href: `/works/${work.id}` })}
-      className="flex flex-col h-full p-5 transition-colors border shadow-sm cursor-pointer rounded-2xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
+      className="flex flex-col h-full p-5 transition-colors border shadow-lg cursor-pointer rounded-2xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
     >
       <div className="flex flex-col gap-5">
         <div style={{backgroundColor: work.color}} className="flex flex-col items-center gap-2 justify-center w-full h-40 rounded-lg">

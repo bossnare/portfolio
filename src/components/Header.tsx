@@ -30,7 +30,7 @@ export function Header() {
   }, [currentIndex]);
 
   return (
-    <header className="sticky w-full top-0 z-1000 bg-background dark:bg-black [#131313]">
+    <header className={cn("sticky w-full top-0 z-1000 bg-background dark:bg-black [#131313]")}>
       <nav className="flex items-center justify-between px-5 py-2.5 md:py-5 md:px-14">
         <div className="flex items-center gap-2">
           <Image src="/icon/lgc.svg" width={400} height={200} className="w-30 invert dark:invert-0" alt="lgc_wordmark" />
@@ -74,7 +74,7 @@ export function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-3 px-5 py-8 border-t border-b bg-background border-border md:hidden"
+          className="flex flex-col gap-3 px-5 py-8 border-t border-b bg-background dark:bg-muted/40 border-border md:hidden"
         >
           <ul className="flex flex-col items-start gap-5">
             {tabs.map((tab, i) => (
