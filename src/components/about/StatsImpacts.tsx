@@ -43,7 +43,7 @@ export function StatsImpacts() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
       >
         <Link
-          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-10 overflow-hidden font-medium transition-colors duration-300 ease-in-out rounded-full hover:text-background hover:shadow-lg hover:outline-transparent active:text-background sm:duration-1200 group font-display outline outline-foreground/70 active:opacity-70"
+          className="relative flex items-center justify-center w-auto h-12 gap-2 px-6 mt-10 overflow-hidden font-medium transition-colors duration-300 ease-in-out rounded-full hover:text-background hover:shadow-lg hover:outline-transparent active:text-background sm:duration-1200 group font-display outline outline-foreground dark:outline-foreground/70 active:opacity-70"
           href="/works"
           onClick={(e) => {
             e.preventDefault();

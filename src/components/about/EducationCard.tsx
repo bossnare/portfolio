@@ -15,7 +15,7 @@ export function EducationCard({ education }: EducationProps) {
       <div className="space-y-4">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="space-y-1">
-            <p className="text-lg font-medium text-foreground">
+            <p className="text- font-medium text-foreground">
               {education.title}
             </p>
             <p className="text-primary font-medium">{education.school}</p>
@@ -24,7 +24,7 @@ export function EducationCard({ education }: EducationProps) {
             </p>
           </div>
 
-          <span className="inline-flex space-x-1 w-fit items-center rounded border border-border px-2.5 py-1 text-xs tracking-[0.08em] text-muted-foreground">
+          <span className="inline-flex space-x-1 w-fit items-center rounded border border-border px-1 py-0.5 text-xs tracking-[0.08em] text-muted-foreground">
             <Award className="size-4 text-primary" />{' '}
             <span>{education.degree}</span>
           </span>
