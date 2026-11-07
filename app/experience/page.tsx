@@ -3,8 +3,15 @@ import { Page, PageHeader } from '@/src/components/Page';
 import { BriefcaseBusiness, PanelsTopLeft, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
+const description = "I design and build digital experiences at the intersection of strategy, interface design, and modern web development."
+
 export const metadata: Metadata = {
   title: 'Experiences',
+  description,
+  alternates: {
+    canonical: "/experience"
+  }
+
 };
 
 const expertise = [
@@ -79,7 +86,7 @@ export default function ExperiencesPage() {
       <PageHeader
         startTitle="my"
         title="experience"
-        description="I design and build digital experiences at the intersection of strategy, interface design, and modern web development."
+        description={description}
       />
 
       <section className="grid gap-4 md:grid-cols-3">

@@ -4,8 +4,14 @@ import { works } from '@/src/data/works';
 import { FolderKanban, Layers3, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 
+const description = "A collection of product ideas, web experiences, and design-driven projects built with clarity and purpose."
+
 export const metadata: Metadata = {
   title: 'Works',
+  description,
+  alternates: {
+    canonical: '/works'
+  }
 };
 
 const summaryStats = [
@@ -41,7 +47,7 @@ export default function WorksPage() {
       <PageHeader
         startTitle="my"
         title="works"
-        description="A collection of product ideas, web experiences, and design-driven projects built with clarity and purpose."
+        description={description}
       />
 
       <section className="grid gap-4 md:grid-cols-3">
