@@ -82,7 +82,7 @@ export const works = [
     category: 'web',
     type: 'Portfolio website',
     name: 'Christo Razafimanga',
-    brandName: 'CHRISTO',
+    brandName: "LET'S GO CHRIS",
     description:
       'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
     icon: 'globe-check',
