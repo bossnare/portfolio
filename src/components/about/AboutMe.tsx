@@ -39,7 +39,7 @@ export function AboutMe() {
               <span className="text-xs font-medium uppercase text-muted-foreground">
                 Backend
               </span>
-              <span className="text-sm">NestJS · APIs</span>
+              <span className="text-sm">Express/NestJS · APIs</span>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-xs font-medium uppercase text-muted-foreground">

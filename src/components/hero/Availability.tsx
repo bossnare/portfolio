@@ -5,7 +5,7 @@ export function Availability({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'flex items-center mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]',
+        'flex items-center mask-[linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]',
         className
       )}
     >

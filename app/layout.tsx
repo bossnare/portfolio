@@ -53,6 +53,7 @@ const personJsonLd = {
     '@type': "Brand",
     '@id': "https://christorazafimanga.is-a.dev/#brand",
     'name': "Let's Go Chris",
+    'alternateName': 'LGC',
     'logo': "https://christorazafimanga.is-a.dev/lgc.png",
     'url': "https://christorazafimanga.is-a.dev"
   },
