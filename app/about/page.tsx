@@ -9,8 +9,14 @@ import { SkillsExpertise } from '@/src/components/about/SkillsExpertise';
 import { Education } from '@/src/components/about/Education';
 import { BeyondCode } from '@/src/components/about/BeyondCode';
 
+const description = "A little bit about me and what I do, highlighting the skills, and expertise I bring to every digital experience I create."
+
 export const metadata: Metadata = {
   title: 'About',
+  description,
+  alternates: {
+    canonical: "/about"
+  }
 };
 
 export default function AboutPage() {
@@ -19,7 +25,7 @@ export default function AboutPage() {
       <PageHeader
         title="About"
         endTitle="me"
-        description="A little bit about me and what I do, highlighting the skills, and expertise I bring to every digital experience I create."
+        description={description}
       />
       <Intro />
       <PersonalInformation />

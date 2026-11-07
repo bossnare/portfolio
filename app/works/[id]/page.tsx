@@ -10,9 +10,17 @@ export async function generateMetadata({ params }: Props) {
   const { id } = await params;
   const work = works.find((w) => w.id === id);
 
+  if (!work) return {
+    title: 'Work not found',
+    robots: {index: false, follow: false} // stop indexing and follow this not found page work
+  };
+
   return {
-    title: work ? work.name : 'Work not found',
-    description: work?.description,
+    title: work.name,
+    description: work.description,
+    alternates: {
+      canonical: `/works/${id}`
+    }
   };
 }
 
