@@ -38,7 +38,7 @@
   --card: #151515;
   --muted: #242424;
   --muted-foreground: oklch(0.75 0 0);
-  --primary-foreground: #191414;
+  --primary-foreground: #000000;
   --border: #303030;
 }
 
