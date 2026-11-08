@@ -5,7 +5,7 @@ import {DiplomaCard} from './DiplomaCard'
 export function Education() {
 return(
   <section className="flex flex-col items-start justify-center w-full min-h-screen gap-10 pb-10 md:pb-0 md:gap-10 md:items-center">
-    <div className="space-y-5 md:text-center">
+    <div className="space-y-4 md:text-center">
         <h3 className="max-w-md text-3xl">Education</h3>
         <p className="max-w-md text-sm text-muted-foreground">
           My academic background and training that shaped my path as a developer.

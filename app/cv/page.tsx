@@ -25,10 +25,10 @@ export default function CVPage () {
                 <h2 className="text-xl font-medium font-sans!">Christo Razafimanga</h2>
                 <p className="text-muted-foreground text-sm">Full-Stack Web Developer and Designer</p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
                 {
                     pdfs.map((pdf) => (
-                        <div key={pdf.name} className="bg-card dark:bg-transparent border border-border dark:border-background flex flex-col gap-3 shadow-sm pb-2">
+                        <div key={pdf.name} className="bg-card w-full sm:w-auto dark:bg-transparent border border-border dark:border-background flex flex-col gap-3 shadow-sm pb-2">
                             <div className="flex justify-between items-center font-medium py-4 bg-background border-b border-muted p-4">
                                 <span>{pdf.name}</span>
                                 <FileText className="size-4"/>
