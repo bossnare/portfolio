@@ -45,9 +45,9 @@ export function PageHeader({
         <span>{title} </span>
         <span className="text-foreground">{endTitle}</span>
       </h1>
-      <p className="max-w-2xl text-3xl leading-10 font-display">
+      {description && (<p className="max-w-2xl text-3xl leading-10 font-display">
         {description}
-      </p>
+      </p>)}
     </motion.div>
   );
 }

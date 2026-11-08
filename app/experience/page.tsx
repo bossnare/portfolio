@@ -70,7 +70,7 @@ const experiences = [
     ],
   },
   {
-    period: '2023 — 2024',
+    period: '2023 — 2025',
     type: 'Learning path',
     role: 'Self-taught builder',
     company: 'Personal projects',

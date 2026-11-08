@@ -41,7 +41,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.9,
         },
-        ...projectUrls
+        ...projectUrls,
+        {
+        url: `${BASE_URL}/cv`,
+        changeFrequency: "monthly",
+        priority: 0.8,
+        },
+        {
+        url: `${BASE_URL}/christo_razafimanga_cv.pdf`,
+        changeFrequency: "monthly",
+        priority: 0.7,
+        },
     ]
 
 }
