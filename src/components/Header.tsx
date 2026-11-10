@@ -58,12 +58,12 @@ export function Header() {
           <LanguageSwitch />
           <button
             onClick={handleTogleOpenMenu}
-            className={cn(isOpenMenu ? "border" : "border-0", "flex items-center justify-center rounded-sm md:hidden size-7.5 border-border active:bg-background active:opacity-60")}
+            className="flex items-center justify-center md:hidden active:bg-background active:opacity-60"
           >
             {isOpenMenu ? (
-              <X className="text-zinc-800 dark:text-zinc-100" />
+              <X className="text-zinc-800 dark:text-zinc-100 size-8" />
             ) : (
-              <Menu className="size-10 text-zinc-800 dark:text-zinc-100" />
+              <Menu className="size-8 text-zinc-800 dark:text-zinc-100" />
             )}
           </button>
         </div>
@@ -90,7 +90,7 @@ export function Header() {
             ))}
           </ul>
           <a
-            className="flex h-11 mt-5 items-center justify-center font-medium gap-2 rounded-lg px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc]"
+            className="flex h-11 mt-5 items-center justify-center font-medium gap-2 rounded-sm px-3 bg-foreground text-background transition-colors hover:bg-[#383838] dark:hover:text-background dark:hover:bg-[#ccc] active:bg-[#383838] dark:active:bg-[#ccc]"
             href="/christo_razafimanga_cv.pdf"
             download
           >

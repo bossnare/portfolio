@@ -49,7 +49,7 @@ function HeroActions() {
   return (
     <div className="flex flex-col gap-4 text-base font-medium sm:w-full sm:flex-row">
       <Link
-        className="flex items-center justify-center w-auto gap-2 px-4 transition-colors rounded-md h-11 active:opacity-70 bg-primary text-primary-foreground hover:brightness-110 active:brightness-120"
+        className="flex items-center justify-center w-auto gap-2 px-4 transition-colors rounded-sm h-11 active:opacity-70 bg-primary text-primary-foreground hover:brightness-110 active:brightness-120"
         href="/works"
         onClick={(e) => {
           e.preventDefault();
@@ -60,7 +60,7 @@ function HeroActions() {
         <ChevronRight />
       </Link>
       <Link
-        className="flex h-11 w-auto active:opacity-70 items-center justify-center gap-2 rounded-md border border-solid border-border px-4 transition-colors hover:border-transparent bg-black/4 dark:bg-[#1a1a1a]/80 hover:bg-black/8 active:bg-black/8 dark:active:bg-background dark:hover:bg-background"
+        className="flex h-11 w-auto active:opacity-70 items-center justify-center gap-2 rounded-sm border border-solid border-border px-4 transition-colors hover:border-transparent bg-black/4 dark:bg-[#1a1a1a]/80 hover:bg-black/8 active:bg-black/8 dark:active:bg-background dark:hover:bg-background"
         href="/contact"
         onClick={(e) => {
           e.preventDefault();
@@ -86,7 +86,7 @@ function Technologies() {
             <li
               title={stack.name}
               key={`${stack}-${index}`}
-              className="p-2 rounded-md bg-muted/50"
+              className="p-2 rounded-sm bg-muted/50"
             >
               <MaskedIcon
                 icon={stack.icon}
