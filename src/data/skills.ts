@@ -27,6 +27,7 @@ export const skills = [
       'REST API',
       'Swagger',
       'Security',
+      'RBAC'
     ],
   },
   {
@@ -46,10 +47,15 @@ export const skills = [
       'VS Code',
       'Linux',
       'Vercel',
+      'Render',
       'CI/CD',
-      'Adobe',
+      'Photoshop',
+      'Illustrator',
+      'InDesign',
       'UI/UX Design',
-      'AI tools'
+      'Copilot',
+      'ChatGPT',
+      'Claude'
     ],
   },
 ];

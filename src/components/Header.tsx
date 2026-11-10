@@ -58,7 +58,7 @@ export function Header() {
           <LanguageSwitch />
           <button
             onClick={handleTogleOpenMenu}
-            className="flex items-center justify-center md:hidden active:bg-background active:opacity-60"
+            className="flex items-center justify-center md:hidden active:bg-muted/60 active:opacity-70"
           >
             {isOpenMenu ? (
               <X className="text-zinc-800 dark:text-zinc-100 size-8" />
