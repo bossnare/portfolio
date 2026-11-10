@@ -12,7 +12,6 @@ import { Availability } from './Availability';
 function HeroIntroduction() {
   return (
     <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
-      <Availability />
       {/* <p className="uppercase text-muted-foreground">Hi, I&apos;m...</p> */}
       <div className="max-w-xl text-black dark:text-zinc-50">
         <span className="uppercase border-r animate-typewriter [word-spacing:0.3rem]">
@@ -80,7 +79,7 @@ function Technologies() {
       <span className="uppercase text-muted-foreground font-display">
         Technologies & Tools
       </span>
-      <div className="overflow-hidden w-full md:w-[85%] mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+      <div className="overflow-hidden w-full sm:w-[80%] mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         <ul className="flex items-center gap-4 mt-4 w-max animate-marquee">
           {[...stacks, ...stacks].map((stack, index) => (
             <li
@@ -128,6 +127,7 @@ export function HeroContent() {
     <div className="flex flex-col items-center justify-between flex-1 w-full max-w-3xl gap-6 px-4 md:px-0 dark:bg-black md:items-start">
       <HeroIntroduction />
       <HeroActions />
+      <Availability />
       <Technologies />
       <HeroStats />
     </div>
