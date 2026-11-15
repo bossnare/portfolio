@@ -118,6 +118,10 @@ export default function RootLayout({
             <Header />
             <main className="w-full pt-8 pb-20 md:pt-0">{children}</main>
             <Footer />
+
+            {/* <a href="/personna" className="fixed right-4 bottom-6 rounded-full active:opacity-80 size-14 shadow-md border bg-background dark:bg-black hover:bg-muted dark:hover:bg-muted/50 active:bg-muted border-border flex items-center justify-center">
+              <img src="/icon/ai_icon.svg" className="size-12 dark:invert" />
+            </a> */}
           </div>
 
           {/* <GoogleAnalytics /> */}

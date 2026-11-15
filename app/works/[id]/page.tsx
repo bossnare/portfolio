@@ -120,7 +120,7 @@ export default async function WorkPage({ params }: Props) {
         )}
       </div>
 
-      <div className="flex w-full gap-3 overflow-x-auto">
+      {/* <div className="flex w-full gap-3 overflow-x-auto">
         {work.previews.map((preview, i) => (
           <div style={{backgroundColor: work.color}} key={i} className="rounded p-4 shrink-0 flex flex-col gap-3 items-center justify-center bg-linear-to-b from-transparent to-black/80 dark:to-white/80 h-80 md:h-110 w-50 md:w-[calc(100%/4-12px)]">
             <div className="flex flex-col text-center items-center">
@@ -130,7 +130,7 @@ export default async function WorkPage({ params }: Props) {
             <div style={{backgroundColor: work.textColor}} className="grow w-full rounded-sm"></div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-8 pt-8">
         <div className="flex flex-col gap-6">

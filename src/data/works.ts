@@ -116,43 +116,43 @@ export const works = [
       }
     ]
   },
-  {
-    id: 'cabinet-excellent',
-    category: 'web',
-    type: 'RH management',
-    name: 'Cabinet Excellent',
-    brandName: 'Cabinet Excellent',
-    description:
-      'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
-    icon: 'person-standing',
-    color: '#688E26',
-    textColor: "#ffffff",
-    link: '#',
-    personal: false,
-    cover: 'cabinet_excellent_cover.png',
-    status: 'In-progress',
-    technologies: ['Tailwind CSS', 'TypeScript', 'Express', 'React', 'Vite', 'MySQL'] ,
-    previews: [
-      {title: 'Home page', description: 'Explore more home design.'},
-      {title: 'Alignment', description: 'Look like clean space, try it.'},
-      {title: 'Design', description: 'What a clean space. Love it.'},
-      {title: 'UI/UX', description: 'Smooth and clean for your rythm.'}
-    ],
-    metadata: [
-      {
-        label: 'Year',
-        value: ['2026']
-      },
-      {
-        label: 'Framework',
-        value: ['React/Vite', 'Express']
-      },
-      {
-        label: 'Category',
-        value: ['UI/UX Design']
-      }
-    ]
-  },
+  // {
+  //   id: 'cabinet-excellent',
+  //   category: 'web',
+  //   type: 'RH management',
+  //   name: 'Cabinet Excellent',
+  //   brandName: 'Cabinet Excellent',
+  //   description:
+  //     'My personal portfolio website designed to showcase my skills, projects, and professional journey. Focused on high performance, clean UI/UX, and accessibility.',
+  //   icon: 'person-standing',
+  //   color: '#688E26',
+  //   textColor: "#ffffff",
+  //   link: '#',
+  //   personal: false,
+  //   cover: 'cabinet_excellent_cover.png',
+  //   status: 'In-progress',
+  //   technologies: ['Tailwind CSS', 'TypeScript', 'Express', 'React', 'Vite', 'MySQL'] ,
+  //   previews: [
+  //     {title: 'Home page', description: 'Explore more home design.'},
+  //     {title: 'Alignment', description: 'Look like clean space, try it.'},
+  //     {title: 'Design', description: 'What a clean space. Love it.'},
+  //     {title: 'UI/UX', description: 'Smooth and clean for your rythm.'}
+  //   ],
+  //   metadata: [
+  //     {
+  //       label: 'Year',
+  //       value: ['2026']
+  //     },
+  //     {
+  //       label: 'Framework',
+  //       value: ['React/Vite', 'Express']
+  //     },
+  //     {
+  //       label: 'Category',
+  //       value: ['UI/UX Design']
+  //     }
+  //   ]
+  // },
 ];
 
 export type Work = (typeof works)[number];
