@@ -1,5 +1,6 @@
 import { cn } from '@/src/lib/utils';
 // import { Terminal } from 'lucide-react';
+const availabilities = ['CDI', 'CDD', 'Collaboration']
 
 export function Availability({ className }: { className?: string }) {
   return (
@@ -9,9 +10,9 @@ export function Availability({ className }: { className?: string }) {
         className
       )}
     >
-      <span className="rounded-full size-2.5 bg-primary ml-1 "></span>
+      <span className="size-2 bg-primary ml-1 "></span>
       <span className="ml-2 text-sm text-muted-foreground">
-        Available for work
+        Available for <span >{availabilities.join(' - ')}. </span>
       </span>
       {/* <span className="p-1 border rounded-md border-border">
         <Terminal className="text-muted-foreground size-5" />

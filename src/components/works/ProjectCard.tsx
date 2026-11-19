@@ -12,6 +12,7 @@ import { OpenExternalLink, OpenLink } from '../link';
 import { useNavigation } from '@/src/hooks/use-navigation';
 import {MaskedIcon} from '@/src/components/MaskedIcon'
 import {cn} from '@/src/lib/utils'
+import Image from 'next/image'
 
 const workIcons = {
   music: Music,
@@ -32,45 +33,42 @@ export function ProjectCard({ work }: WorkCardProps) {
   const { goTo } = useNavigation();
 
   return (
-    <div
-      tabIndex={0}
+    <div tabIndex={0} 
+    className="cursor-pointer group hover:bg-muted/50 active:bg-muted-foreground/40">
+      <div
+      title={work.brandName}
       onClick={() => goTo({ href: `/works/${work.id}` })}
-      className="flex flex-col h-full p-5 transition-colors border shadow-lg cursor-pointer rounded-2xl border-border/80 bg-card hover:border-border hover:bg-muted/50 active:border-border active:bg-muted-foreground/40"
+      className="flex flex-col transition-colors shadow-xl group-hover:bg-card/80 bg-card overflow-hidden border rounded-2xl border-border/80 group-hover:border-border group-active:border-border group-active:opacity-60"
     >
-      <div className="flex flex-col gap-5">
-        <div style={{backgroundColor: work.color}} className="flex flex-col items-center gap-2 justify-center w-full h-40 rounded-lg">
-          {work.logoIcon && <MaskedIcon
-            style={{backgroundColor: work.textColor}}
-            icon={work.logoIcon}
-            className="size-13"
-          />}
-          <span style={{color: work.textColor}} className={cn(!work.logoIcon && "max-w-40 text-center" ,"text-3xl font-medium font-display")}>{work.brandName}</span>
-        </div>
-        <div className="flex gap-5 pb-3 grow">
-          <div className="flex flex-col gap-3 grow">
-            <div className="flex items-center gap-2">
-              <span
-                style={{ background: `${work.color}1a` }}
-                className="p-3 rounded-full shrink-0"
-              >
-                <Icon className="size-5" aria-hidden={true} />
-              </span>
-              <div className="flex flex-col">
-                <span className="text-lg font-semibold">
-                  {work.type}
+      <div className="flex flex-col h-50 gap-5 relative">
+        <Image src={`/images/${work.coverImage}`} 
+        alt={`christo-razafimanga-${work.coverImage}`} 
+        width={1200} height={800}
+        className="object-cover size-full" />
+        <div className="flex flex-col px-2 backdrop-blur-xs bg-card/80 dark:bg-black/80 absolute bottom-0 inset-x-0 gap-5 py-2">
+          <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-2">
+                  <div style={{backgroundColor: work.color}} className="flex items-center gap-2 justify-center size-8 rounded-full">
+                  {work.logoIcon && <MaskedIcon
+                  style={{backgroundColor: work.textColor}}
+                  icon={work.logoIcon}
+                  className="size-5"
+                />}
+                </div>
+        
+                <span className="font-semibold">
+                  {work.brandName}
                 </span>
-                <span className="text-xs capitalize text-muted-foreground">{work.category}</span>
-              </div>
-            </div>
-
-            <span className="line-clamp-3 text-[15px] leading-7 text-muted-foreground">
+                </div>
+            
+            <span className="line-clamp-2 text-[15px] leading-5 text-foreground/80 dark:text-muted-foreground">
               {work.description}
             </span>
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-between pt-2 mt-auto text-">
+      <div className="flex items-center justify-between py-2 px-2 pb-2 text-">
         <span className="text-sm">
           {work.personal ? 'View work' : 'View details'}
         </span>
@@ -95,5 +93,7 @@ export function ProjectCard({ work }: WorkCardProps) {
         )}
       </div>
     </div>
+    </div>
+    
   );
 }
