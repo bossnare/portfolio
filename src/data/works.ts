@@ -8,6 +8,7 @@ export const works = [
     description:
       'A modern music streaming platform built with Next.js and Tailwind CSS. Features seamless audio playback, personalized playlist creation, and a responsive user interface.',
     icon: 'music',
+    coverImage: 'melodayzmusic-dashboard-screenshot.png',
     logoIcon: 'melodayzmusic.svg',
     color: '#296EC9',
     textColor: '#f5f5f5',
@@ -47,6 +48,7 @@ export const works = [
     description:
       'A collaborative task management application featuring intercative Kanban boards, drag-and-drop functionality, and real-time updates powered by React/Vite and NestJS.',
     icon: 'folder-kanban',
+    coverImage: 'talor-homepage-screenshot.png',
     logoIcon: 'talor.svg',
     color: '#A9DCBD',
     textColor: '#162B22',
@@ -88,6 +90,7 @@ export const works = [
     icon: 'globe-check',
     logoIcon: 'letsgochris.svg',
     color: '#191414',
+    coverImage: 'portfolio-homepage-screenshot.png',
     textColor: '#F1f1f1',
     link: 'https://christorazafimanga.is-a.dev',
     cover: 'christo_cover.png',

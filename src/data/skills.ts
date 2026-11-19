@@ -24,7 +24,7 @@ export const skills = [
       'Express',
       'JWT',
       'TypeScript',
-      'REST API',
+      'RESTful API',
       'Swagger',
       'Security',
       'RBAC'
